@@ -1,0 +1,7 @@
+ [I] USE A CRITICAL GRADIENT (1 = CRITICAL GRADIENT, 0 = NO CRITICAL
+
+If this switch is set to 0 then mass wasting is directly related to
+slope gradient with no critical slope gradient, whereas the critical
+gradient is used if this switch is 1. 
+
+See MW0x popup for more details.

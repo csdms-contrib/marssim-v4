@@ -1,0 +1,1 @@
+ LAVA_GRADIENT_WEIGHT                                                           

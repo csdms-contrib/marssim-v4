@@ -1,0 +1,6 @@
+ AVALANCHE_SLOPE_EXPONENT   
+
+The slope gradient is raised to this exponent
+int calculation of avalanche erosion 
+
+See MW13x popup for details

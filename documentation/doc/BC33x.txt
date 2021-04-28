@@ -1,0 +1,15 @@
+********3-D SPATIALLY VARYING BEDROCK RESISTANCE **** 
+
+Two types of 3-D spatial and temporal variation in bedrock
+erosional resistance can be modeled.  In the first type, controlled
+by the next four parameters, a 3-D matrix is read in to set the
+local bedrock erodibiliy as well as regolith diffusivity.
+
+THe last three parameters control a different type of bedrock erodibility,
+in wich a surface crust, such as a duricrust layer, is imposed whch has a
+lower erodibility until that crust is eroded through.  The use of a surface
+crust might also represent erosion through a vegetation layer, although the
+bistable erosion method provides more flexibility.
+
+DO NOT USE BEDROCK ERODIBILITY BEING CONTROLLED BOTH BY A 3-D MATRIX AND BY
+A SURFACE CRUST.                                    

@@ -1,0 +1,6 @@
+ EOLIAN TIME INCREMENT    
+
+If fluvial and slope modeling is NOT selected this is a
+rate constant for the eolian erosion and deposition.
+
+See EO0x popup for further details.

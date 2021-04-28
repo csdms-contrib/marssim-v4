@@ -1,0 +1,21 @@
+ [I] SPATIAL_WEATHERING_USE - 0 = NO, 1 = YES
+
+This determines whether the weathering rates will vary spatially according
+to the values read into SPATIAL_VARIATION.DAT.  The value of SPATIAL_VARIATION_USE
+must be set to unity in the MARSSIM_INITIAL_BOUNDARY_CONDITIONS.PRM file.
+The values input in this matrix are scaled by the LOW_WEATGHERING_SCALE and
+HIGH_WEATHERING_SCALE to set the maximum and minimum weathering rates as a multiplicative
+factor applied to ROCK_WEATHERING_RATE.
+Define:
+ VMX = maximum value in SPATIAL_VARIATION.DAT
+ VMN = mimimum value in SPATIAL_VARIATION.DAT
+ HWS = high weathering scale factor (see popup WE16x)
+ LWS = low weathering scale factor (see popup WE17x) 
+ VAL = the local value of the input matrix
+ WEA = the default bedrock weathering rate (see popup WE1x.dat
+ LOC = the local bedrock weathering rate
+ AVAL = (HWS-LWS)/(VMX-VMN)
+ BVAL = LWS-AVAL*VMN
+ LOC= WEA*(VAL*AVAL-BVAL)
+
+The local vaiues are reduced when there is a regolith cover

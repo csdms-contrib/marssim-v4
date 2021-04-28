@@ -1,0 +1,33 @@
+ INITIAL_GROUNDWATER_DEPTH   
+
+IG = Initial groundwater depth 
+GDS - groundwater_depth_scale (popup GW9x)
+EP - EPOWER (popup GW12x)
+If exponential permeability decay is selected then:
+   IG=GDS*IG and DGS is recalculated:
+   GDS=-log(0.5)/(GDS**EP)
+   
+For constant groundwater permeability with depth at start of each iteration:
+FH - whether fixed head at given location FH is True if the water table is at the 
+     ground surface and False if it is below the surface.
+EL - current surface elevation
+EI - initial surface elevation
+ME - minimum value of EL in simulation matrix
+TR - transmissivity term
+WE - water table elevation
+AT = EL-EI+GDS
+IF AT>0:
+   FH=False
+   WE=EL-AT*IG
+   TR=AT*IG
+   IF WE<ME then:
+     WE=ME
+     TR=max(0,ME-IE+DGS)
+IF AT<0:
+   FH=True
+   WE=EL
+   TR=0.0
+FH at ME = True  
+
+See popup GW0x for further information. 
+ 

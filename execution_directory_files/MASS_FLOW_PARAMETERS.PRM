@@ -1,0 +1,18 @@
+!********************MASS FLOW PARAMETERS +++++++++++++
+1         ! [I] 	We_do_mass_flows, 0=no, 1=bingham flow, 2= glen's law flow
+3.0       ! Glen's Law exponent
+0.00000001 ! Flow diffusivity
+35.0      ! Delta thickness for Bingham flow
+0.0       ! mass flow erosion rate 
+5000.0    ! Bingham flow maximum flow thickness (meters)
+1000.0    ! mass flow material density 
+0.0       ! exponent for flux in basal erosion
+0.0       ! exponent for flow depth in basal erosion
+0.0       ! exponent for sine (shear) term in basal erosion
+0.0       ! mass flow critical value
+0.0       ! critical mass flow thickness (meters)
+100.0     ! critical basal erosion flow thickness (meters)
+200.0     ! maximum basal erosion depth (meters)
+0         ! [I] scheme for determing flow depth at a location
+0         ! [I] use a time increment scaled to maximum flow depth change: 0=n0, 1=yes
+4.0       ! target maximum elevation change per iteration (meters)

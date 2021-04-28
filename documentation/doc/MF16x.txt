@@ -1,0 +1,7 @@
+ [I] use a time increment scaled to maximum flow depth change: 0=n0,  1=yes
+
+This switch if set to 1 overrides the default timestep for the simulation and resets
+the timestep to a value equaling maximum elevation change rate by mass flow set by
+the next parameter (pupup FM17x).
+
+See popup MF0x for more details.

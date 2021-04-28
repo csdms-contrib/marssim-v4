@@ -1,0 +1,6 @@
+ WASHLOAD_FRACTION   
+In sediment routing this is the fractional amount of the stream load
+that is caried as washload.  If a sediment-laden flow reaches standing
+water (lake or ocean), the bedload and suspended load (jointly considered as
+bedload) is deposited as topset and foreset deposits and the washload fraction of the
+total sediment flux is deposited uniformly in the water body. 

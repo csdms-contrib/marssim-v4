@@ -1,0 +1,5 @@
+ LAVA_EVENT_PROBABILITY
+
+This is the probability of a lava event during a single iteration
+
+For additional information see popup LV0z. 

@@ -1,0 +1,19 @@
+ [I] USE_REGOLITH_DEPTH_DEPENDENT_RUNOFF 
+
+This selects whether runoff is scaled by regolith
+depth, with the maximum rate for exposed bedrock. 
+
+BR - runoff scaling for bare bedrock (see popup FP21x))
+DR - runoff scaling for deep regolith (see popup FP22x)
+DD - rate at which runoff decreases (see pupup FP23x)
+NR - nominal runoff
+SR - scaled runoff
+RD - regolith depth
+
+If bare rock:
+  SR = NR * BR
+  
+Otherwise:
+  SR = DR-(DR-BR)*EXP(-DD*RD)
+
+

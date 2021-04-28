@@ -1,0 +1,7 @@
+ ROCK_WEATHERING_RATE 
+
+This maximum rock weathering rate is in meters/year. Rock weathering can
+generally keep up with erosion rates up to 500m/million years, or 0.0005 m/yr.
+This can be reduced on more resistant rock, as governed by the rock resistance.
+
+See popup WE0x for more details.  

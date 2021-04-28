@@ -1,0 +1,8 @@
+ EXPOSE-PARAMETER#2                                                             
+
+This sets one of the parameters reated to defining the
+value of exposure index related to a particular erosion/deposition
+rate value relative to the overal range of values.  The definition
+of the parameter value depends upon the value of the ichoose switch.
+
+ See EO5x popup tor detailed desription

@@ -1,0 +1,12 @@
+ [I] PERMEABILITY_RESCALING 
+
+This switch determines whether the vertical distribution of
+permeability is fixed during the simulation (=0) or whether the
+vertical distribution is rescaled relative to the surface as
+the topography evolves (=1). Unless there is a reason to consider
+the permeability to evolve, leave this at 0.  The only case that
+seems reasonable to rescale is at locations where the landform
+elevation is uncreasing and the rate of decay of permeability
+with depth is large.
+
+For more details see the GW0x popup.

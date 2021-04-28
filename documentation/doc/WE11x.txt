@@ -1,0 +1,10 @@
+ CRITICAL_BEDROCK_GRADIENT  
+
+This is a gradient at which the rock weathering increases nearly
+without limit.  It is included as a type of "safety valve" to keep
+rock slopes from approaching or exceeding vertical, which the program
+cannot handle.  This value should be large, at some value well above
+1.0 (45 degrees), such as 3.0 . Rock that is weathered by this process
+is routed downstream in the mass wasting module.
+
+See WE0x popup for more details.

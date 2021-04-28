@@ -1,0 +1,6 @@
+ FINES FRACTION - FRACTION OF SUBSTRATE THAT IS FINES  
+ 
+This is the fraction of sediment delivered from
+mass wasting on slopes that is finer than the gravel
+size range that is modeled.  This value ranges from
+0.0 for no gravel to 1.0 for slopes composed entirely of gravel.

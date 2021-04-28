@@ -1,0 +1,7 @@
+ [I] INDEX TO VERTICALLY DEFORM SURFACE DURING SIMULATION (1=YES, 0=NO)
+
+If this is set then vertical rock deformation will occur during the simulation.
+At present this is just a stub that has no effect.  If deformation is desired,
+the subroutine BOUNDAY_CONDITIONS in Initial_and_boundary_conditions.f90 must be
+programmed to provide values of DEFORMATION(I,J) spatial and temporal variations
+during the simulation. 

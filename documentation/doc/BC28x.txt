@@ -1,0 +1,7 @@
+ HIGH_EROSION_THRESHOLD 
+
+Value of normalized erosion rate such that accelerated erosion
+is turned on.  In order for accelerated erosion to turn on and off, the
+high_erosion_threshold must be greater than the low_erosion_threshold.
+
+See BC25x popup for further explanation. 

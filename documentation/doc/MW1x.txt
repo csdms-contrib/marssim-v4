@@ -1,0 +1,3 @@
+ [I] DO_MODEL_SLOPES (0 FOR NO SLOPE EROSION MODELLING, OTHERWISE 1 TO MODEL)
+
+This switch turns on mass wasting, otherwise none. 

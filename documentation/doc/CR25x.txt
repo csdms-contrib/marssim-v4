@@ -1,0 +1,8 @@
+ LARGEST_MODELED_CRATER  
+
+This is the largest modeled crater diameter that
+is permitted.  This is usually less than or equal
+to half of the height or width of the simulation domain
+to avoid a "total wipeout" of the simulation topography. 
+
+ See Cr8x and Cr0x popups for details

@@ -1,0 +1,6 @@
+   [I] NEW_SEGMENT_INTERVAL 
+
+This the number of iterations between reassessment of which
+matrix points are potential sources for new flow segments
+
+For additional information see popup LV0z.   

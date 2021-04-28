@@ -1,0 +1,5 @@
+[I] SWITCH FOR ABLATION/ACCRETION MODELING (0=NO, 1=YES)
+
+This model is useful for modeling terrain-normal (perpendicular to surface)
+erosion or deposition of either volatiles or particulates. Parameters
+for this module are in ACCRETION_ABLATION_PARAMETERS.PRM.

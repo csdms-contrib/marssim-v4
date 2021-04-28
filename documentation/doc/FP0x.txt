@@ -1,0 +1,25 @@
+************************  FLOW ROUTING AND DRAINAGE AREA ************* 
+
+This routine sets up runoff generation and flow routing through the landscape.
+The default is spatially uniform runoff generation, but spatially-varying
+runoff can be handled through several methods.  There is also the possibility
+of having rivers enter the simulation domain at a fixed location on the simulation
+boundaries.  Flow routing can occur under three main scenarios:
+   Hyperarid such that all runoff disappears at the floor of depressions.  Although
+      this seems unreasonable except for, perhaps, karst terrain, in a landscape 
+      with small depressions, modeled sedimentation will fill the depressions and
+      an integraded drainage system develops.  This situation occurs when the
+      complete runoff index is set to zero.
+   Complete runoff has runoff routed through the network without losses except for
+      contributing area effects (if selected).  Such effects can occur even without
+      runoff losses due to diffusive reduction of flood peaks downstream.  This
+      behavior is selected when complete runoff is set to 1 and lake flow routing 
+      is turned off.  This option should NOT be set with doubly periodic boundaries
+      unless your are modeling Noah's flood.
+   Flow routing through depressions with evaporation from ponded water.  This is selected
+      by selecting the lake flow option in the MARSSIM_INITIAL_BOUNDARY_CONDTIONS.PRM file
+      and selecting complete runoff in this parameter file. The evaporation rate is set
+      by the X-Ratio parameter in this parameter file.
+
+
+	  

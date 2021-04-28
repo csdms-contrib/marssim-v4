@@ -1,0 +1,8 @@
+************************ RANDOM VARIATION OF SIMULATION PARAMETERS ***
+
+The default for simulations is to have constant parameter values during
+the simulation.  The options for time-varying or event-driven variations
+in parameters or boundary conditions are available, but these are generally
+meant to be applied at infrequent intervals.  Another option is to have
+the discharges or fluvial critical shear conditions vary randomly from 
+iteration to iteration.  The parameters below provide this option.        

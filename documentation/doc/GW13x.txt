@@ -1,0 +1,7 @@
+ MAXIMUM_GROUNDWATER_ITERATIONS 
+
+This is the maximum number of successive overrelaxation
+iterations allowed in calculation of grountwater table
+iterations.
+
+ See popup GW0x for further information. 

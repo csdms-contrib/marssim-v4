@@ -1,0 +1,6 @@
+ SEDIMENT_RUNOFF_FACTOR 
+
+The multiplicative factor for runoff generation from
+sediment-covered locations, if sediment_dependent_runoff is selected.
+
+See popup FP18x for details.

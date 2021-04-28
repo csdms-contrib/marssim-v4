@@ -1,0 +1,10 @@
+ [I] DO SEDIMENT_DIFFUSION (0=NO. 1!YES) 
+
+If this is selected then sediment routing will occur
+by straightforward finite differencing.  Because sediment
+transport uses large exponents for both channel gradient and
+sediment transport flux, VERY small timesteps must be used or
+the simulation will become unstable.  Use of sediment diffusion
+therefore is discouraged.  A more stabe diffusion scheme could be
+implemented (e.g. predicor-corrector) that might improve diffusion
+routing. 

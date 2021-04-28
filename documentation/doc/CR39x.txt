@@ -1,0 +1,14 @@
+ RADIUS_MAX_USE
+
+RU - radius_max_use
+RM - radius_max_inherit (popup CR38x)
+DI - simulated crater diameter
+CP - Cosine_power (CR42x popup)
+LR - local radial distance from the simulated crater center
+HP - Pi/2
+
+Between RM*DI/2 and RU*DI/2 the amount of modification of
+the topography prior to the impact on the simulated crater based on
+the real crater topography drops off as  cos(HP*(LR-RM*DI/2)/((RU-RM)*DI/2))**CP
+
+See CR36x popup for more details

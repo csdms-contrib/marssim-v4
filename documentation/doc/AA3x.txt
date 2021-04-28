@@ -1,0 +1,37 @@
+ [I] USE SOLAR INSOLATION ABLATION OR DEPOSITION
+
+If this is set to 1 and the switch for ablation-accretion modeling
+is set in MARSSIM_INITIAL_BOUNDARY_CONDITIONS.PRM then solar-driven volatile 
+sublimation and condensation are modeled. Several rate variables and switches
+control the volatile processes. RADIATION RATE CONSTANT (AA7x popup) is the basic rate controling
+variable for erosion by solar radiation. RADIATION_DEPOSITION_RATE (AA10x popup)is the rate 
+controlling factor for ice deposition.  Both ablation and condensation are dependent
+not only by direct thermal radiation but also by reflected or re-emitted thermal radiation
+from surrounding slopes visible from the local site.  The distance outward that radiation
+influx from surrounding slopes is considered is set by MAX_OUT_DISTANCE (EO13x popup)and
+WEIGHTING_CALCULATION_DISTANCE (EO12x popup) in the EOLIAN_PARAMETERS.PRM file. The
+amount of incoming radiation from surrounding cells is set by the relative orientations of
+the local and distant site and by inverse-square of the intervening distance. 
+The amount of surface erosion during ablation is also affected by the VOLUME_CHANGE_COEFFICIENT
+in the WEATHERING_PARAMETERS.PRM file (popup WE4x) such that particulate material may be
+mixed with volatile ices. The parameter DEPOSITION FRACTION (popup AA11x) influences the rate
+of ice deposition in the case where the volatile deposition is derived from ablated volatiles
+elsewhere.  A DEPOSITION FRACTION <1.0 implies either that some fraction of the ablated volatile
+is lost from the system or that the ablated volatiles only contain a fraction of the ablated
+material.
+
+Landform evolution resulting from radiation-dependent volatile sublimation or condensation has
+been used in four MARSSIM-based studies. (1) In Howard and Moore (2008) volatile-rich "bedrock" is
+weathered by solar radiation, with released particulates creeping my mass wasting, and water ice is
+recondensed on convex-upward slopes due to low reflected radiation.  In thaat study the presence of ice,
+dust, or bedrock surface was determined by the three state variables: An ice-covered surface is
+indicated by IS_SEDIMENT_COVERED being True and IS_ROCK_SURFACE is False. A bedrock surface is indicated
+by IS_ROCK_SURFACE being True and IS_SEDIMENT_COVERED being False. A dust (sediment-covered) surface is
+indicated by IS_ROCK_SURFACE being False and IS_SEDIMENT_COVERED being False.
+(2) In Howard, Moore et al.(2012) sublimation without recondensation is used to model Hyperion's
+landscape.
+(3) In Moore et al. (2017) Development of a pitted landscape on Pluto is modeled by solar-driven
+sublimation of nitrogen ice.
+See these papers for details of the treatment of solar radiation-induced landform evolution.
+
+See AA0x for further details.  

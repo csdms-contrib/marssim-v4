@@ -1,0 +1,8 @@
+ [I] STICKY_SEDIMENT_ROUTING (0 normal, 1 "sticky")  
+
+Thiw switch was included to provide a inheritance to sediment routing
+so that diversions on alluvial surfaces require a gradient for flow diversion into a new
+channel somewhat greater than the present downstream gradient on a 
+probabilistic basis.
+
+This was never implemented and so has no effect.

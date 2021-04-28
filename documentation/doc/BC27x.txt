@@ -1,0 +1,5 @@
+ LOW_EROSION_THRESHOLD    
+
+Acellerated erosion is turned off if the normalized
+erosion rate drops below this value. See BC25x popup for
+further explanation. 

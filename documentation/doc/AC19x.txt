@@ -1,0 +1,6 @@
+ FLOW_FRACTION  
+
+This is the effective fraction of the year that
+sediment transport occurs.
+
+See the sediment_1_exponent popup for further details

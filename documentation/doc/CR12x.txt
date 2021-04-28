@@ -1,0 +1,8 @@
+ TRANSITION_DIAMETER 
+
+This is the crater diameter that marks the transition
+from simple (small crater) to complex (large crater) geometry
+scaling.  Diameter is in meters. This transition diameter varies
+with the surface gravity of the planetary body.
+
+ See Cr8x and Cr0x popups for details

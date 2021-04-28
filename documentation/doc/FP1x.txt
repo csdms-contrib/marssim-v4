@@ -1,0 +1,18 @@
+ [I] COMPLETE_RUNOFF INDEX (0 for dry 1 for wet depressions that overflow)
+
+Flow routing can occur under three main scenarios:
+   Hyperarid such that all runoff disappears at the floor of depressions.  Although
+      this seems unreasonable except for, perhaps, karst terrain, in a landscape 
+      with small depressions modeled sedimentation will fill the depressions and
+      an integraded drainage system develops.  This situation occurs when the
+      this parameter is set to zero.
+   Complete runoff has runoff routed through the network without losses except for
+      contributing area effects (if selected).  Such effects can occur even without
+      runoff losses due to diffusive reduction of flood peaks downstream.  This
+      behavior is selected when this parameter is set to 1 and lake flow routing 
+      is turned off.  This option should NOT be set with doubly periodic boundaries
+      unless your are modeling Noah's flood.
+   Flow routing through depressions with evaporation from ponded water.  This is selected
+      by selecting the lake flow option in the MARSSIM_INITIAL_BOUNDARY_CONDTIONS.PRM file
+      and setting this parameter to 1. The evaporation rate is set
+      by the X-Ratio parameter in this parameter file. 

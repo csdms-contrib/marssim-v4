@@ -1,0 +1,4 @@
+ CELL SIZE - THE X AND Y DIMENSIONS OF A CELL (RESTRICTED TO EQUAL HORIZONTAL
+AND VERTICAL VALUES
+
+The units are in meters measured horizontally. 

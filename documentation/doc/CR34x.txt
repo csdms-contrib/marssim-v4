@@ -1,0 +1,3 @@
+ PEAK_DIAMETER_MULT - MULTIPLICATIVE FACTOR 
+
+ See popup CR32x for details

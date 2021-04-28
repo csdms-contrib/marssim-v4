@@ -1,0 +1,6 @@
+ STEP_BY_MARSSIM_ITERATION - SUBITERATIONS PER MARSSIM ITERATION  
+
+This determines the number of transport iteration substeps
+occur per interation in the main program
+
+ See popup GV0x for more details

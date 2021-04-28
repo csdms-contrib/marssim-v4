@@ -1,0 +1,4 @@
+ [I] DO_NORMAL_ACCRETION
+
+This switch determines whether surface deposition or erosion occurs normal to
+the land surface (set to 1) or vertically (set to 0).

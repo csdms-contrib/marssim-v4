@@ -1,0 +1,23 @@
+ [I] USE_DIVERGENCE_DEPENDENT_RUNOFF (0=NO,1=YES) 
+
+This is one of several means of specifying areally varying
+discharges.  If this switch is set, the runoff varies as
+a function of local topographic divergence.  For example,
+runoff might be specified to be higher in topographically
+convergent locations (valley floors or depressions) because
+of generally wetter antecedent conditions. The next 5 
+parameters (FP10x -- FP14x) control this behavior.  These parameters specify
+a broadly lazy S-shaped runoff yield curve. Define:
+
+DS - divergence_scale_parameter (see popup FP13x)
+LD - local topographic divergence, based on the surrounding 8 cells
+DM - devergence_for_mean_runoff (see popup FP10x)
+LD - low_divergence_runoff (see popup FP12x)
+HD - high_divergece_runoff (see popup FP11x)
+R0 - default runoff value
+RD - calculated divergence dependent runoff
+
+T2=DS*(LD-DM)/1.414
+T3=0.5*(1+T2/((1+T2**2)**0.5) (** is exponentiation)
+RD=LD+(HD-LD)*T3
+

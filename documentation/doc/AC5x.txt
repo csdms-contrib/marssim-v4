@@ -1,0 +1,7 @@
+ [I] NO_FLUX_LOWER_BOUNDARY (0=NO. 1!YES)   
+
+This is a specialized circumstance and should be used
+ONLY when the boundary condition of a horizontal lower
+boundary is selected in MARSSIM_INITIAL_BOUNDARY_CONDITIONS.PRM
+Selecting this essentially assumes the lower boundary is a tall-
+reflective wall that sediment is deposited against. 

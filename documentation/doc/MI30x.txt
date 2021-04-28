@@ -1,0 +1,10 @@
+ [I] PRINT OUT MORPHOMETRIC STATISTICS (0=NO, 1=YES) - PRIMARILY FOR  
+FLUVIALLY ERODED LANDSCAPES
+
+If this switch is set to unity a large set of morphometric statistics will
+be output, including information on slope profiles, drainage density, channel
+profiles, concavity and convexity of landforms, etc.  See the paper by
+Howard and Tierney (2012) for a summary of these statistics and their use
+in characterizing landscapes.  These are most useful for simulations involving
+only fluvial, mass wasting, and weathering processes in eroding portions of
+the landscape. 

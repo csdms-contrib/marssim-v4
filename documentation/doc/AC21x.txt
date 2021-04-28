@@ -1,0 +1,5 @@
+ SEDIMENT_SPECIFIC_GRAVITY  
+
+The specific gravity of the sediment. For most
+terrestrial gravel a value of 2.65 is reasonable.  For transport of
+water ice gravel on Titan a value of 1.0 would be appropriate. 

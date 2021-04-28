@@ -1,0 +1,4 @@
+ [I] INDEX FOR A NON_ERODING_LOWER_BOUNDARY (0=NO, 1=YES) 
+
+This is seldom invoked, but fixes the lower boundary level if
+it is not level. 

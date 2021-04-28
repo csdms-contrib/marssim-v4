@@ -1,0 +1,28 @@
+ CRATER_FREQUENCY_EXPONENT  
+
+When craters are selected randomly the cumulative size
+distribution of simulated craters is assumed to follow
+an inverse power law distribution:
+ 
+ND - cumulative mumber of craters per unit area per unit time
+      larger than crater diameter DI
+DI -  simulated crater diameter (in neters)
+CE -  crater_frequency_exponent  
+FR -  Frequency_cutoff_scaling (popup CR22x)
+ND assumed to be proportional to DI**(-CE)
+AL = 1.0/CE
+LMC - largest_modeled_crater  (generally less than half the
+      simulation domain width or depth) (popup CR25x)
+SMC - smallest modeled crater  (generally equivalent to 3 to
+      5 simulation cell widths) (popup CR23x)
+CC = 1.0/(1.0/(LMC**CE) -1.0/(SMC**CE))
+BC = -CC/(SMC**CE)
+
+DO this:
+   RR - a uniform random number in the 0-1 size range
+   DI = (CC/(RR-BC))**AL
+until DI>exp(FR*(SMC-DI)) 
+DI is the modeled crater diameter
+
+See pupup CR0x for more details.
+

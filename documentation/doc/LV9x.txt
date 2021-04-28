@@ -1,0 +1,7 @@
+    NO_FLOW_PROBABILITY
+
+this is the lower limit of probability for a cell to be a source for
+  a new flow segment.  if the probability drops below this value the
+  cell is no longer considered a possible flow source
+
+For additional information see popup LV0z	

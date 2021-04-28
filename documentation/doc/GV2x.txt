@@ -1,0 +1,6 @@
+ [I] PRINT_GRAVEL_DETAILS (0=No/1=Yes)                                          
+
+If this switch is set to 1 extensive transport details
+are output which are mostly useful for program debugging.
+
+See the GV0x popup for more details. 

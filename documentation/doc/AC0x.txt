@@ -1,0 +1,12 @@
+************************  ALLUVIAL CHANNEL PARAMETERS **************** 
+
+Alluvial channels, alluvial fans, and deltas are modeled by a simpliifed algorithm
+that routes sediment flux from slopes and upstream bedrock channels downstream assuming
+that the alluvial channel gradient equals the equilibrium gradient necessary to transport the
+bed sediment(total load - bed and suspended sediment).  The sediment is routed and deposited 
+at this gradient until the supplied sediment has been exhausted. This procedure is detailed in
+Howard (1994).  The equilibrium gradient is calculated using a Meyer-Peter like transport
+equation.  The formulation assumes a single representative grain sixe - sand or gravel.
+The Grevel Mixture module with limited capabilities can route multiple gravel grain sizes over 
+small simulation domains.
+           

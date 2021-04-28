@@ -1,0 +1,8 @@
+ [I] DO_ALLUVIAL_REROUTING (0=NO. 1!YES) 
+
+Any particular alluvial fan may have sediment contributions
+from multiple sources (debouching channels and slopes). Setting
+this switch to 1 recalculates gradient directions after routing
+sediment from a single source, permitting avulsions within a given
+iteration.  This rerouting is time-consuming and is not fully 
+tested, so use of this switch is not recommended. 

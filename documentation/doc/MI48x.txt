@@ -1,0 +1,5 @@
+ [I] INTERVAL IN ITERATIONS BETWEEN RECALCULATING DISCHARGE
+
+This is usually recalculated each iteration (set to 1), but it may
+be safe to recalculate only every few iterations if sediment routing
+is not being simulated. 

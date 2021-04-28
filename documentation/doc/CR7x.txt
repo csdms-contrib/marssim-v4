@@ -1,0 +1,11 @@
+ [I] MAKE_CENTRAL_PEAK - SIMULATE A CENTRAL PEAK (1=YES, 0=NO)
+
+If this is set to unity then for craters whose size is above then
+simple-complex transition size will have a simulated central peak.
+This is pretty much a cosmetic adjustment, because if fluvial erosion
+and sedimentation are simulated, the central peak disappears rapidly.
+At present the central peak modeling is runimentary - some
+stochasticity in dimensions and actual presence or not should be added
+to improve realism.
+
+ See CR0x popup for additional details 

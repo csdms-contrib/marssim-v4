@@ -1,0 +1,6 @@
+ [I] WRITE_SEDIMENT_DIAGNOSTICS   
+
+If this is selected extensive output of results will
+be output for debugging purposes.  This should be left
+at zero unless trying to diagnose issues with sediment
+routing. 

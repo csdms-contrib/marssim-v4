@@ -1,0 +1,9 @@
+ [I] NCALCEVAP - ITERATIONS BETWEEN RECALCULATION OF EVAPORATION 
+
+This and the next three parameters govern the calculation of runoff
+and lake distribution when modeling of lake evaporation is selected in
+MARSSIM_INITIAL_AND_BOUNDARY_CONDITIONS.PRM.  The NCALCEVAP parameter
+governs how frequenty the lake evaporation is calculated. This is
+generally a low number, defaulting to every iteration. 
+
+See popup FP29x for details.

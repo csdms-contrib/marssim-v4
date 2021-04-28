@@ -1,0 +1,12 @@
+ [I] CRATER_EDGE_ABORT (0=NO, 1=YES)  
+
+If boundary conditions for the simulation are set to use
+fixed matrix edge boundaries (DO_FLOW_BOUNDARIIES=.TRUE.) and
+this parameter is set to unity, then an impact whose center
+is selected to be outside the simulation domain is skipped.
+Otherwise if the boundaries are non-periodic impacts can be
+simulated whose center falls outside the matrix edges but whose
+rim or ejecta  would extend into the simulation domain ARE allowed
+to be simulated so as to minimize edge effects.
+
+See CR0x popup for additional details 

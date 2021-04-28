@@ -1,0 +1,7 @@
+ [I] EXPONENTIAL_PERMEABILITY_DECAY  
+
+This selects whether the lateral permeabilty decays
+exponentially with depth beneath the surface (if = 1)
+or is constant with a specified aquifer thickness (if = 0).
+
+ For more details see the GW0x popup.

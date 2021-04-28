@@ -1,0 +1,12 @@
+ [I] SWITCH FOR TIME-VARYING SIMULATION PARAMETERS (1=YES, 0=N0) 
+
+IF time-varying behavior is desired then a file INRATES.DAT must be present
+in the simulation directory.  It has a structure as outlined in the
+READ_INPUT_PARAMETERS in the initial_and_boundary_conditions.f90 source
+file starting at line ~1017.  The actual changes in values occur at iteration
+values specified in INRATES.DAT. The actual changes in the parameters are made
+in the DETERMINE_EROSION_RATE subroutine.  A limited number of parameters
+can be changed as presently programmed in this subroutine. To change
+the selection of values, this subroutine would be altered and the program
+recompiled.  This approach to parameter variation has less flexibility than
+the EVENTS procedures.

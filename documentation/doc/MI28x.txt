@@ -1,0 +1,7 @@
+ [I] VERTICAL SIZE (NY) OF DEBUGGING WINDOW (IF USED) 
+
+ The four debugging locations set a window for printing of
+execution information within the given window for purposes
+of debugging code or parameter values. This is rarely used and 
+very large volumes of data can be output. THis is used  concert
+with the do-debugging switch.

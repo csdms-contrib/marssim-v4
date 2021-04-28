@@ -1,0 +1,10 @@
+ RADIUS_MAX_INHERIT
+
+RM - radius max inherit 
+DI/2 - simulated crater radius
+This is the distance 2*RM/DI from the crater center outward for
+which the real crater morphology is exlusively used to simulate the
+crater after compensating for the regional tilt of the real crater
+and the mean elevation of the simulated terrain prior to the impact.
+
+See popup CR36x for more details.

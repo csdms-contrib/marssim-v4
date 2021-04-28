@@ -1,0 +1,21 @@
+ PEAK_HEIGHT_MULT - CENTRAL PEAK HEIGHT MULTIPLICATIVE FACTOR 
+
+If central peaks are modeled this and the next 3 parameters control
+the height and width of the central peak, which is modeled by a
+simple cone shape.  A central peak is applied only for crater diameters 
+greater than the transition_diameter from simple to complex craters.
+
+The shape parameters are based on statistics collected by Garvin and
+colleagues for martian craters (see references in Howard, 2007).
+
+PH - modeled central peak height
+PW - modeled central peak width
+DI - crater diameter
+PHM - central peak height multiplicative factor 
+PHE - central peak height exponent (popup CR33x)
+PWM - central peak diameter multiplier factor (CR34x popup)
+PWE - central peak diameter exponent (CR35x popup)
+  PH=PHM*DI**PHE
+  PW=PWM*DI**PWE
+
+  See Cr8x and Cr0x popups for details 

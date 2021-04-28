@@ -1,0 +1,5 @@
+ WEATHER_MULT FOR STEEP BEDROCK SLOPES
+
+This term scales rock weathering related to the critical bedrock gradient.
+
+See popups WE0x and WE11x for more details. 

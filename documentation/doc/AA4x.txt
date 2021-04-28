@@ -1,0 +1,26 @@
+ [I] USE TOP EXPOSURE  
+
+This determines whether the local "exposure" for exporure-related creep is 
+calculated using the FIND_TOP_EXPOSURE_INDEX function or the EXPOSURE function.  
+Both calculate a local exposure index by iterating from the given location 
+out to surrounding points and calculating the exposure through weighted
+summing:
+EL - local elevation
+ED - distant locality elevation
+EX - the exposure term
+DX - distance between EL and ED
+WT - distance weighting
+DF - distance weighting factor
+EV - calculated exposure value
+EX = (EL-ED)/DX
+WT = exp(-DF*DX)
+EV = sum(EX*WR)/sum(WT) where the summation occurs over all cells in the
+     search radius 
+	 
+The difference between FIND_TOP_EXPOSURE_INDEX and EXPOSURE is that the
+former cycles over all cells within the search radius and includes both
+positive and negative gradients, whereas the latter extends out in only
+8 directions and counts exposure only for cell pairs which are visible from
+the given location.
+
+

@@ -1,0 +1,13 @@
+ [I] CORRECT_BIAS - CORRECT MEAN ELEVATION DIFFERENCE AFTER IMPACT
+ (1=YES, 0=NO)      
+
+The excavated cavity volume of a typical impact crater and the amount of ejecta
+are typically much greater than the volume of the impactor.  By default MARSSIM
+enforces that the volume of the rim and ejecta equals the volume of the excavated
+cavity.  When the crater impacts onto a high-relief surface such as an existing
+crater rim, the default cratering algorithm may not produce exact enforcement of
+no net elevation change.  If this switch is set to unity the elevations are adjusted
+after the impact to enforce no net elevation change.
+
+See CR0x popup for additional details 
+

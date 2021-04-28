@@ -1,0 +1,13 @@
+ THRESHOLD DEPOSITION CONVEXITY  
+
+This is used for modeling of ice condensation.
+On Callisto water ice accumulates on convex upward
+slopes, such as ridge edges and crater rims.  This 
+parameter specifies how convex a slope must be (negative value) to
+be subject to ice condensation.  The convexity is
+calculated by the FIND_TOP_EXPOSURE_INDEX function.
+The ice is assumed to be derived from exposed volatile-
+rich bedrock on steeper crater slopes.
+
+See popup AA3x for more details.
+ 

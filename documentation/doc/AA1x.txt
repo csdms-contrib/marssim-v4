@@ -1,0 +1,17 @@
+ ACCRETION OR ABLATION RATE 
+
+If the switch for modeling accretion and ablation is set in
+MARSSIM_INITIAL_BOUNDARY_CONDTIONS.PRM then this value sets the
+process rate, which may be positive for accretion or negative for ablation. 
+The accretion or ablation can be slope-normal if DEFAULT_EOLIAN_PROCESS
+(set in the EOLIAN_PARAMETERS.PRM parameter file) or be vertical 
+accretion or erosion. It slope-normal the vertical rate of
+elevation change is equal to accretion_rate/Cos(slope_angle).
+The accretion rate is in meters per year.
+The local slope gradient used to define accretion rate uses
+a planar fit to the location and the 8 surrounding points.
+
+Set this parameter to 0.0 to disable accretion and ablation using
+this process suite.
+
+See popup AA0x for further details.

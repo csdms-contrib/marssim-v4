@@ -1,0 +1,12 @@
+ [I] USE EROSION_MASK (0=NO,1=YES)
+
+ It this switch is set then a bimary file BASE_IMAGE_EXLUDE.RAW
+ must be present in the working directory This file must have the
+ same dimensions as the simulation domain with MY rows and MX columns of
+ single byte data (0-255 values).  If these bytes have a value >128 then
+ erosional processes occur at that location, otherwise they are disallowed (masked).
+ As implemented, runoff is generated across the entire simulation domain, but
+ fluvial and mass wasting processes occur only in the unmasked areas.
+ The file has no header, just being MX*MY bytes of data.
+ 
+ This is a very specialized capability and will not be used in most cases.

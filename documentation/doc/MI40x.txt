@@ -1,0 +1,5 @@
+************************  OUTPUT AND RECALCULATION TIMING ************  
+
+The set of parameters below this point primarily control the timing of 
+the simulation and the frequency with which intermediate results are
+written.        

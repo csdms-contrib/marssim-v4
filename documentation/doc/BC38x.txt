@@ -1,0 +1,13 @@
+ [I] RESISTANT_SURFACE lAYER - CRUSTUSE (0=NO CRUST, 1= CONSTANT ThICKNESS SURFACE CRUST
+ 2=SURFACE CRUST THICKNESS IS READ IN.
+
+If this switch is set to unity, then a resistant surface crust will be imposed
+at the start of the simulation.  This could correspond to, e.g., a duricrust.
+The thickness and erosional resistance of the crust are set by parameters BC39x and
+BC40x.  When erosion has cut through the crust, the erosional resistance
+values revert to the nominal resistance. If the CRUSTUSE index is set to 2, then
+a file SURFACE_CRUST.DAT must be present in the execution directory.  This file
+must have the same dimensions as the main simulation dimensions, and each value in
+the file is the crust thickness, in meters.
+
+See BC33x for general discussion of 3_D varying resistance to erosion and weathering.

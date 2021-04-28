@@ -1,0 +1,12 @@
+ [I] DO DEBUGGING PRINTOUT (0=NO, 1=YES)                                        
+
+The four debugging locations set a window for printing of
+execution information within the given window for purposes
+of debugging code or parameter values. This is rarely used and 
+very large volumes of data can be output. This is used  concert
+with the do-debugging switch.  If used, modify the file
+write_debug_information.f90 to output the desired information.
+The timing and model circumstances under which debug information
+is written must be set within the particular routines for which data
+is to be produced or iteration times set in the main_program.f90 
+iteration cycling.

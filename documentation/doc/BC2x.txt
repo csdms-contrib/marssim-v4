@@ -1,0 +1,17 @@
+ [I] USE EXPLICIT BED STATE (0= IMPLICIT, 1= EXPLICIT) 
+
+Erosion by flowing water was conceptualized by Howard (1994) to
+include a channel within each simulation cell whose width is
+parameterized.  During erosion both regolith derived by weathering
+and mass wasting must be eroded as well as bedrock, leading to
+three possible states: A totally bedrock channel with no regolith,
+a channel which is partially, or episodically covered by thin
+regolith that is eroded during each simulation time step, or a 
+channel flowing on thick regolith or other uncosolidated material.
+Howard (1994) conceived the treatment such that during each timestep
+the channel first erodes regolith, and then, if it all regolith
+has been eroded, the bedrock channel bed is scoured.  This implicit
+channel bed state was outlined in Howard(1994) and the same concept
+with a somewhat more explicit treatment of bed state was added later
+Howard(2007). The more explicit state is now preferred, so that having this
+parameter set to 1 is preferred. 

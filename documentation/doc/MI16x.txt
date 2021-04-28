@@ -1,0 +1,5 @@
+ VERTICAL SCALING FACTOR, (E.G., EQUALS 1.0 IF INPUT ELEVATIONS ARE IN
+THE SAME UNITS AS THE HORIZONTAL DIMENSIONS.
+
+If, for example, the horizontal dimensions are in meters and the elevation
+values in INELEV.DAT are in kilometers, this value would be 1000.0 

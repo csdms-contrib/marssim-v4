@@ -1,0 +1,7 @@
+ Flow diffusivity  
+
+This is the multipicative factor in determining
+the flow rate using Glen's Law or Bingham rheology.
+It can be thought of as inverse flow viscosity.
+
+ See popup MF0x for more details

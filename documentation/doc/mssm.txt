@@ -1,0 +1,34 @@
+The program is coded in standard Fortran 90 in free-form format. 
+It has been successfully compiled with a number of compilers, including Intel Fortran (Windows and Linux), 
+PGI Fortran (linux), and the public-domain gfortran (Linux). 
+The Intel Fortran and the Linux environments are recommended for fastest execution times. 
+The program runs in a command-line environment (Command Prompt window in Windows, Terminal window in Linux).
+A batch mode or background execution is recommended, e.g. nohup ./marssim & 
+Compilation with optimization (e.g. -O4 or -fast) is recommended.  MARSSIM is NOT optimized for parallel execution.
+For Intel fortran the fastest execution occurs with compilation: ifort -fast -heap-arrays ...
+This will require installation of the static libraries: clib-static
+For very large array sizes: ifort -ipo -O3 -fp-model fast=2 -xHost -mcmodel=medium -heap-arrays ...
+The following programs and files are included with the distribution and should be compiled & linked as a unit:
+    global_variabled.f90
+    main_program.f90
+    initial_and_boundary_conditions.f90
+    fluvial_slope_erosion.f90
+    mass_wasting.f90
+    sediment_routing.f90
+    weathering.f90
+    gradient_and_flow_directions.f90
+    flow_routing.f90
+    groundwater_flow.f90
+    impact_cratering.f90
+    lava_flows.f90
+    eolian_erosion_deposition.f90
+    surface_erosion_deposition.f90
+    mass_flow.f90
+    gravel_transport_and_abrasion.f90
+    summary_statistics.f90
+    channel_properties.f90
+    stream_network_properties.f90
+    determine_stream_network.f90
+    write_debug_information.f90
+    read_and_write_data_files.f90
+The tab RUN_MARSSIM can be used to launch and monitor the MARSSIM Program

@@ -1,0 +1,4 @@
+ RUNOFF_SCALE_DEEP_REGOLITH   
+
+Runoff depth for deep regolith if runoff is scaled
+for regolith depth (see FP20x for details) 

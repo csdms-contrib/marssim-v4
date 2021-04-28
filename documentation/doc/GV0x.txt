@@ -1,0 +1,17 @@
+************************  Gravel mixture transport  ***********************
+
+This is a specialized module which is loosely connected to the main program, in that
+it primarily uses the flow routing procedures and nothing else.  It is based on
+Gary Parker's surface-based sediment transport model for gravel streams. It is based
+on the Howard et al. (2016) modeling of gravel transport on Earth, Mars, and Titan. The 
+was adapted from Parker's Excel workbook "RTe-bookAgDegNormalGravMixPW.xls" at 
+(http://hydrolab.illi-nois.edu/people/parkerg/excel_ﬁles.htm) through recoding 
+into Fortran and incorporation into MARSSIM. In this use the evolution of slopes
+surrounding the modeled channel system is parameterized rather than simulating explicit
+slopes.  Each cell is a channel with implicit surrounding slopes. The gravel in transport
+is resolved into GRAIN_ARRAY_SIZE categories transported at differential rates. If an
+ABRASION_COEF >0 is selected, grain sizes are reduced by abrasion during transport
+and loss from the smallest grain size is assumed to be suspended load. Because of the high
+computational cost of routing multiple grain sizes the maximum simulation grid size is restricted
+to ~ 3500 total cells and very short timesteps are required. For more details see Howard et al. (2016)
+in the bibliography.        

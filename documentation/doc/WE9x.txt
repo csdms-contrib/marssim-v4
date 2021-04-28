@@ -1,0 +1,7 @@
+ SEEPAGE_WEATHERING_SCALING 
+
+If seepage weathering is selected this is the rate constant
+for rock weathering.  It should be scaled relative to groundwater
+seepage flux. 
+
+See WE8x popup for more details.

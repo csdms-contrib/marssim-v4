@@ -1,0 +1,7 @@
+ MINIMUM_HARD_DIAMETER  
+
+This sets the minimum crater diameter, in meters, that can be
+considered to have its walls and ejecta having the weathering and
+erosional resistance equal to bedrock.
+
+ See CR0x and CR3x popups for additional details 

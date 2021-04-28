@@ -1,0 +1,6 @@
+ [I] SWITCH FOR AVALANCHE EROSION MODELING (0=NO, 1=YES)                        
+
+This experimental part of the mass wasting modeling allows
+for bed erosion by debris being routed downslope on bedrock
+slopes.  Parameters governing this erosion are in
+MASS_WASTING.PRM.

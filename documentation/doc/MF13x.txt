@@ -1,0 +1,5 @@
+ critical basal erosion flow thickness (meters)  
+
+ This is a stub for modeling basal or lateral
+erosion by mass flows.  It is not implemented
+in the current release. 

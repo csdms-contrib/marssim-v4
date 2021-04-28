@@ -1,0 +1,9 @@
+ GROUNDWATER_DEPTH_SCALE
+
+This sets the rate at which permeability declines with
+depth if exponential permeabilty decay is assumed. If 
+constant permeability with depth is assumed it is
+the thickness of the aquifer relative to the initial 
+topography. Both are expressed in meters
+
+For more details see the GW0x popup.

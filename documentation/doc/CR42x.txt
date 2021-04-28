@@ -1,0 +1,8 @@
+ COSINE_POWER 
+
+This parameter controls how rapidly the relative
+influence of the real crater morphology on the resulting
+simulated crater morphology drops off with distance from
+the simulated crater rim.
+
+See the popups CR39x and CR36x for more details. 

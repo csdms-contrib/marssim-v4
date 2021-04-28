@@ -1,0 +1,7 @@
+ RAIN STANDARD DEVIATION 
+
+This parameter has no effect.  It is left as a stub
+for future implementation of a stochasic rainfall 
+model.  A similar capacity exists for stochastic 
+runoff by setting the RANDOMLY-VARYING DISCHARGES switch
+in MARSSIM_INITIAL_BOUNDARY_CONDITIONS.PRM.

@@ -1,0 +1,5 @@
+ BISTABLE_CRITICAL_SHEAR
+
+This factor is multiplied times the normal state critical shear
+when erosion is in an accelerated state. See BC25x popup for
+further explanation 

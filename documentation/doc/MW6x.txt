@@ -1,0 +1,9 @@
+ [I] USE DEPTH!DEPENDENT CREEP (0=N0, 1=YES) 
+
+If this switch is set to 1 then the regolith depth-dependent
+creep model is used.  This can possibly improve the realizm
+of mass wasting modeling when regolith becomes very thin.  The
+default, when this is not selected is that mass wasting rates
+do not decrease for very thin soils.   See Roering (2009 GSAB).
+
+  See MW0x popup for more details.

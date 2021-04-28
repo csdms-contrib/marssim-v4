@@ -1,0 +1,7 @@
+ YEARLY_RECHARGE    
+
+This is the vertical recharge rate, in meters per year
+from the surface to the subsurface.  This only applies
+to non-fixed head locations.
+
+For more details see the GW0x popup.

@@ -1,0 +1,7 @@
+ [I] SEEPAGE_ITERATION_INTERVAL  
+
+This number determines how fequently, in iterations
+of the main program, the groundwater flow conditions
+will be updated.
+
+ For more details see the GW0x popup.

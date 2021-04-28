@@ -1,0 +1,11 @@
+ OMEGA - WEIGHTING OF INFLUENCE OF LAST ITERATION VALUE IN TEMPORAL VARIATION
+ (GENERALLY 0.5 TO 1.0, WITH 1.0 BEING NO PAST INFLUENCE)
+
+The omega parameter affects the timescale of discharge variation.  This
+parameter should have a value, OW such that 1>=OW>0 .  If the value is 
+unity the discharge is based entirely on the current random value return if
+it is less than unity the value used is OW*V + (1-OW)* PV, where V is the
+randomly calculated balue and PV is the value from the previous iteration.
+THe closer omega is to zero the slower tte discarge varies and the smaller
+the range of variation. 
+.

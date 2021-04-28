@@ -1,0 +1,5 @@
+ UPWIND_COEFF - COEFFICIENT FOR LOAD SPATIAL DERIVATIVES 
+
+This factor relates to the relative weighting of local verus
+upwind transport conditions.  It is not used in the current
+version of the program.  

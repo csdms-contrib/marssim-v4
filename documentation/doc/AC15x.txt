@@ -1,0 +1,11 @@
+ EFFECTIVE_DISCHARGE_RATIO
+
+This is the effective discharge for sediment transport relative
+to the routed discharge through the fluvial network.  The routed
+discharge is assumed to be the geomorphically effective discharge
+for bedrock channel erosion as represented by the parameters in
+the FLOW_PARAMETERS.PRM file.  That diwcharge is likely to be higher
+than the geomorphically effective discharge for sediment transport,
+so that this parameter might be set to less than unity.
+
+ See the AC13x popup for further details.

@@ -1,0 +1,8 @@
+ IMPACT_PROBABILITY    
+
+This sets the probability of a crater event occurring, expressed
+in average interval between impacts, in iterations if fluvial and
+slope modeling is NOT used and TIME_INCREMENT units if fluvial
+and slope modeling is used.
+
+See CR0x popup for additional details 

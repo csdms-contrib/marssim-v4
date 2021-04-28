@@ -1,0 +1,15 @@
+************************EOLIAN EROSION/DEPOSITION******************** 
+
+This module heuristically models eolian erosion and deposition.  Eolian
+deposition is limited to airfall deposition or to that traction transport
+and deposition that can be related to local topography.  Erosion and deposition
+are related to the degree of local "exposure".  Sites that are convex upward (hills and ridges) 
+have positive exposure and may experience erosion or reduced deposition rate.  Sites
+that are concave downward (crater interiors, local depressions, valleys) generally receive
+net deposition.  Portions of this module related to calculation of exposure are
+shared with the accretion and ablation module.
+
+If net eolian deposition occurs at a site, the added material is considered to be regolith.
+If net erosion occurs, the calculated erosion rate on bedrock slopes is divided by the 
+REGOLITH_CRITICAL_SHEAR_FACTOR.
+

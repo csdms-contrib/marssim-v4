@@ -1,0 +1,5 @@
+ [I] DO_ACCRETE_REGOLITH
+
+This switch determines whether surface deposition is considered 
+to be regolith (set to 1) or does not change the surface material
+state (set to 0).

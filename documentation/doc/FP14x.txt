@@ -1,0 +1,8 @@
+ [I] INTEGER_DIVERGENCE_RANGE (>=1)
+
+This is a stub for calculating the divergence
+based on a wider swath of neighboring elevations larger
+than the surroinding 8 cells.  A calculation
+routine would have to be supplied if a wider range of
+elevations (> +/- one cell) is desired for calculation
+of divergence. See popup FP9x for details.

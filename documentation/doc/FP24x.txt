@@ -1,0 +1,11 @@
+ [I] USE_SLOPE_DEPENDENT_RUNOFF 
+
+Selection switch for runoff being dependent on slope gradient. 
+
+DR - default runoff value
+SR - scaled runoff value
+GR - slope gradient
+MS - slope gradient having the median runoff value (see popup FP25x)
+SF - Slope runoff scale factor (see popup FP26x)
+
+SR = 2.0/(1.0+EXP(-SF*(LOG(GR)-LOG(MS))))

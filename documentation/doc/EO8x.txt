@@ -1,0 +1,7 @@
+ [I] DO_ONLY_EOLIAN_DEPOSITION 
+
+If this is set to 1 the eolian module only models eolian deposition at a location
+even if the parameter values indicate erosion.  In other words, model-indicated
+erosion is distregarded and no erosion or deposition occurs at that site.
+
+See EO5x popup tor detailed desription

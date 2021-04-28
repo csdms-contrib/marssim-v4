@@ -1,0 +1,5 @@
+ MAXIMUM_EOLIAN_DEPOSIT_RATE 
+
+This sets the maximum eolian deposition rate in concave locations
+
+See EO5x popup tor detailed desription 

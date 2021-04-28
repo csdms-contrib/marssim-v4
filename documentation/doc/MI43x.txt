@@ -1,0 +1,7 @@
+ [I] MAXIMUM ITERATION NUMBER (STOPS SIMULATION AND PRINTS RESULTS
+IF EQUALLED)
+
+The simulation tests both for reaching the maximum iteration number or
+the maximum elapsed time and stops the simulation and writes output files.
+If control by number of iterations is desired, set the maximum elapsed time
+to a large value, or vice-versa for time control.

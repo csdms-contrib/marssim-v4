@@ -1,0 +1,48 @@
+ SEDIMENT_1_EXPONENT
+
+One of the parameters used in calculation of sediment transport and channel
+gradient in alluvial channels.  Generally keep this value at 0.5 .
+
+The main parameters used in the sediment transport formulation are read from
+the next several parameters:
+S1E - sediment_1_exponent (pupup AC13x)
+S2E - sediment_2_exponent  (popup AC14x)
+DR = effective discharge ratio (a factor converting the modeled discharge for 
+     bed erosion to a the effective discharge for sediment transport) (popup AC15x) 
+SGE - sediment gradient exponent (pupup AC16x)
+STE = sediment transport exponent (popup AC17x
+TF - transportfactor (popup AC18x)
+FF - flow_fraction (fraction of year during sediment transport) (popup AC19x)
+SPO - Sediment Porosity (popup AC20x)
+SSG - Sediment specific gravity (popup AC21x)
+DS  - Bed material grain size (popup AC22x)
+TCS - Transport critical dimensionless shear (Shield's parameter) (popup AC23x)
+g - gravity
+QL - Local discharge
+QS - Local Sediment transport rate
+CG - Local Channel gradient
+ESG - Equilibrium channel gradient for sediment transport
+WC - Channel width constant (read from BEDROCK_CHANNEL_PARAMETERS.PRM)
+NN - Manning's N (read from BEDROCK_CHANNEL_PARAMETERS.PRM)
+SY - Seconds per year
+BF - bedload fraction (popup AC26x)
+QSE - local potential bed sediment transport rate for given gradient and discharge
+TSE - transport stage at equilibrium transport for given gradient and discharge
+The transport and routing procedures are presented in Howard(1994):
+
+SDF = desiment discharge factor = ((NN/WC)**0.6)*DR**S2E/(DS*(SSG-1)*(g/9.8)**0.3)
+SC = sediment constant = WC*TF*FF*(DS**1.5)*SY*(g*(SSG-1))**0.5 /((1-SPO)*BF)
+
+To determine the potential bedload transport rate:
+A1T = a1term = QL**S1E
+A2T = a2term = QL**S2E
+XXX = (CG**SGE*A2T*SDF-TCS
+if XXX>0: 
+   QSE = SC*A1T*(XXX**STE)
+   TSE = XXX/TCS
+   
+To Determine the equilibrium sediment gradient:
+T1= (QS/(SC*((QL*DR)**S1E)))**(1.0/STE)
+ESG=((T1+TCS)/(SDF*(LQ*DR)**S2E))**(1.0/SGE)
+
+

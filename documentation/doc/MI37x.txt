@@ -1,0 +1,8 @@
+ [I] INDEX FOR HORIZONTAL PERIODIC BOUNDARY (ON I AXIS) (0=NO, 1=YES 
+
+This forces the left and right boundaries to be coupled, so that they
+essentially are identical and flows of water and mass wasting materials
+can be transported across the boundary.  This can be combinded with the
+horizontal lower boundary to reduce the effects of lateral boundaries on
+landform evolution.  If this switch is not set (set to 0) the lateral boundaries
+are no-flux, such that no water sediment, or mass wasting crosses the boundary. 

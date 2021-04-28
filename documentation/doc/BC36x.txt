@@ -1,0 +1,6 @@
+ RESISTANCE_VARIABILITY 
+
+If random bedrock erodibility is selected, this controls
+the standard deviation of variation in the lognormal distribution.
+
+See Popup BC34x for more explanation.

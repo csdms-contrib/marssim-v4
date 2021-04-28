@@ -1,0 +1,12 @@
+ [I] DO_GRAVEL_MIXTURE (0=No/1=Yes)                                             
+
+This switch selects the gravel mixture module and as a byproduct
+deselects almost all other fluvial and slope MARSSIM modules 
+except flow routing and gradient/flow direction.
+
+If gravel mixture calculations are to be done, the execution
+directory must have a file GRAVEL_VALUES.TXT file present which
+contains detailed parameter values and grain size distribution
+information.
+
+See the Gv0x popup for more details.

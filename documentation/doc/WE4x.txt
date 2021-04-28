@@ -1,0 +1,7 @@
+ VOLUME_CHANGE_COEFFICIENT DUE TO CONVERSION OF BEDROCK TO REGOLITH 
+
+This is the relative change in volume produced by rock weathering.
+A value of 1.0 means equal volume of regolith for equal volume of weathering,
+and values <1.0 mean less volume of regolith is produced per unit rock weathering.
+
+ See popup WE0x for more details. 

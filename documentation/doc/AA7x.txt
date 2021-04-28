@@ -1,0 +1,10 @@
+ RADIATION RATE CONSTANT (meters per year)
+
+ This is the scale constant that determines the rate of solar
+ radiation ablation as scaled by the local value of the
+ function RAD_ERODE that sums over cells in the search
+ radius and determines the re-radiation loading from the
+ distant cells as affected by visibility, relative slope
+ orientations and weighted by inverse square of separation.  
+ 
+ See popup AA3x for more detail

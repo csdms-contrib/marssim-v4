@@ -1,0 +1,17 @@
+ [I] INDEX FOR TEMPORAL VARIATION IN GLOBAL OCEAN LEVEL (0=NO, 1=YES)
+(A FILE SPECIFYING TEMPORAL VASRIATION MUST BE SUPPLIED}
+
+
+If this switch is set then the elevation of a shoreline within the simulation
+domain varies through time. If this switch is set then a file must be
+supplied: OCEANLEVELS.DAT.  It consists of paired values in each line:
+OCEAN_RECALCULATION_TIMES(I) OCEAN_LEVELS (I) for as many timesteps of
+ocean variation are programmed.  The first value is the simulation time when
+the ocean level is to be changed and the second value is the corresponding
+elevation level.  See Howard and Tierney (2012) for an example of using this
+option.
+
+For a fixed oceanlevel set the ocean level in the ALLUVIAL_CHANNELS_PARAMETER>PRM File.
+
+If runoff with lake evaporation is modeled lakes with time-varying levels are 
+automaticall implemented independent of this switch value.. 

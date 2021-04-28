@@ -1,0 +1,4 @@
+ VEGETATION_CHANNEL_RESISTANCE FACTOR 
+
+The value of critical shear for channels without
+vegetation influenc.  See 2 parameters above 

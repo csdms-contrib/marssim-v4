@@ -1,0 +1,28 @@
+                PARAMETER EXPLANATION AND EDITING
+
+By selecting a given parameter file a popup window is created which displays information
+on each parameter.  Three fields are presented for each parameter:
+Column 1:  The current value of the parameter in an editable box.
+Column 2:  A button which if selected raises a popup window with detailed
+           information about the parameter and its role in the program. 
+Column 3:  A brief title or description of the parameter.
+
+The parameter file display has two purposes: editing the parameter values and providing
+information on their purpose and use within MARSSIM.  When a parameter file is selected
+a backup copy of the parameter file is saved in the "backup" subdirectory.  If values
+are edited and the edited values are to be saved, click the green "SAVE" value at the bottom
+of the display.  Edited values are NOT saved automatically.  To exit the popup click the "X" or red button
+in the banner at the top of the display.
+
+Most parameter files have one or more rows with a description preceded and followed by multiple '*'s. These
+have no editing field.  The associated popup boxes generally have extended discussion about the process module that
+is related to this parameter file.
+
+If a parameter file is edited external to this graphical interface, be sure to retain the exclamation characters
+in each line and the descriptive material associated with the line.  It is best not to introduce a large
+number of spaces between the right edge of the parameter value and the exclamation character preceding the
+brief dexription, because this affects display of the parameter file within this graphical interface.
+
+In addition, parameter lines should not be removed or new parameter lines added, because this affects synchronicity
+of the detailed parameter popups.  New parameter CAN be added at the bottom of the parameter file, or one
+of the several inactive parameters can be repurposed if the MARSSIM program is modified.

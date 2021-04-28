@@ -1,0 +1,8 @@
+ WEATHERING_TERM_2 (FOR TWO TERM WEATHERING)
+
+This is the default weathering rate for the second term at
+zero regolith cover.  To have a humped weathering rate function
+versus regolith thickness this term should be less than or equal
+to the rock weathering rate (WE1x popup). 
+
+See popups WE0x and WE5x for more details. 

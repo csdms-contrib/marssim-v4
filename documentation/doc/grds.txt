@@ -1,0 +1,29 @@
+MARSSIM utilizes a square grid of MX columns and MY rows.  The rows and columns increase
+from (1,1) at the upper left to the lower right. The boundary conditions fall in several
+broad categories:
+
+Bottom boundary level, and possibly increasing or decreasing in elevation during the simulation.
+   In this case the upper boundary is usually specified as no-flux, which generally becomes a divide.
+   The lateral boundaries can be no-flux or periodic.
+   
+All boundaries are fixed elevation.  Under these conditions water and sediment may leave the simulation
+   domain but not enter.  These boundary conditions are most appropriate for simulations starting from
+   actual or retrodicted terrain.
+  
+All boundaries are periodic.  This minimizes edge effects. For this situation either the flow routing 
+   must be run for hyperarid conditions where flow disappears in all undrained depression, or alternately,
+   depression flow routing with lake evaporation can be used so long that the evaporation rate is sufficient
+   not to completely flood the simulation domain.
+   
+A typical simulation proceeds with constant parameter values.  The only situation which can involve discrete
+events without special programming is random impact cratering with a fixed probability.  There is the possibility
+to prescribe specific "events" occuring at specific times or specific iterations. The file EVENTS.PRM specifies
+these occurrences, but the response to the events must be programmed int the MAKE_EVENT subroutine in the
+INITIAL_AND_BOUNDARY_CONDITIONS.f90 file.
+
+A run can be terminated by editing the file ERODE.STOP and changing the number 0 to 1.  This file is read
+every 10 iterations and gracefully closes the simulation if this occurs.
+
+MARSSIM is typically run as a background job, which in Linux is run as "nohup ./marssim &", assuming that marssim
+is the executable.  The evolution of the topgraphy during the simulation can be moditored by looking at the 
+shaded relief image ATPRESENT.PBM file which is output every IMAGE_OUTPUT_INTERVAL iterations.   

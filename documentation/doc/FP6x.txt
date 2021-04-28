@@ -1,0 +1,3 @@
+ AREAFACTOR 
+
+This parameter is obsolete and should be left at 0.0. 

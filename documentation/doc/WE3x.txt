@@ -1,0 +1,9 @@
+ INITIAL_REGOLITH_THICKNESS 
+
+This is the initial regolith thickness at the start of the simulation.
+Because of threshold effects on weathering, erosion, and mass wasting
+associated with exposed bedrock, it is usually desirable to have a positive
+regolith thickness that is small compared to characteristic landform relief, say
+1 meter. 
+
+See popup WE0x for more details. 

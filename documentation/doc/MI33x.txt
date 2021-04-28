@@ -1,0 +1,5 @@
+ SUN_ANGLE_GRADIENT (USED ONLY IF FIXED SUN ANGLE)
+
+This is the sun angle gradient (relative to zero at the
+horizon) for shaded relief images if the swith for a fixed
+sun angle is set (the previous parameter, MI32x). 

@@ -1,0 +1,6 @@
+ SLOPE_FAILURE_DIFFUSIVITY   
+
+This factor is used to scale rates of mass
+wasting at slope gradients very close to the
+critical slope gradient. See the MW10x popup for details.
+ 

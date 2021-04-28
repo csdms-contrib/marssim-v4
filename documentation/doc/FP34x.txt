@@ -1,0 +1,5 @@
+ MINIMUM_PELAGIC_LAKE_SIZE (IN NUMBER OF CELLS)  
+
+The pelagic sediment deposited in small lakes is not
+subject to creep diffusion.  This controls the minimum lake
+size that is subject to diffusive creep. 

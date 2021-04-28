@@ -1,0 +1,7 @@
+ [I] READREGOLITH (>0 read in initial regolith thickness) 
+
+This is a switch allowing initial regolith thicknesses to be read in from
+the file INREG.DAT, which must be in the execution directory.  This file
+has the dimensions of the simulation domain.  This can be useful for initiating or continuing
+a run other than by the default switch for continuation run, which also reads in
+regolith thickness from the prior run.  

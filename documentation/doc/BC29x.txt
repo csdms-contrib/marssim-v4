@@ -1,0 +1,7 @@
+ EROSION_RATE_CHANGE_LAG 
+
+This governs how rapidly the nominal local erosion rate
+changes. Let 1>=CL>0 be the change lag. If PE is the previous iteration 
+erosion rate and NE is the present iteration erosion rate, then the lagged
+erosion rate, LE, is LE=(i-CL)*PE + CL*NE.  See BC25x popup for
+further explanation

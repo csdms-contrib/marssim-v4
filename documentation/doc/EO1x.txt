@@ -1,0 +1,9 @@
+ EOLIAN_EVENT_PROBABILITY   
+
+THis is how frequently in iterations, that calculation of
+eolian erosion and deposition occur.  If fluvial and slope
+processes are being modeled, this parameter might be less than
+unity, but if only eolian processes are modeled, then this is
+generally set to 1.0 .
+
+See EO0x popup for further details.

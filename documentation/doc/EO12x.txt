@@ -1,0 +1,11 @@
+ [I] WEIGHTING_CALCULATION_DISTANCE   
+
+This is the maximum radial range, in cells, that the calculation
+of exposure index and radiation ablation extend from the location
+in question.  The actual radial distance is set by the
+maximum_weight_distance, which is the minimum of the 
+weighting_calculation_distance amd the number of radial cells at 
+which the weigting weight drops below 1.0 percent of its value
+at zero distance. 
+
+See EO11x popup for more explanation about exposure index calculation

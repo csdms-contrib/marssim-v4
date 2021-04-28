@@ -1,0 +1,5 @@
+ BISTABLE_BEDROCK_ERODIBILITY  
+
+If erosion is in an accelerated state, then the bedrock
+erodibility is multiplied by this factor.  See BC24x popup for
+further explanation.

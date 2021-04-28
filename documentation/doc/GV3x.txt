@@ -1,0 +1,7 @@
+ [I] WIDTH-RELATIVE CALCULATIONS (0=No/1=Yes)                                   
+
+This selects whether modeling of slope mass wasting 
+contributions to sediment load compensate for the width
+of the channel within the cell.
+
+See the GV0x popup for more details.

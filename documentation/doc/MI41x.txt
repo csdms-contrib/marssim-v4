@@ -1,0 +1,6 @@
+ [I] STARTING ITERATION NUMBER
+
+This is usually zero, unless this is a continuation 
+of a previous simulation with the topography and
+other state variables read in from the simulation
+results. 

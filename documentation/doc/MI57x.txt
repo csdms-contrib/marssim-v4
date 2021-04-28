@@ -1,0 +1,7 @@
+ [I] INDEX FOR USE OF RANDOMLY-VARYING DISCHARGES FOLLOWING A NEGATIVE
+EXPONENTIAL DISTRIBUTION
+
+If this switch is set discharges vary randomly following a negative
+exponential distribution with the coefficient of variation read two 
+parameters down and the mean value is calculated from the parameters
+in FLOW_PARAMETERS.PRM

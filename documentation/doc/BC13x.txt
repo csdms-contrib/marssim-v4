@@ -1,0 +1,7 @@
+ FLUID DENSITY 
+
+This is the density of the fluid flowing through
+the fluvial system (1000 kg/m**3 for water, 450 kg/m**3
+for liquid methane on Titan) 
+
+

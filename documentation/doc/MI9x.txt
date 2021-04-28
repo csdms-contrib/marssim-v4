@@ -1,0 +1,8 @@
+ [I] SWITCH FOR LAKE EVAPORATION MODELING (0=NO, 1=YES)
+
+This switch turns on flow routing involving balancing between
+runoff generation and evaporation from ponded/lake surfaces
+to determine the size of lakes in depressions and any overflow
+from the lakes that is routed further downstream.  Use of this
+routine also requires that the USEWET parameter in FLOW_ROUTING.PRM
+be set to unity. 

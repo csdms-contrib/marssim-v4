@@ -1,0 +1,5 @@
+ MINIMUM_BEDROCK_GRADIENT 
+
+If this value is >0 it sets a minimum gradient for
+ a slope to be considered a bedrock surface.  This
+ parameter at present has no effect. 

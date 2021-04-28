@@ -1,0 +1,6 @@
+ mass flow material density   
+
+THis is the density of the regolith subject
+to mass flow, in kg/cu. meter 
+
+See MF0x for detailed information.

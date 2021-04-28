@@ -1,0 +1,16 @@
+ [I] RESCALE_DISCHARGES AS A FUNCTION OF CUMULATIVE ROUTED FLOW
+
+This switch is normally set to 1 so that discharges based upon
+calculating drainage areas can be scaled downstream to correspond
+to natural drainage basins in which geomorphically effective floods
+(e.g. the mean annual flood) increase less than linearly with 
+contributing area.
+
+UD = Unscaled discharge that is routed downstream 
+SD = Scaled discharges
+DC = Discharge constant (see popup FP4x)
+DE = Discharge exponent (see popup FP5x)
+
+At each location:
+
+SD = DC * UD**DE   (** is exponentiation)

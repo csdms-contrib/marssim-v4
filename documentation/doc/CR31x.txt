@@ -1,0 +1,9 @@
+ INHERIT_EXPONENT    
+
+This is the exponent controlling the radial variation in degree
+of inheritance of the original topography in the shape of a new
+crater. This exponent is >=2
+
+ See Cr8x, cr28x and Cr0x popups for details
+
+ 

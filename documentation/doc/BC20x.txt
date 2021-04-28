@@ -1,0 +1,6 @@
+ VEGETATION_UPLAND_RESISTANCE FACTOR 
+
+The critical shear stress for channel erosion on vegetated uplands
+
+See popup BC19x for more details.
+ 

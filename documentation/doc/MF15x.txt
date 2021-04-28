@@ -1,0 +1,23 @@
+ [I]  scheme for determing flow depth at a location 
+
+This multiple-value switch determines how the flow depth
+is determined for flows between adjacent cells for Bingham flow
+
+DL = flow depth at local cells
+DR - flow depth at the adjacent cell
+
+Values for switch and depth scheme:
+
+1:  Use DL as the flow depth regardless of flow direction
+2:  Use DL if the flow is toward the adjacent cell, otherwise DR
+3:  Use (DL+DR)/2
+0 or >3: A mixed scheme is used:  If the flow is coming from the adjacent cell
+     and the local cell's potential yield stress exceeds the critical yield stress then
+     the average regolith thickness is used, otherwise the remote cell thickness is used
+     If the flow is going to the adjacent cell and the
+	 local cell shear stress exceeds the critical yield stress then
+     the average thickness is used otherwise the local thickness is used
+	 
+For Glen's law flow modeling scheme 3 is always used
+
+See the popup MF0x for more details.

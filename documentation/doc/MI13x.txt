@@ -1,0 +1,8 @@
+ [I] MY, NUMBER OF CELLS IN THE Y DIRECTION                                     
+
+This sets the number of simulation cells in the
+vertical direction, MY.  Cell numbers go from 1
+to MY downward (South).  The mumber of cells
+in the input elevation file (INELEV.DAT)  or any
+other spatially distributed input file must have
+the same number of vertical cells. 

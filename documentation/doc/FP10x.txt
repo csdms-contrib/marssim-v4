@@ -1,0 +1,5 @@
+ DIVERGENCE_FOR_MEAN_RUNOFF PARAMETER 
+
+This is the value of local topgraphic divergence
+that produces a runoff equal to the default calculated
+runoff.  See popup FP9x for details. 

@@ -1,0 +1,5 @@
+ TIME (IN YEARS) AT START IF SIMULATION 
+
+As with the starting iteration number, this is
+usually zero unless it is a continuation of a previous
+simulation. 

@@ -1,0 +1,35 @@
+ INHERITANCE_PARAMETER   
+
+When an impact hits a planetary surface the resultant crater
+morphology is affected by the underlying topography. This is
+reflected in the inheritance_parameter.  Generally near the
+center of a larger crater the crater floor topography is totally
+reworked, giving a nearly flat floor no matter what the original
+surface looked like (no ineritance).  In the far field, at the edges
+of the ejecta sheet, the ejecta is superimposed on the pre-existing
+topography (total inheritance).  The degree of inheritance is reflected
+in MARSSIM by this parameter, which governs how the degree of inheritance
+changes from the center of the crater to the outer edge of the ejecta.
+The inheritance parameter is assumed to be in the range of 0.5 to 1.0.
+If it is 1.0 then the modeled crater excavation and ejecta depostion
+is directly controlled by the existing underlying topography, producing
+a nearly fractal roughness.  An ineritance parameter near 0.9 appears
+to give the most realistic cratered landscape.  Details are presented
+in Howard(2007) but summarized below:
+
+RR - distance from the crater center
+DI - diameter of the simulated crater
+ER = a "reference elevation" calculated by pre-impact elevations inside the
+crater ant elevations outside the crater rim weighted by (2*RR/DI)**-N, 
+where N is the exterior shape exponent (see popup CR8x)
+IP - the inheritance parameter
+EM - the elevation change modeled by the crater scaling (see popup CR8X)
+EL - the local pre-impact topography
+EC - the resultant net elevation change
+IX - the INHERIT_EXPONENT (>=2) (popup CR31x)
+For the crater interior and rim:
+  EC=EM+(ER-EL)*(1.0-IP*(2*RR/DI)**IX)
+The calculations for the crater exterior are presented in Howard(2007)
+
+ See Cr8x and Cr0x popups for additional details
+

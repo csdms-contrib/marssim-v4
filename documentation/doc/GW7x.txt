@@ -1,0 +1,6 @@
+ VISCOSITY                                                                      
+
+This is the fluid (usually water) dynamic viscosity in
+Pascal seconds, or Newton seconds per square meter.
+
+For more details see the GW0x popup.

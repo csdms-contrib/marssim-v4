@@ -1,0 +1,8 @@
+  ERUPTION_STOP_PROBABILITY
+
+Eruption_stop_probability is the probability, per iteration, that the existing flow
+   will solidify and stop being active_lava_flow -- presumably due to
+   interruption of the flow source.  If the flow becomes inactive
+   a new flow starts from the source. 
+   
+ For additional information see popup LV0z

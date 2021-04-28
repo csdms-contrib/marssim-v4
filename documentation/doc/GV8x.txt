@@ -1,0 +1,6 @@
+ ACTIVE_LAYER_FACTOR - TO GET ACTIVE LAYER THICKNESS FROM D90
+
+ This factor when multiplied by the D90 grain
+size determines the active layer thicknness.
+
+See GV0x popup for additional details.

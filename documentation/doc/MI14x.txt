@@ -1,0 +1,6 @@
+ [I] MZ, NUMBER OF CELLS IN THE Z DIRECTION IF BEDROCK STRATIGRAPHY IS MODELED
+
+If a 3-D matrix of bedrock erodibility is input, this specifies the number
+of cells, with 1 being the initial surface and MZ being the deepest cell.
+This number has no meaning if bedrock weathering potential and erosional resistance
+is uniform with depth. 

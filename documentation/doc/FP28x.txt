@@ -1,0 +1,7 @@
+ [I] NCHANGEEVAP - ITERATIONS BETWEEN CHANGING EVAPORATION RATIO 
+
+When lake evaporation is modeled, this parameter governs how frequently
+the evaporation rate is recalculated.  It should be a multiple of 
+NCALCEVAP.
+
+See popup FP29x for details 

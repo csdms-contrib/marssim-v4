@@ -1,0 +1,4 @@
+******************** OCEAN PROCESS PARAMETERS *************************
+
+The next parameter is related to temporal varial in related to temporal
+variation in an ocean shoreline within the simulation domain.        

@@ -1,0 +1,4 @@
+ SEDIMENT_2_EXPONENT  
+
+See the AC13x popup for further details.  Generally 
+keep this exponent at 0.3 . 

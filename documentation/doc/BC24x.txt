@@ -1,0 +1,38 @@
+************************ BISTABLE EROSION **************************** 
+
+This is a different method than used by the previous 5 parameters to have 
+a vegetation control on channel erosion.  Howard(1999) used the method
+controlled by the following parameters to model gully initiation, growth, and
+cessation.  The idea is that either a rapid local erosion rate or a decrease
+in vegetaion resistance (e.g., fire or overgrazing) can trigger transition to
+an accelerated state of erosion, but a return to normal erosion rates can
+occur only when the local erosion rate drops to a low value
+The next 8 parameters control this behavior:
+BI = selection parameter for the possibility of bistable fluvial erosion (see popup BC25x)
+BB = switch for using bistable bedrock resistance (see popup BC26x)
+LT = lower erosion rate transition threshold (see popup BC27x)
+HT = high erosion rate transition threshold (see popup BC28x)
+EL = erosion rate change lag (see popup BC29x)
+BC = Bistable critical shear (see popup BC30x)
+BR = bistable runoff factor (see popup BC31x)
+BE = bistable bedrock erodibility (see popup BC32x)
+NC = the normal state critical shear for bedrock erosion (see popup BC14x)
+NB = the normal state bedrock erodibility (see popup BC10x)
+NF = normal factor for converting NC and NB to regolith values of NC and NB (see p0pups BC15x and BC16x) 
+AC = if AC==True erosion is in an accelerated state, if AC==False it is in a normal state
+ER = local erosion rate during last iteration
+LC = local bedrock critical shear
+LE = local bedrock erodibility
+
+If BI == 0 then there is no bistable behavior, otherwise:
+AC==>False if ER<LT or the channel is alluvial 
+AC==>True if ER>HT
+EL introduces a lag in transition in response to changes in ER 
+IF AC==False erosion rate is controlled by NC and NB, i.e. LC=NC and LE=NE   
+If AC==True then:
+  local runoff is increased by the factor BR
+  LC=BC*NC
+  LE=BE
+  LC for regolith=BC/NF
+  LE for regolith=BE
+  

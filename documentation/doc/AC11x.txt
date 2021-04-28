@@ -1,0 +1,9 @@
+ GLOBAL OCEAN_ELEVATION 
+
+If a fixed oceanic or estuarine shoreline is to
+be modeled then this is the "ocean" level.  If
+this is not to be used, set the value to being well
+below the lowest elevation in the domain.  Note
+that a fluctuating ocean/estuarine baselevel can
+be modeled if this is specified in MARSSIM_INITIAL_
+BPIMDARY_CONDITIONS.PRM.

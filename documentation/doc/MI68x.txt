@@ -1,0 +1,22 @@
+ [I] USE SPATIAL VARIATION IN RUNOFF AND/OR WEATHERING
+
+If this switch is set there must be a file SPATIAL_VARIATION.DAT in the
+execution directory.  It should follow the format of the INELEV.DAT file
+with a first line giving the I and J dimensions of the matrix, and the 
+values following arranged as with INELEV.DAT.
+The values express relative intensities relative to 1.0, which should be
+approximately the mean value of the input matrix.
+It is a matrix of values whose dimensions 
+ correspond to the dimensions of the simulation.  This file must be assembled
+ externally to MARSSIM and can be based on a variety of factors, including
+ elevation, regional gradient, relative elevation, and topographic divergence.
+In order to use the spatial variation for flow routing, the variable 
+SPATIAL_RUNOFF_USE must be set to unity in the FLOW_PARAMETERS.PRM file.
+In order to use the spatial variation for weathering rate, the variable
+SPATIAL_WEATHER_USE must be set to unity in the WEATHERING_PARAMETERS.PRM file.
+Both the flow routing and weathering routines read in minimum and maximum
+values for rate adjustment which are used to scale the range of variation
+as expressed in the SPATIAL_VARIATION matrix.  Both weathering variation
+and runoff variation can be used simultaneously with independent scale ranges
+but based on the relative values in the SPATIAL_VARIATION matrix.
+

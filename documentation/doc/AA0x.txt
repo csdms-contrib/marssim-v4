@@ -1,0 +1,19 @@
+******************** ACCRETION-ABLATION PARAMETERS *************************  
+
+Addition or removal of volatiles or particulate materials contributing to landform
+evolution is controlled by parameters in this module.  The switch for using  
+Accretion/ablation modeling (MI8x) in the MARSSIM_INITIAL_BOUNDARY_CONDITIONS.PRM 
+parameter file should be set to unity to enable any of the processes used in this
+module.  There are three process suites in this module:
+(1) ACCRETION and ABLATION involves addition or removal of surface materials 
+at a constant rate determined by the accretion_rate parameter. See popup AA1x
+for details.
+(2) Exposure-dependent mass wasting.  This is enabled by the EXPOSURE_DEPENDENT_CREEP
+switch.  See popup AA2x for details.
+(3) Ablation or condensation of volatiles to planetary surfaces by solar radiation-driven
+processes.  See popup AA3x for details.
+
+Under normal circumstances only one of these three process suites (if any) should be used
+in one simulation. to disable accretion and ablation set the ACCRETION_RATE to 0.0. The others
+are enabled or disabled by setting the AA2x and AA3x switches.
+ 

@@ -1,0 +1,6 @@
+ [I] ELEVATION_PRINT_INTERVAL (FREQUENCY OF ELEVATION PRINTOUTS, 
+ IN NUMBER OF ITERATIONS)
+
+This sets the frequency for output of elevation data.  Usually
+this is set to the same value as the interval for interim simulation
+results (the next parameter). 

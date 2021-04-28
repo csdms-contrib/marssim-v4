@@ -1,0 +1,16 @@
+ MANNING'S N   
+
+MARSSIM uses the Manning flow resistance formula
+in calculating flow velocity, as corrected for
+gravity. Values might range from 0.02 to possibly 0.1
+depending upon bed roughness.
+
+
+
+
+
+
+
+
+
+ 

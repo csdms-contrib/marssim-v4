@@ -1,0 +1,3 @@
+ FREQUENCY_CUTOFF_SCALING  
+
+See pupup CR21x for more detail. 

@@ -1,0 +1,8 @@
+ [I] SHADE_BORDER_INDEX (0=NO, 1=YES) IF I OR J DIMENSIONS ARE PERIODIC
+ APPENDS OPPOSITE SIDE BORDER IN SHADED RELIEF IMAGES
+
+When periodic boundaries are used for x or y or both sets of boundaries setting
+this switch will extend the lateral boundaries of shaded relief images to include
+a strip from the opposite boundary.  This is particularly useful to permit visualization
+of the landscape near the periodic boundaries and to be able to select regions for
+figures that cross the simulation edges. 

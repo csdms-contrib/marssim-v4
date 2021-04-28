@@ -1,0 +1,24 @@
+  MAXIMUM_DIFFUSIVITY_INCREASE PARAMETER 
+
+In order to keep mass wasting rates from becoming infinite.
+This parameter sets an upper limit to
+the rate of mass wasting. If the gradient gets very close to the critical
+slope gradient then the maximum diffusivity, MD, is set to:
+
+ KF - the failure mass diffusivity using the Howard(1994) mass wasting model 
+ ND - the maximum diffusivity increase parameter
+ SGE - the slope gradient exponent 
+ MD - maximum slope diffusivity
+ SC - the critical slope gradient
+ KS - the slope diffusivity
+ 
+ For the Howard (1994) model:
+
+    MD = KF*(1/ND -1) which applies to slope gradients greater than SC*(1-ND)**(1/SGE)
+	
+ For the Roering et al model:
+ 
+    MD = KS*(1/ND-1) which applies to slope gradients greater than SC*(1-ND)**0.5
+	
+See MW0x popup for more details.	
+ 

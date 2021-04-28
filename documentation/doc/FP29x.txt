@@ -1,0 +1,24 @@
+ X-RATIO - A MEASURE OF RELATIVE ARIDITY IN FLOW ROUTING
+
+The X-RATIO defines the relative aridity of flow routing
+and lake evaporation when this is selected in the
+MARSSIM_INITIAL_AND_BOUNDARY_CONDITIONS.PRM parameter set.
+The X-RATIO governs the size and overflowing state of lakes
+within depressions.  It is defined as follows:
+   EV - Yearly depth of evaporation from lakes
+   RF - Fraction of precipitaion on non-submerged uplands that
+        contributes to runoff
+   PR - Yearly depth of precipitation
+	
+   X-RATIO = (EV-PR)/(RF*PR)
+	
+Because this is defined as a ratio the exact values of evaporation, runoff
+fraction, and precipitation are not necessary to know.
+The minimum value of the X-RATIO is -1.0, when EV=0 and RF=1.
+Humid locations with permanent, overflowing lakes are defined by negative X-RATIOS.
+During the Pleistocene when the large lakes Lahontan and Bonneville occupied the
+U.S. Great Basin, the X-RATIO was in the range 3-5.  At present the X-RATIO in
+this basin exceeds 20. For flow routing and lake size prediction for the Great
+Basin region see Matsubara and Howard(2009).  For application of the X_Ratio to
+Mars see Matsubara and Howard(2011) and Matsubara et al. (2018). In flow routing
+an effective evaporation is taken to be X-RATIO+1.0.  

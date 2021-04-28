@@ -1,0 +1,5 @@
+ DIVERGENCE_SCALE_PARAMETER
+
+This determines how broad the range is overwhich divergence values
+vary, in terms of calculated divergence values.  See popup FP9x for details.
+ 

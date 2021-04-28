@@ -1,0 +1,5 @@
+ DISCHARGE COEFFICIENT OF VARIATION 
+
+This value is only used it the switch for randomly
+varying discharges is set.  The mean value is determined
+by calculations based on parameters in FLOW_PARAMETERS.PRM 

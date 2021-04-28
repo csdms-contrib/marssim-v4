@@ -1,0 +1,3 @@
+ PEAK_HEIGHT_EXPONENT  
+
+See popup CR32x for details

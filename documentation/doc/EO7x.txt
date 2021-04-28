@@ -1,0 +1,4 @@
+ [I] ICHOOSE (CHOICE (0 THROUGH 4) OF METHODS OF PARAMETERIZING EROSION AND DEPOSITION
+
+This multivalue parameter sets the method of calculation of eolian erosion and deposition
+THe values range from 1 to 4.  See EO5x popup for description of the options.  

@@ -1,0 +1,19 @@
+ [I] DO_EVENTS (0 FOR STEADY BOUNDARY CONDITIONS DURING SIMULATION, 
+IF SPECIFIC EVENTS ARE TO BE PROGRAMMED.
+
+This is a flexible approach to produce time-varying behavior during
+program execution.  This approach has been used, for example, to simulate impact
+craters occurring at specified times, locations, with assigned
+crater sizes.  Another use in Howard and Tierney (2012) has implemented wave
+planation events in coastal landforms. The events can be specified to 
+occur as specific times or as iteration numbers, as read from EVENTS.PRM. 
+
+THe downside is that the actions performed at the specific times must
+be programmed within the subroutine MAKE_EVENT in the 
+initial_and_boundary_conditions.f90 source file and the program 
+recompiled. Some examples and suggestions are given in the
+MAKE_EVENTS subroutine.
+
+Of course, a more laborious method would be to sequence a number of
+simulation runs with different parameters or after change of the output
+topography or other state variables from the preceeding run.

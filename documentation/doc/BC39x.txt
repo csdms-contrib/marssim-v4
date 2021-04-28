@@ -1,0 +1,6 @@
+ SURFACE_LAYER_THICKNESS 
+
+The initial thickness of the surface crust, which will be
+weathered and eroded at a rate controlled by parameter BC40x.
+
+See popup BC38x for additional information 

@@ -1,0 +1,6 @@
+ [I]  WRITE_ABSOLUTE_ELEVATION (0 = RELATIVE TO INITIAL ELEVATIONS,
+1 = ABSOLUTE)
+
+This determines whether elevations are written as relative to the lowest initial
+elevation in the simulation domain or as absolute elevations.
+This is usually left at 1, with absolute elevations output. 

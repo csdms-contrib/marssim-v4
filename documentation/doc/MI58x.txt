@@ -1,0 +1,4 @@
+ CRITICAL_SHEAR_VARIABILITY (STANDARD DEVIATION)
+
+This only applies if the switch for randomy varying critical
+shear is set.  The mean value is read from BEDROCK_CHANNEL_PARAMETERS.PRM 

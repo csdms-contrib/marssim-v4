@@ -1,0 +1,113 @@
+INPUT FILES:
+
+INELEV.DAT - initial elevations for the simulation  It, and most other data files read or written by the program,
+    is read by the following pseudocode:
+    
+read (indata,*) mx,my !the x and y dimensions of the simulation domain
+do i=1,mx
+do j=1,my
+   read(indata,*) elevation(i,j) !elevation is the surface elevation at location i,j
+enddo
+enddo
+
+1: MARSSIM_INITIAL_BOUNDARY_CONDITIONS.PRM - the master parameters for the simulations.  
+
+Parameters for specific processes are read from the following files.  
+    Each of these files must be present in the execution directory.
+    Additional files may be needed depending upon the processes being
+    simulated.
+2: BEDROCK_CHANNEL_PARAMETERS.PRM
+3: ALLUVIAL_CHANNEL_PARAMETERS.PRM
+4: FLOW_PARAMETERS.PRM
+5: WEATHERING_PARAMETERS.PRM
+6: ACCRETION_ABLATION_PARAMETERS.PRM
+7: CRATERING_PARAMETERS.PRM
+8: EOLIAN_PARAMETERS.PRM
+9: GRAVEL_MIXTURE.RM
+10: GROUNDWATER_PARAMETERS.PRM
+11: LAVA_FLOW_PARAMETERS.PRM
+12: MASS_FLOW.PRM
+13: MASS_WASTING.PRM
+14: REAL_CRATERS.PRM
+ERODE.STOP  -This file is read every 10 iterations, reading a single integer.  
+    If it is 1 the program stops and writes out files, otherwise if 0 the program continues.  
+    To stop the program in mid-simulation without discarding results, copy ERODE.STOP.YES to ERODE.STOP.  
+    But be sure to copy ERODE.STOP.NO to ERODE.STOP before the next simulation.
+
+For some simulations, depending on switches set in parameter file 1: the following may be needed:
+
+RESIST.IN   -a 3-D matrix of rock resistance
+INREG.DAT   -initial conditions for regolith thickness
+INRATES.DAT -reads time-varying simulation parameters 
+INRIVER.PRM -allows specification of rivers entering the domain from outside
+EVENTS.PRM  - specifies the time of specified programmed “events’
+CRATER_EVENTS_PRM – Locations and sized of simulated craters.  Additional files are needed if 
+    fresh martian craters are used to represent new craters.
+SPATIAL_VARIATION.DAT - Matrix of spatially-varying values used to scale local runoff rates
+    and/or local weathering rates, if selected.
+
+OUTPUT FILES: (most output are written in subroutines in read_and_write_data_files.90 – 
+    see the program routines for formatting and further explanation – 
+    most of these consist of several concatenated records of data output 
+    at intervals during the simulation in the same general format as INELEV.DAT.
+    Relatively important output files are indicated in bold italics.  
+    Some files will not be created unless the appropriate processes are included in the simulation, 
+    and some will be created but not written to.
+
+BASIN.LST   -a text file that summarizes the simulation parameters plus a good bit of data 
+    on the progress of the simulations and a variety of rate-process information
+OUTELEV.DAT -a text file of the surface elevations written at various times during the simulation.  
+    This file usually includes several sequential datasets.  
+ALLUVIAL.DAT    -an ascii file of 0’s to indicate locations that are bedrock channels, and 1’s for alluvial channels
+DISCHARGE????.RAW   - raw image files of the logarithm of discharges within the drainage network.  
+    Normalized so that low discharges are black, highest is white. 
+    The dimensions of these images equals that of the elevation matrix.
+BEDROCK.DAT -an ascii file of 0’s for regolith-covered locations, and 1’s for bare bedrock.
+SUBMERGE????.RAW    - raw image files indicating submerged (black) and unsubmerged (white) locations. 
+    The dimensions of these images equals that of the elevation matrix.
+SUBMERGED.DAT-an ascii file of 1’s for underwater locations, otherwise 0’s for subaerial locations.
+EROSION_DEPTH_INDEX.DAT -if variable rock resistance is used, this is the z-index of the surface in the 3-D rock resistance file.
+OUTBASE.DAT - the elevation of the bottom of alluvial deposits, or, where they are absent, the land surface elevation.
+REGOLITH.DAT    -the regolith thickness.
+DEFORM.DAT  -if the rocks are actively deformed, writes the total amount of deformation during the simulation.
+RESIST.OUT  -writes the erosional resistance for rocks at the surface (for variable rock resistance is a slice through RESIST.IN
+    corresponding to the surface elevation).
+REPORT.PRN  -a record of relief and erosion rate.
+RECORD.DAT  -a record of several variables expressing the progression towards a steady-state landscape.
+SUMMARY.DAT - some of the data printed out in basin.lst, but in bare-bones format.
+STATISTICS.PRN – writes a sampling of the simulation state for emergent points at intervals during the simulation.
+CHANNEL.DAT -information on stream channels.
+CRATER.DAT  -information about individual simulated impact craters.
+RELELE???.RAW   -files consisting of raw b&w images of surface elevation- scaled so that the lowest elevation
+    is black and the highest is white. The dimensions of these images equals that of the elevation matrix.
+TOPO.DAT    -a file that gives information on the elevation range corresponding to the images in RELELE????.RAW.
+BSHADE????.PBM  -shaded relief images of the surface topography, output in sequential order during the 
+    simulation and periodic intervals.  These filesc an be put together in Adobe Photoshop to make a movie. 
+    If periodic boundary conditions are used these files can paste strips from the opposite side 
+    in order to better portray the topography if selected. 
+    If neither boundary is periodic the image size is (2*(MX-1), 2*(MY-1).  
+    If the image is periodic in, say, the X dimension, then the horizontal image size increases to 2*(MX-1)+2*(MX/2+2) 
+    and similarly if the image is periodic in the Y dimension.
+BISTABLE.DAT – output file of locations that are (1) and are not (0) in the accelerated erosion state.
+DEBUG.PRN  - A file of debugging data written by write_debug
+SOURCE.DAT -  A file of stream source information written by stream_network_properties if it is utilized.
+QQ.DAT  -if groundwater flow is simulated, is the matrix of groundwater discharges.
+EWATER.DAT  -if groundwater flow is simulated, is the water table elevation.
+ACTIVE.DAT  -if groundwater sapping is simulated, is locations that are presently undergoing sapping erosion.
+LAVA.DAT    -if lava flows are simulated, whether lava has been deposited at that location.
+LACTIVE.DAT -if lava flows are simulated, is the locations where lava flows are active.
+LAGE.DAT    -if lava flows are simulated, is the age since the last lava was deposited at that location.
+EOLIAN.DAT  -if eolian deposition is simulated, is the amount of eolian deposition or erosion.
+BINGHAM_FLUX.DAT – if Bingham mass flow is modeled, gives the flux magnitude.
+GLEN_FLUX.DAT – If Glen Law flow is selected gives the mass flux.
+CUMULATIVE_...DAT  -net changes in state variable matrices during the simulation. 
+    Exact name and number of files depends upon which processes are simulated.  
+    See the subroutine write_net_change_matrices for details.
+FINAL_...DAT – These are the final values of state variables.  
+    Useful to analyze simulation results and to use to continue a simulation.  
+    See the subroutine write_final_state for details.
+BINARY_....DAT – if selected these are cumulative binary output files of surface elevation, stream discharges, 
+    lake locations, and impact crater events.  
+    This was specifically included to permit making movie files of landform evolution.  
+    See the subroutine output_binary_data for details.  
+

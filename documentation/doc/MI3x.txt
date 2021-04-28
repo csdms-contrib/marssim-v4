@@ -1,0 +1,17 @@
+[I] SWITCH FOR FLUVIAL AND SLOPE MODELING (0=NO, 1=YES)
+
+This is the first of several switches that determine which modules
+to include and which matrices to allocate (initialize)
+
+Simulations involving runoff, fluvial processes, and mass wasting
+need to set this switch to 1 for yes.  These switches should
+be indicated as an integer such that 0 = No; 1 = yes
+
+When fluvial processes are modeled, the iteration temporal duration
+is usually governed by the fluvial erosion. The fluvial processe
+generally govern the speed of the simulation, and thus set realistic
+limits to the spatial dimensions of the simulation domain and the 
+duration of the simulation. Of the fluvial modeled processes sediment
+routing, if used, consumes the greatist time.  Simulations using up to
+1 million cells usually can be completed in no more than a few days,
+depending upon the total number of iterations.

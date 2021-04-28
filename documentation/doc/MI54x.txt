@@ -1,0 +1,6 @@
+ [I] INDEX FOR WRITING BINARY DATA FILES (0=N0, 1=YES) 
+
+There is the option of output of elevation, crater impact events,
+submerged state, and discharge data to be output to sequential binary files.
+This is specialized data useful for preparing animations of the
+simulation, but normally this switch should be set to 0. 

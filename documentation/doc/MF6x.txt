@@ -1,0 +1,7 @@
+ bingham flow maximum flow thickness (meters) 
+
+This parameter limits the depth of regolith material subject
+to Bingham flow.  If there is no limit, then set this to a
+large value.
+
+See MF0x for detailed information. 

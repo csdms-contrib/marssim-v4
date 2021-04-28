@@ -1,0 +1,5 @@
+   PELAGIC CREEP DIFFUSIVITY
+ 
+The washload sediment deposited in standing water is 
+subjected to diffusive creep.  This parameter is the
+creep diffusivity, in sq. meters/year. 

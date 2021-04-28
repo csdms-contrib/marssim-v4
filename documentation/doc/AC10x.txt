@@ -1,0 +1,6 @@
+ [I] USE_AN_OCEAN (MODEL DELTAS - >0 to use) 
+
+Set this switch to 1 to model deltaic deposition in 
+lakes or an ocean.  This is generally desirable
+if lake flow routing is used or if there is an ocean
+shoreline within the simulation domain 

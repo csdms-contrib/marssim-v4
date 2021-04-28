@@ -1,0 +1,14 @@
+[I] SWITCH FOR IMPACT CRATER MODELING (0=NO, 1=YES)
+
+If impact cratering is to be included in a simulation,
+set this to 1 (yes)
+
+This module can be run without the fluvial and slope module.
+Under these contitions large matrix dimensions and tens of thousands
+of impacts can be quickly simulated.
+
+Most of the relevant parameters are in the CRATERING_PARAMETERS.PRM file.
+There are options to model craters geometrically or as actual martian 
+fresh craters.
+Cratering can occur randomly in time and space with a specified probability
+or individual impacts can be programmed in time and space using the EVENTS method.

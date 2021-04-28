@@ -1,0 +1,5 @@
+ BISTABLE_RUNOFF_FACTOR 
+
+If erosion is ina an accelerated state, then the nominal
+local runoff is multiplied by this factor.See BC24x popup for
+further explanation  

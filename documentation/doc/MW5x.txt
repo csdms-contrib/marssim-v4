@@ -1,0 +1,6 @@
+ [I] ROERING_USE (1=USE ROERING FORMULA, 0=USE HOWARD) 
+
+This switch chooses between the Howard and Sklar et al. regolith
+mass wasting model.
+
+ See MW0x popup for more details.

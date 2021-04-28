@@ -1,0 +1,8 @@
+  SLOPE_GRADIENT_EXPONENT
+
+This is the exponent for the slope gradient to critical
+slope gradient ratio in the numerator of the Howard (1994)
+mass wasting model.  The equivenelt exponent for the Roering
+et al model is 2.0.  
+
+See MW0x popup for more details.

@@ -1,0 +1,30 @@
+************************  MASS WASTING PARAMETERS ********************
+
+The mass wasting routine includes four models of downslope mass wasting on regoltith-mantled slopes.
+Creep rate is evaluated in 8 directions in and out of each cell and summed.
+Four main models are implemented:
+
+1) Using the Howard (1994) slope model:
+    KS - slope diffusivity (popup MW2x)
+	KF - rapid creep diffusivity (popup MW11x)
+    SG - slope gradient
+    SC - critical slope gradient (popup MW8x) 
+    SE - slope gradient exponent (popup MW9x)
+    DF - Mass wasting flux per unit slope width
+	RD - Regolith depth
+	CD - creep depth constant (MW7x popup)
+	
+	DF - KS*SG + KF/(1 - (SG/SC)**SE)
+
+2) Roering et al. (1999,WRR): 
+
+    DF = KS*SG/(1 - (SG/SC)**2)
+	
+3) Simple diffusion
+    
+	DF = KS*SG
+	
+4) Depth-dependent creep
+
+    DF = (1-exp(-KS*RD))*SG/(1-(SG/SC)**2)
+	

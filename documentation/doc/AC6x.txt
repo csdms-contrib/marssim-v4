@@ -1,0 +1,11 @@
+ [I] DO_ALLUVIAL_SMOOTHING (0=NO. 1!YES)  
+
+The routing model assumes sediment is transported in
+a single path following the steepest descent.  Thus,
+on alluvial fans, only a single channel is active at any
+time. As sediment is deposited and the fan aggrades, 
+however, the channel will shift to new courses across
+the fan.  Selecting this switch applies applies diffusive
+smoothing to the fan surface after each iteration to make
+the single channels less obvious.  This is not generally
+used, but can be experimented with. 

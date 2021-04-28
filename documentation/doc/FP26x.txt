@@ -1,0 +1,6 @@
+ SLOPE_RUNOFF_SCALE_FACTOR   
+
+If slope-dependent runoff is selected this determines the 
+rate that runoff increases with slope gradient. 
+
+See popup FP24x for details.

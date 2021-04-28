@@ -1,0 +1,74 @@
+************************ GROUNDWATER FLOW ****************************
+
+This module simulates groundwater flow and its geomorphic effects. Two
+main substrate models are used: exponentially - decreasing hydraulic
+conductivity with depth and a finite-depth aquifer with vertically uniform
+hydraulic conductivity. The model uses a grid with the same dimensions as the
+main program. Groundwater flow is solved using a finite-difference approach with
+overrelaxation. Locations are characterized as being fixed or variable water
+table surface.  Locations are designated as fixed_head if the water table intersects
+the land surface.  The solution initially assumes a fixed head only at the lowest point in the
+topographic matrix. An iterative solution to a steady state solution progresses until
+a stable grounwater level is produced with spatially-variable distribution of fixed-head
+and non-fixed locations.  In calls to the subroutine after the initial solution is 
+obtained the groundwater levels are assumed to be identical to the results from the
+previous solution, hastening approach to a new solution after the suface topography
+is modified. At present the model assumes spatially uniform hydraulic
+conductivity and spatially uniform yearly recharge from the surface. The model assumes
+DuPuit flow such that the slope of the water table is small compared to the lateral
+dimensions of the cells. At fixed head locations the spatial divergence of lateral
+groundwater flux is calculated, which is the discharge per unit area to the surface.
+Grounwater levels and groundwater flow rates are assumed to represent steady-state
+conditions for the given recharge rate.  The rate of change of surface elevations is
+therefore assumed to be slow relative to the timescale of adjustment of the groundwater flow.
+For more details see Luo and Howard (2008).
+
+PD - Reference permeability in Darcies (popup GW8x)
+MD - metric permeability = PD/1.0E+12
+V - water viscosity. (popup GW7x)
+DF - water density (from )
+g - gravity
+HD - reference hydraulic conductivity 
+  HD=MD*DF*g/V
+DX - cell size (in meters)
+GDF - groundwater_depth_scale (popup GW9x)
+GSF - groundwater scale factor
+  GSF=HD/(2*DX*DX) for constant permeability with depth
+  GSF=HD/(2*DX*DX*GDF) for exponential decreasing permeability with depth
+EL - surface elevation
+IE - initial surface elevation
+WE - groundwater water table elevation
+TR - lateral transmissivity
+EP - power governing permeability decay rate with depth (GW5x popup)
+If exponential decay of permeability with depth is not rescaled 
+for surface elevation then:
+  TR=exp(-GDF*(IE-WE)**EP)
+otherwise:
+  TR=exp(-GDF*(EL-WE)**EP)
+Water table elevation is calculated in 4 directions, E,W,N,S
+WN - new water table elevation calculated during an iteration
+WO - previous water table iteration
+RE - groundwater recharge rate
+Let 0 be local value, and E,W,N,S be values at surrounding cells
+ELL=TR(0)
+CIP=TR(0)+TR(W)
+CIM=TR(0)+TR(E)
+CJP=TR(0)+TR(S)
+CJM=TR(0)+TR(N)
+WN(0)=(CIP*WO(W)+CIM*WO(E)+CJP*WO(S)+CJM*WO(N)+RE/GSF)/(CIP+CIM+CJP+CJM)
+which is iterated until abs(WN-WO) drops below a specific value, MGE - maximun_groundwater_error (popup GW14x).
+Then the groundwater discharge, QX in the horixonatal direction and QY in the vertical direction are:
+QX=T(0)*(WN(W)-WN(E))/(DX*DX)
+QY=T(0)*(WN(S)-WN(N))/(DX*DX)
+
+Depending upon the switch USE_GROUNDWATER_FLUX (popup GW16x), either the total groundwater flux
+or the spatial flux divergence (measuring flow rate from the subsurface to the surface)
+is returned to be used to calculate geomorphic effects of groundwater.
+
+The switch SEEPAGE_DIVERGENCE_AVERAGING (popup GW17x)allows 9-point averaging of the flux divergence if selected.
+
+Similar calculations are performed for the situation where constant hydraulic conductivity with depth is
+selected
+
+
+            

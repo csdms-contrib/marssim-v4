@@ -1,0 +1,10 @@
+ [I] INTERVAL BETWEEN PRINTING OUT CHANGE STATISTICS (IN ITERATIONS)
+
+This sets the frequency at which several descriptive parameters are
+printed out to the the file REPORT.PRN.
+In particular the file contains updates on:
+   Iteration number
+   elapsed time and time increment
+   fractions of bedrock and sediment-covered cells
+   the average elevation, gradient, erosion rate
+   topgraphic relief 

@@ -1,0 +1,9 @@
+ ALVCREEPFAC (PROPORTION OF SLOPE CONSTANT IN ALLUVIAL CREEP)
+
+This factor determines the creep diffusivity in alluvial locations, ranging
+from 0 for no mass wasting to 1.0 for rate equality for regolith slopes to
+values >1 for enhanced diffusivity on alluvial surfaces. A value greater than
+1.0 can help to smooth out irregulatities on depostional surfaces such as 
+alluvial fans produced by the sediment routing procedure.
+
+See MW0x popup for more details.

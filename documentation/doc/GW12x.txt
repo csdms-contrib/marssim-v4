@@ -1,0 +1,9 @@
+ EPOWER    
+
+For exponential decay of permeability with depth
+this determines how rapidly permeability decays
+with depth relative to exponential decay.  A value
+of 1.0 selects normal exponential decay, and a value > 1.0
+selects more rapid decay and vice-versa for <1.0 .
+
+ See popup GW0x for further information. 

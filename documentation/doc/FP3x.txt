@@ -1,0 +1,13 @@
+ [I] USE_RANDOM_FLOWROUTING (0 = determinstic d8, 1 = random d8)
+
+This switch at present has no effect.  It is left as a stub to
+implementing a procedure to calculate contributing area by a
+more subtle method than the d8 method used in MARSSIM such that
+each cell contributes discharge to only the neighboring cell for which
+the downhill gradient to that cell is the steepest.  There are a 
+number of routing schemes that permit distributed flows to downhill
+directions.  Thise offer more realistic discharge patterns on hillslopes.
+MARSSIM, however, is typically focused on regional landscape evolution
+such that using distributed flow routing has only minor effect on
+landform morphology. 
+ 

@@ -1,0 +1,5 @@
+ RUNOFF_SCALE_BEDROCK -RUNOFF SCALING FOR BEDROCK 
+
+Runoff scale factor for exposed bedrock
+
+See popup FP20x for details

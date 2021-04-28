@@ -1,0 +1,5 @@
+ exponent for flow depth in basal erosion  
+
+ This is a stub for modeling basal or lateral
+erosion by mass flows.  It is not implemented
+in the current release. 

@@ -1,0 +1,33 @@
+************************  REGOLITH WEATHERING PARAMETERS ************* 
+
+These parameters govern rock weathering into regolith.  In addition to the
+parameters in this file, the rate of rock weathering can also be subject
+to weathering by groundwater seepage and solar erosion and mass flow erosion
+
+The default weathering can be based on 1- or 2-term weathering
+
+RWR - the rock weathering rate for bare bedrock (WE1x popup)
+WDR - the default rate that weathering decreases with regolith thickness (WE2x popup)
+RW2 - weathering term 2 (WE6x popup)
+WD2 - weathering decay rate 2 (WE7x popup)
+DEL-R - the increase in regolith thickness per year
+RT - regolith thickness
+VCC - volume change coefficing - how much regolith is produced per unit rock weathering
+      (can be greater or less than 1)  (WE4x popup)
+DV - term for effect of topographic divergence on weathering rate (WE13x popup)
+COS - inverse cosine of slope correction for weathering being perpendicular to slope
+GCR - an enhanced weathering rate for steep bedrock slopes
+LRR - local rock resistance to weathering
+LTD - local topographic divergence 
+The default weathering rate for regolith-covered slopes is:
+DEL-R = VCC*(RWR*EXP(-WDR*RT) - RW2*EXP(-WD2*RT))/(COS*LRR)
+WM - a scaling factor for GCR (WE12x popup)
+
+This produces a humped regolith production function if RWR>WR2 and WDR<WD2
+On bedrock slopes where mass wasting and fluvial erosion have exceeded RWR then
+   weathered bedrock production = RWR*(exp(-WD2*RT) + WM*GCR)
+The GCR term (if selected) approaches a very large value at a critical slope gradient  > critical 
+   gradient for regolith(WE11x popup).  The weathered bedrock production on bedrock slopes is routed downslope
+   in the mass wasting routine, and regolith is also diffused by mass wasting.
+
+          

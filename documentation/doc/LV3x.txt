@@ -1,0 +1,7 @@
+   MININUM_LAVA_FLOW_SLOPE
+
+If the gradient between an active cell to a surrounding cell 
+drops below this value the probably of flow extension into that 
+cell is zero.
+
+   For additional information see popup LV0z.

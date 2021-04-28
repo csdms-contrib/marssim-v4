@@ -1,0 +1,28 @@
+ DISTANCE_DECAY_FACTOR
+
+This is the distance in number of cells at which the weighting
+of cells at that distance in calculating the exposure index drops
+by a factor of two. 
+
+Calculation of eolian deposition and erosion rates is based
+on relative elevations extending radially outward from a given
+location.  The weighting of the relative elevations decreases
+with distance from the given location.  The calculation is based
+on summation over radial transects in 8 directions from a given
+location:
+
+EL - local elevation
+ER - elevation of a point along a transects
+EI - the calculated exposure index
+DI - distance to the transect point
+DF - distance decay factor
+WD - weighting_decay_factor
+WD=log(0.5)/DF
+WT - weighting of a poing at a given distance
+WT=exp(WD*DI)
+the local exposure index, EI:
+EI= sum[(EL-ER)*WT/DI]/sum(WT) taken over all cells out to the 
+     maximum_weight_distance
+	 
+See EO0x for more detail and EO5x for calculations
+ 

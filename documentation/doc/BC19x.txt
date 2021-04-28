@@ -1,0 +1,23 @@
+ [I] VARIABLE_VEGETATION_RESITANCE - INDEX FOR MODELING VEGETATION EROSION
+SHEAR  RESISTANCE (1-YES, 0=NO)
+
+This switch determines whether vegetation will be considered as factor determining
+resistance to fluvial erosion.  The argument is that on slopes and upland hollows
+vegetation acts as a significant impediment to fluvial erosion, but vegetation
+becomes less of a factor downstream.  This was used by Howard and Tierney (2012)
+to model landform evolution in Virginia.  The next four parameters parameterize this
+effect.
+
+TU = vegetation upland resistance shear factor (Pascals)
+TC = downstream channel resistance shear factor
+AMN = contributing area below which the shear resistance is given by TU
+AMX = contributing area above which the shear resistance is given by TC
+AR = local contributing drainage area
+LC = local shear resistance
+
+For AR<AMN: LC = TU
+for AR>AMX: LC = TC
+For contributing areas between AMN and AMX:
+VFS = (log(TU)-LOG(TC))/(log(AMN-log(AMX))
+VFI = log(TU)-VFS*log(AMN)
+LC=exp(log(AR)*VFS+VFI)

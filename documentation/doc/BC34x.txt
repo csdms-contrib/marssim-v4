@@ -1,0 +1,11 @@
+ [I] USE 3D SPATIALLY VARYING BEDROCK RESISTANCE TO WEATHERING AND EROSION (0=NO,1=YES)
+
+ If this is selected, then an unformatted direct access file RESIST.IN must be present
+ in the working directory. For this file i is the lateral direction, left to right, j is
+the downward direction, j downward, and k is the vertical direction, increasing downward.
+Tte function READ_ERODIBILITY accesses erodibility values from the file.  Given I,J,K indices
+the record number is J+MY*I-1)+MX*MY*(K-1). If the index for resistance variability (next parameter)
+is 1 then the value of resistance that is input, RR, is transformed by lognormal random variability
+with RR as the mean value and resistance variability (BC36x) as the log standard deviation.
+
+See BC33x for discussion of 3-D bedrock resistance to weathering and erosion.

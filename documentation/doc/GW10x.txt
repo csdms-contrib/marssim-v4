@@ -1,0 +1,9 @@
+ GROUNDWATER_FLOW_FRACTION   
+
+When the role of groundwater is envisioned to be transport of
+sediment by the groundwater flux from the subsurface to the surface,
+this parameter defines the relative roles of surface runoff to groundwater-
+derived runoff in sediment transport. If this factor is set to 1.0
+then all surface flow derives from groundwater seepage.
+
+See pupup GW0x for further details.

@@ -1,0 +1,55 @@
+Howard, A.D., (1994).A detachment limited model of drainage basin evolution, 
+    Water Resources Research, Vol. 30, No. 7, p. 2261 2285.
+Howard, A. D., (1997). Badland morphology and evolution:  Interpretation using a simulation model.  
+    Earth Surface Processes and Landforms, v. 22, 211 227.
+Howard, A.D., (1999) Simulation of Gully Erosion and Bistable Landforms, 
+    book chapter, in Incised River Channels, edited by S. Darby and A. Simon, John Wiley & Sons, p. 277-300 & plates.
+Howard, A.D. (1999) Simulation of lava flow inundation on martian cratered terrain, 
+    30th Lunar and Planetary Science Conferene, Abstract 1112.
+Forsberg-Taylor, N. K., Howard, A. D., Craddock, R.A., (2004) Crater degradation in the Martian highlands:  
+    morphometric analysis of the Sinus Sabaeus region and simulation modeling suggest fluvial processes.  
+    Journal of Geophysical Research, Planets.109, E05002,  doi:10.1029/2004JE002242.
+Fagherazzi, S., Howard, A. D., and Wiberg, P. L., (2004) Modeling Fluvial Erosion and Deposition
+    on Continental Shelves During Sea Level Cycles. Journal of Geophysical Research, 109, doi: 10.1029/2003JF000091.
+Howard, A. D., (2007) Simulating the development of martian highland landscapes through the interaction of impact cratering, 
+    fluvial erosion, and variable hydrologic forcing, 
+    Geomorphology, v. 91, p. 332-363.
+Luo, W., and Howard, A. D., (2008).Computer simulation of the role of groundwater seepage in forming Martian valley networks, 
+    Journal of Geophysical Research, Planets, vol. 113, E05002, doi:10.1029/2007JE002981.
+Matsubara, Y. and Howard, A. D., (2008),A spatially-explicit model of runoff, evaporation and lake extent:  
+    Application to modern and late Pleistocene lakes in the Great Basin region, western United States, 
+    Water Resources Research,45, W06425, doi:10.1029/2007WR005903. 
+Howard, A. D., and Moore, J. M., (2008). Sublimation-driven erosion on Callisto:  A landform simulation model test.  
+    Geophysical Research Letters, v. 35, L03203, doi:10.1029/2007GL032618.
+Barnhart, C. J., Howard, A. D., and Moore, J. M., (2009) Long-term precipitation and late-stage valley network formation:
+    Landform simulations of Parana Basin, Mars, 
+    Journal of Geophysical Research, Planets, vol. 114, E01003, doi:10.1029/2008JE003122.
+Howard, A. D., and Tierney, H.E.,(2012) Taking the measure of a landscape:  
+    Comparing simulated and natural landscapes in the Virginia Coastal Plain, USA., 
+    Geomorphology 137, p. 27-40
+Howard, A. D., Moore, J. M., Schenk, P. M., White, O. L., and Spencer, J.(2012). Sublimation-driven erosion on Hyperion. 
+    Topographic analysis and landform simulation model tests.  
+    Icarus, 220, 268-276.
+Neish, C. D., Moaro, J. L., Lora, J. M., Howard, A. D., Kirk, R. L., Schenk, P., Bray, V. J., Lorenz, R. D., (2016).
+    Fluvial erosion as a mechanism for crater modification on Titan, 
+    Icarus, 270, 114-129, http://dx.doi.org/10.1016/j.icarus.2015.07.022.
+Howard, A. D., Breton, S. and Moore, J. M, (2016) 
+    Formation of gravel pavements during fluvial erosion as an explanation 
+    for persistence of ancient cratered terrain on Titan and Mars, 
+    Icarus, 270, 100-113, http://dx.doi.org/10.1016/j.icarus.2015.05.034
+White, O. L., Umurhan, O. M., Moore, J. M., and Howard, A. D., (2016) Modeling of ice pinnacle formation on Callisto, 
+    Journal of Geophysical Research: Planets, 121, 21-45, doi:10.1002/2015JE004846.
+Moore, J. M., Howard, A. D., Umurhan, O.M. and 13 additional authors, (2017) Sublimation as a landform-shaping process on Pluto, 
+    Icarus, 287, 320-333, doi:10.1016/j.icarus.2016.08.025.
+Matsubara, Y., Howard, A. D., Irwin, R. P. III, (2018) 
+    Constraints on the Noachian paleoclimate of the martian highlands from landscape evolution modeling, 
+    Journal of Geophysical Research, Planets, 123, 2958-2979, doi:10.1029/2018JE005572
+Hughes, M.N., Arvidson, R.E., Grant, J.A. Wilson, S.A., Howard, A.D., Golombek, M.P., (2019)
+    Degradation of Endeavour crater based on orbital and rover-based observations in combination
+    with landscape evolution modeling, 
+    Journal of Geophysical Research: Planets, 124, 1472-1494, doi:10.1029/2019JE005949	
+
+
+
+
+

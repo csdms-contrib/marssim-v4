@@ -1,0 +1,13 @@
+ [I] HAVE_INFLUENT_RIVERS (0 FOR NO INCOMING RIVERS, 1 FOR INCOMING RIVER(S) 
+
+It is possible to have influent rivers at the borders of the simulation
+domain.  If this is selected, then a file INRIVER.PRM file must be present
+in the program execution directory.  The first line of this file is the
+number N of influent rivers (N>=1). The N lines following, one for each
+influent river have the following information:
+I-LOC, J-LOC, QIN, QSIN
+Where:
+I-LOC is the I (Horizontal) location of the influent location (1<=I-LOC<=MX)
+J-LOC is the J (Vertical) locaion of the influent location (1<=J-LOC<=MY)
+QIN is the effective discharge of the river in cu. meters/second
+QSIN is the yearly average sediment load in cu. meters /year [note the difference in units]

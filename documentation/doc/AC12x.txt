@@ -1,0 +1,7 @@
+ DELTA_FORESET_GRADIENT  
+
+This ls the gradient for foreset beds deposited during
+delta progradation.  For bedload-dominant channels this might
+be close to the angle of repose of loose sedimet.  For channels
+carrying a high suspended or wash load, this might be just a few
+degrees, as with the Mississippi River delta. 

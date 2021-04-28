@@ -1,0 +1,7 @@
+ [I] IFOLD (CARRY CALCULATIONS BEYOND PERIODIC BOUNDARIES) (==N0, 1=YES)
+
+If periodic boundaries are selected then setting this to 1 allows craters
+and ejecta to overlap onto the opposite side of the simulation, which limits
+artifical effects of lateral boundaries.
+
+See CR0x popup for additional details 

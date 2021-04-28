@@ -1,0 +1,14 @@
+ [I] IS_REGOLITH_CRATER  (0= EJECTA IS CONSIDERED TO BE BEDROCK, OTHERWISE
+ REGOLITH IF SET TO 1) 
+ 
+If this is set to zero then any modeled crater and its ejecta will be considered to
+have the weathering and erosional resistance of bedrock.  If set to 1 then the crater and
+ejecta have the erosional characteristics of regolith.  
+
+Large craters are more likely to have exposed bedrock on the crater rim and large rocks in
+the ejecta.  In a setting such as on the cratered highlands of Mars or on the Moon smaller
+craters and their ejecta may primarily consist of regolith or megaregolith.  The parameter
+MINIMUM_HARD_DIAMETER sets the smallest crater diameter that will be considered to be bedrock
+if IS_REGOLITH_CRATER is set to 0.
+
+See CR0x popup for additional details 

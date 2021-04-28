@@ -1,0 +1,12 @@
+ [I] USE A FIXED SUN ANGLE IN SHADED RELIEF IMAGES, OTHERWISE CALCULATED
+ FOR GRAZING ILLUMINATION            
+
+Shaded relief images are useful for visualizing the progress of landform
+changes during a simulation.  If this switch is NOT set, then the default
+is to output images using a sun angle on the steepest slope facing away from 
+the sun (east-facing slopes).  This assures each image shows detail on all
+slopes.  However, as landscapes evolve the maximum slope steepness will increase
+or decrease, so that the computed sun angle changes.  If the intent is to use a long
+sequence of images to generate a movie of the landform evolution, then a fixed sun
+angle may be preferable, which will occur if this switch is set.  The next
+parameter gives the gradient of the sun angle (Sunrise is a gradient of zero).

@@ -1,0 +1,14 @@
+ EJECTA_THICKNESS_VARIABILITY
+ 
+This is the standard deviation of variation of the 
+thickness of the ejecta from the crater - scaled to
+the ejecta thickness.  This is partially cosmetic, to
+create a more realistic looking crater, but also
+serves the funcion of roughening the surface for more
+realism in fluvial incision and mass wasting.
+This random variability is also applied to the crater
+interior, with variability increasing from none at the
+crater center to the value of this parameter at the 
+crater rim.
+
+ See Cr8x and Cr0x popups for details

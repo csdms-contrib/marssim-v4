@@ -1,0 +1,39 @@
+ LARGE_CRATER_DEPTH_SCALE 
+
+Unless real crater topography is selected the
+shape of simulated craters is set parametrically.
+The default shape parameters are derived by measurement
+of fresh craters by Garvin and colleagues using MOLA
+topography (see references in Howard(2007)). The shape
+parameters are different for large craters (above the
+simple to complex size transition) and small craters.
+See Howard(2007) about details of the parameterization. 
+Both the interior and exterior of the crater (rim and ejecta)
+are modeled geometrically as power-functions of distance
+from the crater rim.  Parameters CR8x through CR20x control
+the shape scaling.  These could be altered, e.g. for the Moon
+or icy satellites from appropriate fresh crater morphological
+statistics.
+DI is crater diameter
+H1 = crater depth
+KH1 - large_crater_depth_scale or small_crater_depth_scale (popups CR8x and CR13x)
+HE - large_crater_depth_exponent or small_crater_depth_exponent (Popups CR9x and CR14x)
+  H1=KH1*DI**HE
+H2 = rim height
+KH2 - large_crater_rim_scale or small_crater_rim_scale (popups CR10x and CR15x) 
+RE = large_crater_rim_exponent or small_crater_rim_exponent (popups CR11x or XR16x)
+  H2=KH2*DI**RE
+
+M - Exponent controlling the crater interior shape
+KM - large_crater_shape_scale or small_crater_shape_scale (popups CR17x or CR19x)
+ME - large_crater_shape_exponent or small_crater_shape_exponent (popups CR18x or CR20x)
+  M=KM*DI**ME
+The crater interior is modeled as:
+DH - elevation differential of the interior relative to the
+   surrounding terain
+RR - distance from the crater center
+  DH=(H2-H1) + H1*(2*RR/DI)**M
+The crater exterior is modeled as:
+  DH=H2*(2*RR/DI)**-N , where N is calculated to conserve net elevation.
+
+See CR0x popup for additional details 

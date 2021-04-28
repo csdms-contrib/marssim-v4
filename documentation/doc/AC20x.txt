@@ -1,0 +1,5 @@
+ SEDIMENT_POROSITY 
+
+The assumed porosity of the bed sediment.
+
+ See the AC13x popup for further details.

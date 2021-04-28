@@ -1,0 +1,20 @@
+ DISCHARGE_EXPONENTRELATING SCALED DISCHARGE TO CUMULATIVE ROUTED FLOW                                                              
+
+If the RESCALE DISCHARGES option is used, the DISCHARGE_CONSTANT
+and the DISCHARGE_EXPONENTS work together to determine the effective
+fluvial discharge as a function of drainage area using the scaling:
+DISCHARGE = DISCHARGE_CONSTANT * ROUTED FLOW ** DISCHARGE_EXPONENT
+(** is exponentiation)  The DISCHARGE_EXPONENT determines how rapidly
+discharge increases downstream.  For flow rates  equivalent
+to semi-arid terrestrial landscapes the following provide equivalent
+runoff at 7.5 sq. km contributing area, progressing to more arid
+conditions down the chart:
+DISCHARGE_CONSTANT   DISCHARGE_EXPONENT
+   3.5E-7               1.0
+   3.5E-5               0.7
+   7.56E-4              0.5
+   1.69E-2              0.3   
+
+These values are for the mean annual flood, which is assumed to 
+correspond to the geomorphically effective discharge for channel
+bed erosion and sediment transport.

@@ -1,0 +1,8 @@
+ [I] USE_REGOLITH_ABLATION 
+
+This switch determines whether regolith can be subject
+to radiation-dependent ablation.  If set to 1 then
+regolith can be ablated.  This might be the case,for example,
+for mass flows, which designate the flowing ice or ice and particulates
+as being regolith.
+ 

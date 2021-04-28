@@ -1,0 +1,9 @@
+ [I] USE DEFAULT_EOLIAN_PROCESS WITH NORMAL-TO-SLOPE DEPOSITION/EROSION
+
+If this switch is set to 1 then erosion and deposition at a cell occurs normal
+(perpendicular) to an inclined cell.  Under these circumstances the vertical
+elevation change equals the calculated erosion/deposition amount divided by
+the cosine of the slope angle.  If this switch is set to zero the cosine
+division is not applied.
+
+ See EO0x popup for further details.

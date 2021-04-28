@@ -1,0 +1,9 @@
+ [I] INDEX FOR USE OF A RANDOMLY-VARYING CRITICAL SHEAR FOR FLUVIAL 
+EROSION (0 - NO, 1 - YES) 
+
+If this switch is set, the critical shear for fluvial erosion follows a
+lognormal distribution, with the lognormal standard deviation read two
+lines below, and the mean value is read from BEDROCK_CHANNEL_PARAMETERS.PRM.
+Note, this creates a temporal variation and applies spatially uniformly.
+Spatial variation in bedrock erosibility would generally be set by reading
+in a 3-D matrix of rock resistance.

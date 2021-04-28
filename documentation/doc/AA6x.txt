@@ -1,0 +1,6 @@
+ [I] SMOOTH EXPOSURE VALUES                                                              
+
+The exposure index can be smoothed prior to modeling
+exposure-dependent creep if this switch is set to 1.
+
+See popup AA2x for additional details

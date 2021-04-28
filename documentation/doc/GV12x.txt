@@ -1,0 +1,6 @@
+ INTERMITTENCY - FRACTION OF YEAR WITH GRAVEL TRANSPORT   
+
+ This is the fraction of the year that gravel sediment is in
+active transport. 
+
+See popup GV0x for more details

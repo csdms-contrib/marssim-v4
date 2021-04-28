@@ -1,0 +1,13 @@
+[I] SWITCH FOR A GLOBAL OCEAN LEVEL (0=NO, 1=YES)
+
+If this is set to Yes, then locations below the ocean
+level are modeled as submerged sedimentary processes.
+Only deltaic foreset bed deposition of bedload 
+and distributed bottomset deposition of suspended
+load are modeled.
+
+The ocean elevation is read from the ALLUVIAL_CHANNEL_
+PARAMETERS.PRM file.
+
+Deltaic and bottomset deposition in lakes also can be modeled
+if the Lake Evaporation modeling is selected.  

@@ -1,0 +1,12 @@
+!************************LAVAFLOW**************************************
+3         ! [I]   NUMBER_OF_LAVA_SOURCES - followed by I,J locations of sources
+0.12      ! LAVA_EVENT_PROBABILITY
+0.01      ! MINIMUM_LAVA_FLOW_SLOPE
+0.01      ! LAVA_FLOW_THICKNESS (meters)
+0.002     ! MINIMUM_FLOW_THICKNESS (meters)
+100       ! [I]  NEW_SEGMENT_INTERVAL
+12500     !  SOURCE_CHANGE_INTERVAL
+0.0001    ! ERUPTION_STOP_PROBABILITY
+0.005     ! NO_FLOW_PROBABILITY
+28.0      ! LAVA_GRADIENT_WEIGHT
+0.14      ! LAVA_DURATION_WEIGHT

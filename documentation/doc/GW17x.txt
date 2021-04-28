@@ -1,0 +1,8 @@
+ [I] SEEPAGE_DIVERGENCE_AVERAGING  0=NO 1=YES  
+
+The default switch value is 0, which returns the local value
+of the groundwater flow variable for use in gemorphic calculations.
+If set to 1.0 the returned value is averaged over the local cell and
+the 8 surrounding cells. 
+
+See popup GW0x for further information. 

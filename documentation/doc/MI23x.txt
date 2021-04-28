@@ -1,0 +1,11 @@
+ [I] SWITCH FOR USING SEDIMENT YIELD TIMESTEP SCALING (0=NO, 1=YES) 
+
+Sediment routing is very sensitive to the imposed sediment load from
+upstream erosion.  If a variable discharge is used and/or when upstream
+drainage patterns change abruptly very large transient sediment loads can
+cause pronounced ridges of deposition on fan and delta surfaces. If this
+switch is set to 1 the calculated timestep will be reduced for sediment
+yields exceeding the value of the SEDIMENT YIELD TIMESTEP FACTOR (the
+next parameter in the parameter file).  This approach has not been well
+tested, and is probably best avoided unless you want to experiment with
+values or work with the code.  

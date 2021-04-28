@@ -1,0 +1,6 @@
+ AVALANCHE_CRITICAL_VALUE    
+
+The calculated rate of avalanche erosion on bedrock slopes
+must exceed this value to cause erosion.
+
+ See MW13x popup for details

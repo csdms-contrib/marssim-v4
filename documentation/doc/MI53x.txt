@@ -1,0 +1,6 @@
+ [I] INTERVAL BETWEEN RECALCULATION OF TOPOGRAPHIC DIVERGENCE 
+
+The rate of rock weathering can depend upon the convexity or concavity
+of the surface.  This parameter determines the interval, in iterations,
+between recalculating the divergence.  It can be left at a few iterations
+to provide some computation time savings. 

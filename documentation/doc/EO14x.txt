@@ -1,0 +1,7 @@
+ [I] WRITE OUT INITIAL EXPOSURE DATA FILE  
+
+If this switch is set to 1 then after the first calculation of
+exposure index for the simulation domain, the exposure index
+matrix is written out to a file EXPOSURE.DAT.  This can reveal the
+pattern and magnitude of exposure variation accross the simulation
+domain to calibrate rate parameters. 

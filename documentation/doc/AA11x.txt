@@ -1,0 +1,6 @@
+ FRACTIONAL DEPOSITION VOLUME   
+
+This multiplicative factor limits ice deposition rate to the
+specified fraction of ablated ice within the simulation domain
+
+See popups AA10x, AA9x, and AA3x for additional details. 

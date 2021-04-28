@@ -1,0 +1,36 @@
+***************PARAMETERS FOR USING ACTUAL MARTIAN FRESH CRATERS********** 
+
+If the option is selected to use the topography from real martian craters to
+represent new impacts (see CR37x) then a database of topography of real martian
+fresh craters is used for newly-generated craters, but only if the crater is
+in the size range 15000 to 100000 meter crater diameter.  The use of real craters
+gives a cosmetically more realistic simulation, but also the craters tend to have
+wider rim regions than geometrically simulated craters. An important limitation
+of this capability is that scaled fresh crater topography must be created from
+MOLA DEMs for the selected CELL_SIZE for the simulation.  The distribution includes
+topographic databases for CELL_SIZE of 1000m, 750m, 500m and 350m.  Because of
+the resolution limits of the MOLA topography, use of this dataset is not useful
+for CELL_SIZE less than 350m. When a crater diameter for simulation is selected,
+either randomly or set by scheduled events, The topography for a natural crater
+closest in size to the crater size being simulated is utilized. The orientation of
+the real crater DEM (N,S,E.or W) is selected randomly. The natural craters that
+have been selected have some background topography, so that the the natural crater
+topography exterior to the crater rim is blended with the pre-existing topography
+of the simulation. Use of real craters requires several data files be available.
+REAL_CRATERS.TXT is the list of the names and diameters of the natural crater
+database and must be in the execution directory. The first line of this file
+is the absolute file systempath to the directory containing the topographic datasets
+for the natural craters.
+
+RM - RADIUS_MAX_INTERIT (popup CR38x)
+RU - RADIUS_MAX_USE (popup 39x)
+CP - COSINE_POWER (popup 42x)
+DI - simulated crater diameter
+HP - Pi/2
+LR - local radius from crater center
+
+Between the center of the crater and RM*DI/2 the real crater morphology is used
+to create the simulated crater after accounting for the mean elevation of the
+simulated terrain and compensating for any regional tilt of the real crater topography.
+Between RM*DI/2 and RU*DI/2 the influence of the real crater morphology on modifying
+the surface elevations drops off as  cos(HP*(LR-RM*DI/2)/((RU-RM)*DI/2))**CP    

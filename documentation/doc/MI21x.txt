@@ -1,0 +1,4 @@
+ MAXIMUM_TIME_INCREMENT, YEARS (OVERRIDES CALCULATED MAXIMUM TIMESTEP) 
+
+The rate indicated by this parameter will set an upper limit to the
+automatically calculated timestep. 

@@ -1,0 +1,14 @@
+ REGOLITH_CRITICAL_SHEAR_FACTOR                                                 
+
+MARSSIM envisions that regolith has a lower critical shear
+stress than bedrock, coupled with the concept that regolith
+from weathering or introduced by mass wasting is eroded
+during each time step, and if all regolith can be
+eroded, then the remainder of the timestep erodes
+the underlying bedrock.  This parameter is generally
+>=1.0.  This value of critical shear stress is entered as a divisor
+to that of bedrock, such that if there is no bedrock critical shear
+stress this value has no effect. The value of this parameter is 
+usually set to a value equal to the regolith erodibility factor.
+
+See popup BC3x for more details.

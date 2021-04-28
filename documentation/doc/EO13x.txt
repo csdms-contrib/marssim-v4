@@ -1,0 +1,6 @@
+ [I] MAX_OUT_DISTANCE   
+
+This is an absolute maximum radial distance, in number of cells that
+exposure index calculation can range in calculations. 
+
+See EO11x popup for additional details about exposure index calculation

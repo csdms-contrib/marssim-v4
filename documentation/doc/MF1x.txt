@@ -1,0 +1,10 @@
+ [I] 	We_do_mass_flows, 0=no, 1=bingham flow, 2= glen's law flow 
+
+This 3-valued switch determines whether mass flow occurs and which
+rheology model to use:
+
+0:  Mass flows are not modeled
+1:  Mass flow utilizes Bingham rheology
+2:  Mass flow utilizes Glen's law rheology
+
+See poput MF0x for more details

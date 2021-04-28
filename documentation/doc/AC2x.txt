@@ -1,0 +1,5 @@
+ [I] DO_SEDIMENT_TRANSPORT (0=NO. 1!YES)  
+
+If this is set to 1 then sediment routing through alluvial
+channels, fans, and deltas will be simulated.  If it is not
+set then any fluvial channels will be modeled as bedrock-floored. 

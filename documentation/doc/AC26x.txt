@@ -1,0 +1,13 @@
+ BEDLOAD_FRACTION  
+
+The is the fraction of the sediment delivered to the
+channel surface that is considered to be in the size
+range of bed material.  This is used to determine the
+ gradient of alluvial depositional surfaces.  On alluvial
+ surfaces not terminating in ponded water or an ocean the
+ total sediment load (including wash load) is used to determine
+ the volume of deposited sediment.  When sediment is transported
+ into ponded water (lakes or ocean) the bedload_fraction portion
+ of the total load is deposited on fans, topset, and foreset beds,
+ and the remaining fraction is deposted as bottomset deposits
+ in the lake/ocean floor.

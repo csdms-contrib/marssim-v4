@@ -1,0 +1,8 @@
+ GRAVITY (9.8 FOR EARTH, 3.7 FOR MARS) 
+
+This is the value of small g for the given
+planetary environment. This is measured in
+meter per second squared [m s**-2].  Also 
+1.35 on Titan.
+
+See popup BC3x for more details.

@@ -1,0 +1,13 @@
+************************  BEDROCK CHANNEL PARAMETERS  **************** 
+
+This set of parameters pertains to erosion of channels with exposed or partially
+exposed bedrock.  The default treatment of bed erosion as being proportional to
+stream power, defined broadly, is discussed in Howard (1994, 1997, & 2007).  More
+recently, the option has been added to relate bed erosion to abrasion rate by 
+bedload in transport.  Additional options include: 1) the possibility to have a threshold
+behavior for erosion of vegetated surfaces on low-order slopes and channels, as
+discussed in Howard and Tierney (2012); 2) An alternative way to treat the effects of
+vegetation is through bistable states, applied to modeling gully development by Howard (1999);
+3) Having bedrock erodibility be spatially and depth-dependent by having a 3-D matrix of
+erodibility; and 4) Allowing for the possibility of a surface crust of more indurated material, 
+such as a caliche layer or other duricrust.     

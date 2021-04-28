@@ -1,0 +1,5 @@
+ FACTOR FOR RATE OF DEFORMATION
+
+This is a stub for a variable to be passed to the deformation
+calculation that might control, for example the rate or amplitude
+of deformation.  Presently it has no effect 

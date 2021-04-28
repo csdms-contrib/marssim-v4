@@ -1,0 +1,10 @@
+ SURFACE_LAYER_RESISTANCE FACTOR  
+
+This value is the factor by which the default rock resistance
+is multiplicativly changed relative to the default rock resistance.
+In addition, the rate of rock weathering is changed by the same
+multiplicative factor.  In general the resistance factor is greater
+than 1.0, but if less than 1.0 it could model a more erodible surface
+layer.
+
+ See popup BC38x for additional information 

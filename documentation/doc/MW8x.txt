@@ -1,0 +1,10 @@
+  CRITICAL_SLOPE_GRADIENT  
+
+If a critical gradient is selected this is the gradient value
+for which the mass wasting approaches a very large value.  This
+effectively sets a limit of slope steepness for regolith-covered
+slopes.  Above this gradient all slopes are bedrock. This critical
+gradient is typically equal to or greater than the angle of repose
+for cohesionless debris.
+
+See MW0x popup for more details.

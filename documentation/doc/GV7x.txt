@@ -1,0 +1,6 @@
+ ROUGHNESS_FACTOR - TO GET ROUGHNESS HEIGHT FROM D90 
+
+ This factor is used to determine the roughness height based
+upon the D90 bed grain size.
+ 
+See popup GV0x for more details

@@ -1,0 +1,5 @@
+ GRAIN_SIZE  
+
+The effective grain size of bed material in transport, in meters.
+
+ See the AC13x popup for further details.

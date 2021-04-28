@@ -1,0 +1,6 @@
+  MAXIMUM_RIM_GRADIENT   
+
+This sets the upper limit to the steepness of the inner crater
+wall slope.
+
+See CR28x and CR0x popups  

@@ -1,0 +1,9 @@
+ [I] INDEX FOR FIXED EXTERNAL BOUNDARIES (0=NO, 1=YES) 
+
+This is a special boundary configuration used mostly to simulate
+evolution of targeted natural landscapes using actual or retrodicted
+initial topography (See, for example, Matsubara et al, 2018).  For this situation
+the simulation domain boundaries remain fixed in elevation.  Water, sediment,
+and mass wasted regolith can exit the domain but not enter (sort of a
+topologically inverted "roach hotel").  If this is set then neither the
+horizontal or vertical boundaries can be periodic.  

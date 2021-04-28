@@ -1,0 +1,10 @@
+ EJECTA_FRACTION_RETAINED 
+
+On small satellites, comets, or asteroids much of the ejecta may
+be lost to space.  THis parameter is in the range 0 to 1 governing
+how much of the ejecta is retained.  A value slightly greater than
+1 could account for the volume of the impactor or increase in volume
+of the ejecta by increasing the porosity of the ejecta relative to
+the rocks in the excavated crater interior. 
+
+ See Cr8x and Cr0x popups for details

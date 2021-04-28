@@ -1,0 +1,4 @@
+ SEDIMENT YIELD TIMESTEP FACTOR 
+
+See the discussion under the preceding switch for
+seddiment yield timestep scaling. 

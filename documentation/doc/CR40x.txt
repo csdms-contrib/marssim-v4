@@ -1,0 +1,10 @@
+ MINIMUM_REAL_CRATER_DIAMETER 
+
+Only craters of size between MINIMUM_REAL_CRATER_DIAMETER
+and MAXIMUM_REAL_CRATER_DIAMETER can be simulated using
+real fresh crater morphology.  THe default values are 15000 
+and 100000 meters, respectively. This diameter range can be
+narrowed but not expanded due to limits on compiled martian
+fresh crater morphology.
+
+See Popup CR36x for more details

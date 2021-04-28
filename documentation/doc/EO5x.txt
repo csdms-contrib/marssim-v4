@@ -1,0 +1,49 @@
+ MINIMUM_EOLIAN_DEPOSIT_RATE 
+
+This is the minimum rate of eolian deposition (or erosion if negative) in locations
+with stronp positive convex exposure 
+
+The relative amount of erosion or deposition at a site is controlled by a parameterized relationship
+between the exposure index and the rate.  This relationship is shaped like a logistic curve (flattened S-shape).
+The shape of the curve is determined by five parameters:
+MNR - minimum_eolian_deposit_rate (often negative for erosion)
+MXR - maximum_eolian_deposit_rate (popup(EO6x)
+IC - ICHOSE, which is in the range of 1 to 4 (popup EO7x)
+EP1 - expose-parameter#1  -- the meaning of EP1 and EP2 depends upon the value of ICHOSE (popup(EO9x)
+EP2 - expose-parameter#2 (popup(EO10x)
+EC1=(MXR-MNR)/2 - eolian_constant_1
+EC2=(MNR+MXR)/2 - eolian_constant_1
+E50 - exposure value where deposit rate is MNR+0.5(MXR-MNR)
+
+if IC==1: 
+   EC3=(MXR-EC2)/((EP2-(EP1+EP2)/2)*sqrt(EC1**2+(MXR-EC2)**2))
+   EP1 is exposure value at deposit rate MNR+0.1(MXR-MNR)
+   EP2 is exposure value at deposit rate MNR+0.9(MXR-MNR)
+   E50=(EP1+EP2)/2
+if IC==2:
+   EC3=(MXR-EC2)/((EC2-EC1)*sqrt(EC1**2+(MXR-EC2)**2))
+   EP1 is exposure value at deposit rate MNR+0.5(MXR-MNR)
+   EP2 is exposure value at deposit rate MNR+0.9(MXR-MNR)
+   E50=EP1   
+if IC==3:
+   T2=EC2/sqrt(EC1**2-EC2**2)
+   T3=(MXR-EC2/sqrt(EC1**2+(MXR-EC2)**2))
+   T4=(EC1+EC2*T2/T3)/(1.0*T2/T3)
+   EC3=T3/(EP2-T4)
+   EP1 is exposure value at deposit rate=0
+   EP2 is exposure value at deposit rate MNR+0.9(MXR-MNR)
+   E50 =(EP1+E90*T2/T3)/(1.0+T2/T3)   
+IF IC==4:
+   if MNR<0: EC3=(EP1-EC2)/(EP2*sqrt(EC1**2-(EP1-EC2)**2))
+   EP1 = eolian deposition rate at exposure=0
+   EP2 is exposure value at deposit rate MNR+0.5(MXR-MNR)
+   E50=EP2
+   else: EC1=0.0 and EC3=0.0   
+EV - calculated exposure value
+ER - eolian erosion or deposition rate
+To calclate ER for given value of ER:
+
+TX=EC3*(EV-E50)
+ER=EC2+EC1*TX/sqrt(1.0+TX**2)
+
+See popup EO0x for more details

@@ -1,0 +1,8 @@
+   LAVA_DURATION_WEIGHT
+   
+lava_duration_weight is a parameter that determines how rapidly a new cell
+  diminishes in probability that it can be the source of a flow
+  to a neighboring cell -- Presumably represents effects of cooling
+  Of emplaced lava.
+
+   For additional information see popup LV0z

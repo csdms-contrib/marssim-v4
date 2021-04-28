@@ -1,0 +1,48 @@
+MARSSIM is a Fortran 95 program written in several process modules.
+Simulated processes include:
+    Fluvial detachment, transport, and deposition
+    Fluvial sediment transport as a single grain size or with multiple grain sizes
+    Sedimentation as aggradational fans, deltas, and suspended sediment deposition in lakes
+    Runoff flow routing under hyperarid, lake evaporation, and total runoff scenarios
+    Weathering of surficial materials
+    Shallow mass wasting in regolith or across bedrock slopes, with optional avalanching erosion 
+    Deep mass flows, specifically under Bingham or Glen's law rheology
+    Accretion or Deposition of particulates or volatiles
+    Eolian deposition or scour
+    Impact cratering using either scaled crater geometry or using real crater morphology
+    Groundwater flow with optional contributions to surface runoff and rock weathering
+    Weathering rates and erosional resistance scaled to a 3D matrix of values
+    Lava flows and lava emplacement
+A variety of boundary conditions can be specified, including fixed, periodic, and moving.
+Initial conditions are read from files, including new and restarted runs.
+Specified events can occur during the simulation, such as impact cratering, change of process rates, 
+     and baselevel fluctuations.
+Output files include:
+    Shaded relief images 
+    State variables such as elevation and regolith thickness
+    A record of events
+    Cumulative records of process effects
+Additional information is provided in the other pop-up documentation in the underlying 
+    window frame as well as pop-ups available during parameter file editing.  The distribution also includes
+    marssim_program_v4.doc which also has detailed information about files and parameters.
+The Fortran code can mostly be utilized "out of the box" unless events such as non-random cratering events,
+    changes in parameter values, or other changes occuring during a simulation. If such events are desired, the
+    source file "initial_and_boundary_conditions.f90" will need to be modified and the program recompiled. 
+The model is built upon the landform evolution model first described by Howard (1994).  
+The core model primarily focuses on  landform evolution at relatively long temporal scales 
+    (relative to the timescale for noticeable landform change) through fluvial and mass wasting processes. 
+The program is designed be computationally efficient such that individual runs can be done on a modern 
+    microcomputer in no more than a few tens of hours. The more recent additions to the model have focused on 
+    processes relevant to planetary landscapes, including lava flows, groundwater seepage and sapping, 
+    impact cratering, surface-normal accretion and ablation, and volatile redistribution by radiation-induced 
+    sublimation and recondensation. 
+Individual process formulations vary from completely heuristic to modestly 
+    mechanistic. 
+Important limitations for some potential applications are the assumption of a single 
+    representative bed material grain size in the fluvial system and no tracking of internal stratigraphy 
+    of sedimentary deposits (except for total thickness and surface morphology). 
+    Some stratigraphic information can be gleaned by frequent reporting of 
+    elevation changes through time on sedimentary deposits.  
+A loosely-connected multi-grain-size gravel transport
+    module can be used for small simulation windows based on the Parker surface-based tranport model.  
+    More information on this module can be found in Howard, Breton, and Moore (2016).

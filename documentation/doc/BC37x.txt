@@ -1,0 +1,10 @@
+ VERTICAL_RESISTANCE_SCALING  
+
+Because the depth of erosion in modeled landscapes is often
+considerably less than the lateral dimensions, this parameter
+allows the vertical scaling of resistance values in the RESIST.IN
+file to have higher resolution than the horizontal dimensions.
+For example, if VERTICAL_RESISTANCE_SCALING is 0.5 then the vertical
+dimension of a 3-D cell is half that of the horizontal dimensions. 
+
+See popup BC34x for more details.

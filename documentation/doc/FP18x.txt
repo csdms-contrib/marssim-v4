@@ -1,0 +1,8 @@
+ [I] USE_SEDIMENT_DEPENDENT_RUNOFF  
+
+This is a switch for having runoff from alluvial locations
+be modified by a scale factor, sediment_runoff_factor (see popup FP19x)
+
+In some localities more runoff occurs from valley bottoms and
+alluvial fans, in part because of infiltration being inhibited
+by fines. 

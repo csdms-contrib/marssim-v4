@@ -1,0 +1,30 @@
+************************  INITIAL AND BOUNDARY CONDITIONS  ***********************  
+This parameter file contains switches to turn simulation modules on or off. For some
+processes (groundwater flow for example) the switch is in the process-specific
+parameter file.
+Also included are:
+    Parameters controlling the size and duration of the simulation and unit scaling
+    Parameters controlling the interation time increment
+    Parameters related to monitoring and debugging the simulation
+    Boundary conditions: Fixed, Periodic, Changing in elevation
+    Parameters related to time-varying process rates and modeled events during the simulation
+    Parameters controlling the frequency of saving of intermediate simulation results
+    Parameters controlling the selection of output files
+    Parameters selecting steady or stochastic forcing of discharge and rock erodibility
+    Parameters related to the occurrence of surface deformation
+    Whether there is an oceanic baselevel that varies temporally in elevation
+    Whether there is a masking file prohibiting erosional processes in certain locations
+	
+In general the length dimensions for numerical parameters are in meters.  The time unit for fluvial
+flows and sediment transport rates is in seconds, but units for temporal changes ant simulation
+timescales are generally in years.  Masses are in kilograms.
+	
+In the various parameter files, a [I] at the beginning of the parameter description indicates
+an integer value is required, otherwise a floating-point value is expected.
+
+IF VALUES ARE CHANGED FOR PARAMETER AND SWITCH VALUES FOR ANY OF THE PARAMETER FILES BE
+SURE TO SAVE THE FILE BY CLICKING ON THE GREEN "SAVE" BUTTON AT THE BOTTOM OF THE EDITING
+WINDOW.  THIS IS NOT DONE AUTOMATICALLY, ALTHOUGH A BACKUP FILE IS WRITTEN EACH TIME A 
+PARAMETER FILE IS READ.
+	
+    	

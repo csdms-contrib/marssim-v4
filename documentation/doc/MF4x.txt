@@ -1,0 +1,14 @@
+ Delta_thickness for Bingham flow 
+ 
+ This is a scaling parameter defining the critical
+ yield stress for Bingham flow in units of meters.  
+ DT - delta thickness
+ RHO - mass flow material density
+ g - gravity
+ TC - critical yield stress for Bingham flow
+ 
+ DT = TC/(RHO*g)
+ Thus:
+ TC=DT*RHO*g
+ 
+ See popup MF0x for more details

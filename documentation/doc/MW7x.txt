@@ -1,0 +1,7 @@
+ CREEP_RATE_HALF_DEPTH   
+
+If depth-dependent creep is selected, then this parameter
+defines the regolith depth for which creep rate is half
+that for infinitely deep regolith. 
+
+See MW0x and MW6x popups for more details.

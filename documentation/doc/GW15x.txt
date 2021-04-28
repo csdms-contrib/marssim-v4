@@ -1,0 +1,10 @@
+ GROUNDWATER_RELAXATION_COEFFICIENT 
+
+Grundwater flow calculations utilize successive over-
+relaxation.  This parameter determines how much overrelaxation
+to use.  This value, OR, is within the range 1.0<=OR<2.0 .
+Values near 2.0 usually result in more rapid convergence, but
+experimentation is the best way to determine the best value for
+the fewest calculations required for convergence.
+
+ See popup GW0x for further information. 

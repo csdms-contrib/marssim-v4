@@ -1,0 +1,29 @@
+ [I] INDEX FOR SEEPAGE WEATHERING (>0 FOR SEEPAGE!DEPENDENT WEATHERING
+
+Groundwater seepage can contribute to erosion in two ways:
+
+1) Seepage can add to surface discharge, and thus enhance sediment transport 
+   (e.g. Howard and McLane (1988, WRR).  This mechanism is only effective
+   if the "bedrock" is loose sand, a circumstance that occurs on beaches and
+   a landscape in Florida (Schumm et al, 1995 GEOMORPH.; Lobkovsky et al, 1007, JGR).
+   This type of seepage erosion is covered by the GROUNDWATER_PARAMETERS.PRM file.
+
+2) Emergent groundwater can weather rock at seepage faces, undermining the overlying
+   slopes and creating groundwater sapping canyons (Laity and Malin, 1988 GSAB; Howard et
+   al, 1988, NASA SP 488, Howard, 1995, GEOMORPH). This is the type of groundwater
+   involvement treated in the weathering module.  In this case:
+   
+   GF - groundwater flux to surface
+   SWS - seepage_weathering_scaling (WE9x popup)
+   SE  - seepage_weathering_exponent (WE10x popup)
+   SW - seepage contribution to rock weathering
+   WDR - weathering decay rate sith depth (WE2x popup)
+   RT - regolith thickness
+   
+   SW= SWS*(GF**SE)*exp(-WDR*RT)
+   
+   See Luo and Howard (2008) for simulations of groundwater-influenced erosion
+   in a martian context.
+   
+
+   

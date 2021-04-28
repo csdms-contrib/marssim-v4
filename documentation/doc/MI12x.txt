@@ -1,0 +1,8 @@
+ [I] MX, NUMBER OF CELLS IN THE X DIRECTION
+
+This sets the number of simulation cells in the
+lateral direction, MX.  Cell numbers go from 1
+to MX to the right (East).  The mumber of cells
+in the input elevation file (INELEV.DAT) or any
+other spatially distributed input file must have
+the same number of lateral cells . 

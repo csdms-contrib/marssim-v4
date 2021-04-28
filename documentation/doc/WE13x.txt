@@ -1,0 +1,7 @@
+ WEATHER_DIVERGENCE 
+
+This term scales rock weathering related to topographic divergence.
+Set to 0.0 if bedrock surface cavity or convexity does not influence
+weathering rates.
+
+See popup WE0x for more details. 

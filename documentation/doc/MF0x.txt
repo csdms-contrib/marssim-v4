@@ -1,0 +1,36 @@
+********************MASS FLOW PARAMETERS +++++++++++++  
+
+The mass wasting module simulates landform modification by shallow mass
+wasting.  By contrast, this module simulates landform modification by deeper flows (10's
+to 100's of meters thick).  The flows are assumed to be sufficiently slowly
+moving that momentum effects can be discounted.  Two types of rheology are
+modeled: 1) Bingham-like flow with a yield stress and a creep rate varying linearly
+with shear stress above the yield stress, and 2) Glen's Law (glacier-like) flow with
+no yield stress and shearing rate proportional to stress raised to the Glen's Law 
+exponent:
+T - applied shear stress
+D - strain rate of flow
+Y - Bingham yield stress  (popup MF4x)
+N - Glen's law exponent (popup MF2x)
+F - FLow diffusivity (popup MF3x)                      
+1): D = F*(T-Y) if T>Y
+2): D = F*T**N
+
+MARSSIM presently considers the flowing material to be regolith, defined broadly as
+the surficial layer subject to flow, which could be conceived as ice, dusty ice, fine
+particulates, or water-regolith mixtures. The model has several limiting assumptions:
+1) the rheology of the mobile regolith is constant with depth beneath the surface
+2) The surface slope of the flow is small enough that stresses are hydrostatic
+3) The rate of change in flow thickness with distance is small in comparison to 
+simulation cell size.
+4) Although several parameters are related to possible erosion of the substrate by the
+mass flow, these are not implemented or validated in the present model.
+The mobile regolith may be generated (or lost) by a number of processes, including volatile 
+condensation, exogenous deposition, and weathering, but it is redistributed by mass flow.
+
+Flows into and from a given cell are computed by simple finite-difference equations 
+between the surrounding 8 cells. FLows are calculated using depth-integrated flow
+equations with flow surface gradients driving the flow.  Several options are available
+to calculate the effective depth of the flow between cells (see popup MF15x).  There is
+the option to have the simulation time increment be determined by the maximum flow
+depth change (See popups MF16x and MF17x).  

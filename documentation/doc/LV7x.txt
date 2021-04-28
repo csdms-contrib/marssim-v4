@@ -1,0 +1,6 @@
+  SOURCE_CHANGE_INTERVAL
+
+This is the number of iterations between changeover between
+the different source vents.
+
+ For additional information see popup LV0z. 

@@ -1,0 +1,6 @@
+ [I] INDEX FOR A HORIZONTAL LOWER BOUNDARY (AT J=MY) (0=NO, 1=YES)  
+
+This and the next 5 switches define the boundary conditions for
+the simulation.  A horixontal lower boundary is usually for simulations
+involving that boundary as a base level control.  It should not be
+paired with a y-periodic boundary.   

@@ -1,0 +1,7 @@
+ SEDIMENT_TRANSPORT_EXPONENT 
+
+ The main exponent in the sediment transport relationship
+For gravel this is generally 1.5, and for total load
+in sand-bed channels is about 3.0
+
+See the AC13x popup for further details.

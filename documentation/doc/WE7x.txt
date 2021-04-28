@@ -1,0 +1,8 @@
+ WEATHERING_DECAY_2 (FOR TWO TERM WEATHERING)
+
+This term determines how rapidly the second term weathering
+decreases with increase in regolith thickness.  To produce a 
+humped regolith production function this value should be larger than
+the term 1 weather decay rate. 
+
+See popups WE0x and WE5x for more details. 

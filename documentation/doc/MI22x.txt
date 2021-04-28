@@ -1,0 +1,5 @@
+ MINIMUM_TIME_INCREMENT, YEARS YEARS(OVERRIDES CALCULATED MINIMUM TIMESTEP
+
+This sets a lower limit to the timestep.  Set to a low value to assure simulation
+stability.  Experimentation with the maximum and minimum timesteps is useful to
+find the maximum timestep that guarantees stability. 

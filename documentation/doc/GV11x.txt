@@ -1,0 +1,8 @@
+ AGGRADATION_COEFFICENT FOR TRANFER TO SUBSTRATE  
+
+This determines the relative importanvce of sediment in transport
+and sediment in the surface layer in determining sediment sizes in
+the active layer based upon the active layer and sediment in transport
+if the channel is aggrading.
+
+See popup GV0x for more details

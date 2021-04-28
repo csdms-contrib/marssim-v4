@@ -1,0 +1,22 @@
+ AVALANCHE_RATE_COEFFICIENT
+
+Steep bedrock mountain slopes often develop chutes presumably
+due to cascades or avalanches of frost-weathered bedrock as as
+result of advective scour.  If this module is selected in
+MARSSIM_INITIAL_BOUNDARY_CONDITIONS.PRM, then this parameter
+is the rate multiplyer for avalanche advection.  This is an
+experimental module that has only been tested in a planetary
+context.  The avalance erosion builds upon the bedrock mass
+wasting routing procedures.  The model is parameterized as:
+
+   AF - flux of routed mass wasted material at given bedrock /location
+        from previous iteration
+   LS - local slope gradient
+   ARD - avalanche_rate_coefficient 
+   AFE - avalanche_flux_exponent (popup MW15x)
+   ASE - avalanche_slope_exponent (popup MW14x)
+   ACV - avalanche_critical_value (popup MW16x)
+   AER - avalanche_erosion_rate
+   
+   AER = ARD * AF**AFE * LS**ASE - ACV (if a posiitive value)
+   

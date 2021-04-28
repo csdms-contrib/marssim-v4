@@ -1,0 +1,7 @@
+ VEGETATION_AREA_MINIMUM VALUE OF CONTRIBUTING AREA FOR TRANSITION TO 
+VEGETATION RESISTANCE CONTROL
+
+For contributing areas below this value, in sq. m., the shear resistance
+is determined by vegetation upland resistance factor. 
+
+See popup BC19x for more details.

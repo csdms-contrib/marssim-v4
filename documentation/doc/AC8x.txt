@@ -1,0 +1,5 @@
+ ALLUVIUM_SMOOTHING_FACTOR   
+
+If alluvial smoothing is selected (see popup AC8x) then this
+parameter is the diffusivity. Diffusion occurs by simple gradient-linear
+2-D finite difference diffusion. 

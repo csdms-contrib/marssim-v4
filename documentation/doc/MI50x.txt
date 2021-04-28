@@ -1,0 +1,9 @@
+ [I]  MIN. CONV. CHAN. PLOT 1=0;2=.1;3=.2;4=.4,5=.8;6=1.6 ! TOPOGRAPHIC
+CONVERGENCE FACTOR FOR DEFINING THE HEAD OF A CHANNEL
+
+MARSSIM considers each cell to be potentially modified by both fluvial
+and mass wasting processes during each iteration.  In consequence the drainage
+density could be considered infinite.  The program will, however, define the
+"channel" heads of the stream network to correspond to a specific ratio of 
+topographic convergence to the mean topographic gradient.  This parameter
+specifies the critical value of convergence.  See Howard(1994) for more details.

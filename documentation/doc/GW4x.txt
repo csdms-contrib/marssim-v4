@@ -1,0 +1,6 @@
+ [I] SHOW_GROUNDWATER_CALCULATIONS    
+
+If this switch is set to 1 then detailed information
+about the groundwater calculations will be output.  This
+should only be necessary to evaluate the performance of the
+model. 

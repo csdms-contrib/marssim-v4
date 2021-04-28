@@ -1,0 +1,10 @@
+ [I] USE TWO_TERM_WEATHERING (0=NO, 1=YES)   
+
+This switch determines whether two-term weathering is assumed, with
+the possibility of a humped production function (weathering rate for
+a certain range of regolith cover greater than that for bare rock).  
+A humped production function tends to introduce a threshold behavior
+between exposed bedrock and regolith cover such that thin regolith
+may quickly removed during high erosion rates, exposing bedrock.
+
+ See popup WE0x for more details. 

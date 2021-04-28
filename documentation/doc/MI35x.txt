@@ -1,0 +1,13 @@
+ RATE OF LOWERING OF LOWER BOUNDARY (IN M/YR) POSITIVE FOR OWNCUTTING, 
+ USED ONLY IF HORIZONTAL LOWER BOUNDARY IS SPECIFIED
+
+This is used with the switch for a horizontal lower boundary being set (to 1).
+It governs the rate of lowering (or raising) of the boundary, expressed as meters
+per year. 
+
+Erosion rates on Earth vary from less than 0.00001 to more than 0.01 m/yr.  The
+highest rates occur only in very rapidly uplifting mountain chains.  For example,
+the rate of erosion in the Appalachian region of the eastern United States is
+about 0.00003, and the rates in the coastal ranges of the U.S. pacific coast
+is about 0.001.  Rates even lower than the low value quoted can characterize
+central portions of continental stable platforms (e.g. Australia) under arid conditions.

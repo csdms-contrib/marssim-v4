@@ -1,0 +1,6 @@
+ STICKY_ROUTING_CRITICAL_VALUE 
+
+This is the variable controlling the probability of
+flow rerouting on alluvial surfaces using "sticky" routing.
+
+This was never implemented and so has no effect. 

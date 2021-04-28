@@ -1,0 +1,9 @@
+ [I] SCALE_3D_ROCK_ERODIBILITY -INDEX FOR RESISTANCE VARIABLILITY (0=ABSOLUTE,
+1=LOGNORMAL RANDOM SCALING)
+
+ This controls the use of the rock resistance read from the direct access RESIST.IN
+ file. If this index is zero, the resistance is the value read from the file. If it
+ is 1 then the resistance is subject to lognormal noise scaled by RESISTANCE_VARIABILITY.
+ 
+ See popup BC34x for more details.
+ 

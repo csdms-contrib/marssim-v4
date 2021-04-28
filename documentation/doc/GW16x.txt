@@ -1,0 +1,10 @@
+ [I] USE_GROUNDWATER_FLUX 0=NO 1=YES  
+
+This switch determines whether groundwater flux or groundwater
+flux divergence is used to calculate geomorphic effects of
+groundwater flow.  Groundwater flux divergence is the rate of
+seepage to the surface which is the most obvious variable to use.
+That is, set this switch to 0 unless there is a reason to use
+groundwater flow rate, which is aquifer depth integrated.
+
+ See popup GW0x for further information. 

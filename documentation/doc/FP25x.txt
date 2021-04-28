@@ -1,0 +1,6 @@
+ MEDIAN_SLOPE - SLOPE GRADIENT FOR MEDIAN RUNOFF
+
+The slope gradient giving median discharge if slope-dependent
+runoff is selected.
+
+See popup FP24x for details 

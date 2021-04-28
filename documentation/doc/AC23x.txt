@@ -1,0 +1,5 @@
+ TRANSPORT_CRITICAL_DIM_SHEAR (SHIELD'S PARAMETER
+
+The dimensionless critical shear of bed 
+sediment, or the Shield's parameter.  Generally
+assumed to be in the range 0.03-0.06 

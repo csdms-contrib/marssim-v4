@@ -1,0 +1,8 @@
+ WEATHER_DECAY_RATE WITH DEPTH BENEATH SURFACE 
+
+This governs how rapidly weathering decays with regolith depth.
+weathering decays as a negative exponential function of regolith
+depth.  With regolith thickness measured in meters, a 
+weather_decay_rate of 2.0 to 3.0 has been measured. 
+
+See popup WE0x for more details. 

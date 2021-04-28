@@ -1,0 +1,6 @@
+ NOISED  
+
+A random elevation moise applied unigotmly to the simulated crater
+if greater than zero.  This is not generally used, so set to 0.0 .
+
+  See Cr8x and Cr0x popups for details

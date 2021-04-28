@@ -1,0 +1,7 @@
+ [I] USE_REAL_CRATERS 
+
+This selects whether actual fresh crater morphology
+will be used to model craters within the diameter
+range of minimum_real_crater_diameter and maximum_real_crater_diameter.
+
+See popup CR36x for details. 

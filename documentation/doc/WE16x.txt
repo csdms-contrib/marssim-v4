@@ -1,0 +1,4 @@
+  LOW_WEATHERING_SCALE
+
+This sets the minimum spatially varying weathering rate if spatially varying
+weathering rate is used.  See WE15X for details.

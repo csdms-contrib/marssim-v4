@@ -1,0 +1,12 @@
+ [I] USE_TOTAL_EXPOSURE 
+
+Two routines are used to calculate the local "exposure" which is
+then used to determine eolian erosion or deposition rate.  
+The function EXPOSURE is called if this switch is set to zero and function TOTAL_EXPOSURE
+os called if this is set to 1.
+In the EXPOSURE subroutine only cells visible to the local cell are used in computing
+   the weighted exposure.
+In the TOTAL_EXPOSURE subroutine all cells within the calculation window are used to
+   compute exposure.
+   
+See EO0x popup for further details.

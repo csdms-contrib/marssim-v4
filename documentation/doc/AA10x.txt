@@ -1,0 +1,7 @@
+ RADIATION DEPOSITION RATE  
+
+For slopes with a sufficiently low exposure index this
+rate parameter determines how rapidly ice is deposited. Ice
+is deposited normal to the slope surface.
+
+See popups AA9x and AA3x.  

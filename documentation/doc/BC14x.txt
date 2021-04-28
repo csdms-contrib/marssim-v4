@@ -1,0 +1,12 @@
+  DETACHMENT_CRITICAL_SHEAR
+
+This is the critical shear value that sets a lower limit
+to fluvial detachment using the stream power model. A very
+narrow range of this parameter separatez widespread fluvial 
+erosion to no fluvial erosion. The MARSSIM_INITIAL_BOUNDARY_CONDITIONS.PRM
+file allows parameters to be entered that cause iteration-to-iterateion
+variation of critical shear (or critical stream power) using a 
+log-normal distribution.
+
+See popup BC3x for more details.
+  

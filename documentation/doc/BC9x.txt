@@ -1,0 +1,10 @@
+   BEDROCK_GRADIENT_EXPONENT                                                    
+
+This is the exponent governing the dependency of
+bed erosion rate on channel gradient in the stream power
+model.  Typical values include 0.7 for shear stress
+dependency and 1.0 for stream power per unit channel width.
+Higher values have been suggested based upon studies of
+long-term erosion rates.
+
+See popup BC3x for more details.

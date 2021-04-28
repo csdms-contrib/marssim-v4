@@ -1,0 +1,14 @@
+ CHANNEL WIDTH EXPONENT 
+
+ Channel width is parameterized as a simple power function of
+discharge:
+
+WC is the channel width constant
+WE is the channel width exponent
+W is channel width
+Q is the geomorphically effective discharge
+
+W = WC * Q**WE  (** is exponentiation)
+
+Channel width is used to determine bed shear, stream power per unit
+width, and sediment transport flux per unit width.

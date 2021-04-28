@@ -1,0 +1,8 @@
+ [I] USE_INVERSE_EXPOSURE
+
+This switch is used in conjuntion with exposure-dependent
+creep (see popup AA6x) to determine whether screep rate
+is directly related to the exposure index (if 0) or inverse
+dependence (if set to 1).
+
+See popup AA2x for additional details

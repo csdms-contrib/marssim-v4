@@ -1,0 +1,3 @@
+ SMALL_CRATER_DEPTH_EXPONENT                                                    
+
+See Cr8x and Cr0x popups for details

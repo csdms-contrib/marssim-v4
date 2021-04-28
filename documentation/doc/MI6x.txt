@@ -1,0 +1,15 @@
+[I] SWITCH FOR EOLIAN EROSION/DEPOSITION MODELING (0=NO, 1=YES)
+
+Eolian processes are simulated only as broad-scale erosion or
+deposition.  Tractive transport and bedforms (ripples, dunes)
+are not simulated.  Eolian erosion and deposition rates are modeled
+in terms of the "exposure" of a location in the landscape, generally
+such that areas with high exposure (ridges, crater rims, etc.) are gradually
+eroded in proportion to an exposure index, whereas areas with low or negative
+exposure (e.g., valleys, crater interiors) have deposition in proportion to
+their negative exposure.
+
+This module can be run independently of the fluvial and slope module.
+
+See the papers Forsberg-Taylor et al. (2004), Howard (2007), and Luo and Howard (2008)
+for model description and examples.                   

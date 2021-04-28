@@ -1,0 +1,13 @@
+ [I] NUMBER OF ITERATIONS BETWEEN OUTPUT OF SHADED RELIEF AND BINARY 
+ELEVATION FILES.
+
+A shaded relief portable grey map (PGM) file is created at the frequency
+set by this parameter, with each image numbered sequentially. This is
+useful for monitoring the progress of the simulation as well as being
+a summary of changes in relief during the simulation.  In addition, the
+most recent state is also presented in ATPRESENT.PGM, which is updated 
+at the frequency set by this parameter.  For the purpose of documenting
+the evolution of the landscape a value of a few hundred iterations is 
+generally sufficient.  If, however, a movie of the topographic evolution
+is desired to be made, output of images every few iterations is optimal.
+ 

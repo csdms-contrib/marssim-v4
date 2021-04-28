@@ -1,0 +1,9 @@
+256   8  MAXDIMENSION, MAXLEVEL {512, 256, 128, 64, 32, 16, 4 } {9,  8, 7, 6, 5, 4, 3}
+1.0      ERROR
+0.25       DIMENSION
+488932   RANDOM NUMBER (0.76976)
+1.0       FACTOR (1.0 RANDOM CORNERS, ELSE 0.0)
+256 256 256   I, J AND K DIMENSIONS
+0 0 1 0      BLENDUSEx, blendusey,  PERIODUSEx,periodusy
+-1.0          EDECAY
+1        1=use lognormal distribution,else 0

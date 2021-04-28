@@ -1,0 +1,66 @@
+ [I] FLUX-DEPENDENT BEDROCK CHANNEL EROSION RATE ( 0 STREAM POWER, 1 
+USE THE SKLAR-DIETRICH BED ABRASION MODEL, AND 3) USE A FLUX-DEPENDENT
+INCISION MODEL PROPOSED BY WHIPPLE AND TUCKER (2002, JGR). 
+
+This is a three-value switch.
+Definitions:  
+
+EQ - the exponent for discharge (see the BC8x popup)
+EG - the exponent for gradient (see the BV9x popup)
+QL - the local discharge
+SL - the local gradient
+WL - the local channel width
+SY - the local bed sediment yield
+TS - transport stage (see popup AC13x)
+QSE - the local bed sediment transport capacity (See popup AC13x for calculation procedures)
+BE - the bedrock erodibility (see popup BC10x, although may vary spatially and temporally)
+CE - the critical value of the stream power that must be exceeded for erosion to occur (see popup
+     BC14x, although may vary spatially and temporally)
+ER - the bedrock erosion rate for the given flow conditions
+DC - The discharge coefficient
+WD - fluid density (see popup BC13x)
+WC - Channel width constant (see BC17x)
+NN - Manning coefficient (see popup BC11x)
+SF - the Sklar_factor (see popup BC5x)
+BT - the bedrock tensile strength (see popup BC4x)
+FF - Flow fraction for sediment transport - (see popup AC19x)
+g - gravity (see popup BC12x)
+SY - local bed sediment yield
+SG - sediment specific gravity (see popup AC21x)
+SP - sediment porosity (see popup AC20x)
+SR - saturation ratio - the ratio of bed sediment transport rate to the maximum bed sediment
+     transport rate
+SM - the multiplicative factor in the Sklar/Dietrich bed erosion model
+SR=SY/QSE 
+DC=WD**(NN/WC)**0.6*g*(9.8/g)**0.3
+SM=(SF*(g*(SG-1)*(1-SP)*FF))/BT**2
+
+Erosional processes depend upon the switch state:
+
+Switch = 0:  The stream power formulation of Howard(1994):
+AF=QL**EQ
+GF=SL**ES
+ER=-(DC*AF*GF-CE)*BE
+
+Switch = 2: The Whipple-Tucker flux-dependent bed erosion model:
+ER =-(DC*AF*GF-CE)*BE*(4.0*SR*(1.0-SR))
+
+Switch = 1: The Sklar-Dietrich bed erosion by saltation:
+
+if Sklar saturation use (Switch BC7x set to 0):
+   SSF=1-SR
+else: SSF=exp(-SR)
+BF - bedload flux
+FB - fracton of sediment yield that is bed sediment (see popup AC26x)
+BF=SY*FB
+if TS>0:
+   If using the shear ratio (see popup BC6):
+      EC=-SM*BF*SSF/sqrt(TS)
+   else:
+      EC=-SM*BF*SSF
+else:
+      EC=0.0
+   
+
+
+ 

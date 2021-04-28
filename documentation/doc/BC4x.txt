@@ -1,0 +1,22 @@
+ SKLAR ROCK_TENSILE_STRENGTH (megapascals, range~1-25)
+
+If the Sklar and Dietrich (2004, WRR) bed abrasion model is 
+selected, the bed erodibility is parameterized by rock
+tensile strength, which can vary in the range from 1 to ~25
+megapascals.
+
+An important issue with sediment-load-dependent erosion is
+treating how sediment is introduced into the channel system.
+In almost all natural landscapes the great majority of the
+sediment load is derived from mass wasting from surrounding
+slopes.  In the Sklar-Dietrich model this introduces a strong
+positive feedback between channel erosion and supply of 
+sediment locally and as routed from upstream.  It also
+introduces the issue of how sediment is introduced in headwater
+regions of low gradient.  As implemented here, low relief areas
+remain largely uneroded until incision waves penetrate upstream
+and slopes begin to contribute sediment.
+This largely distinguishes the erosional pattern from sediment-load-dependent
+models from the stream power model.
+
+See popup BC3x for more details.

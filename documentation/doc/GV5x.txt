@@ -1,0 +1,11 @@
+ [I] STRAIN_CURVE_SIZE                                                          
+
+This determines how many categories are used to transport
+individual gravel components based upon their relative proportions
+on the bed.  These relative rates are called "strain curves" in
+the Parker model.  The model as programmed assumes 36 strain curves,
+each consisting of 3 parameters for interpolation of transport rates.
+The 36 triplets of values are read from the GRAVEL_VALUES.TXT file
+in the execution directory.
+
+ See the GV0x popup for more details.

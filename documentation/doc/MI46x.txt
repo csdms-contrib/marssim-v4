@@ -1,0 +1,4 @@
+ [I] PRINT OUT INTERVAL FOR INTERIM SIMULATION RESULTS, IN ITERATIONs
+
+This is the number of iterations between output of intermediate simulation
+results.  It is usually set to the same number as the elevation print interval. 

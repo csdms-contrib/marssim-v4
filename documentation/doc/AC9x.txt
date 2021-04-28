@@ -1,0 +1,6 @@
+ [I] IREADALLUV (0=NO INITIAL ALLUVIUM, 1= READ IN ALLUVIAL THICKNESS
+0= NO INITIAL ALLUVIAL DEPOSITS
+
+This switch is no longer necessary and has no effect, because alluvial
+locations are now input at the start of any program continuation run. 
+ 

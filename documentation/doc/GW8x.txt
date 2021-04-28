@@ -1,0 +1,11 @@
+ DARCIES 
+
+This is the lateral permeability of the aquifer if constant
+conditions with depth is assumed or the surface permeability
+if an exponentially decreasing permeability is assumed.
+This is measured in Darcies, which is expressed in cm length
+units and converted to meter length units.  Natural rocks
+and sediment vary over many orders of magnitude.  For reference
+sand has a permeability of about 1 darcy.
+
+ For more details see the GW0x popup.

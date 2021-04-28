@@ -1,0 +1,6 @@
+ SEEPAGE_WEATHERING_EXPONENT  
+
+The groundwater seepage rate is raised to this power to determine
+weathering due to groundwater seepage.
+
+See popup WE8x for more details. 

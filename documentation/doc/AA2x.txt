@@ -1,0 +1,11 @@
+ [I] USE EXPOSURE-DEPENDENT_CREEP                                                            
+
+If this parameter is set to 1.0,  gradient-dependent creep mass wasting occurs 
+with diffusivity being governed in proportion to the'exposure'.
+There is the option to use either of two different measures of 'exposure' 
+(exposure and topexpose) and to have positive exposure enhance or diminish creep rate
+dependent on the setting of USE INVERSE EXPOSURE (popup AA5x).
+The local exposure index can be smoothed prior to creep rate determination if
+smooth-exposure-value is set to 1 (see popup AA6x).
+The eolian rate function parameters in the EOLIAN_PARAMETERS.PRM FILE (popups EO7x to EO10x)
+define the dependence of creep rate on exposure.

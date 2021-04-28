@@ -1,0 +1,27 @@
+ifort -fast  -heap-arrays  -c ./global_variables.f90
+ifort -fast  -heap-arrays  -c ./main_program.f90
+ifort -fast  -heap-arrays  -c ./initial_and_boundary_conditions.f90
+ifort -fast  -heap-arrays  -c ./channel_properties.f90
+ifort -fast  -heap-arrays  -c ./flow_routing.f90
+ifort -fast  -heap-arrays  -c ./determine_stream_network.f90
+ifort -fast  -heap-arrays  -c ./eolian_erosion_deposition.f90
+ifort -fast  -heap-arrays  -c ./fluvial_slope_erosion.f90
+ifort -fast  -heap-arrays  -c ./groundwater_flow.f90
+ifort -fast  -heap-arrays  -c ./impact_cratering.f90
+ifort -fast  -heap-arrays  -c ./mass_wasting.f90
+ifort -fast  -heap-arrays  -c ./read_and_write_data_files.f90
+ifort -fast  -heap-arrays  -c ./sediment_routing.f90
+ifort -fast  -heap-arrays  -c ./stream_network_properties.f90
+ifort -fast  -heap-arrays  -c ./summary_statistics.f90
+ifort -fast  -heap-arrays  -c ./surface_erosion_deposition.f90
+ifort -fast  -heap-arrays  -c ./weathering.f90
+ifort -fast  -heap-arrays  -c ./lava_flows.f90
+ifort -fast  -heap-arrays  -c ./gradient_and_flow_directions.f90
+ifort -fast  -heap-arrays  -c ./gravel_transport_and_abrasion_new.f90
+ifort -fast  -heap-arrays  -c ./plot_diagnostics.f90
+ifort -fast  -heap-arrays  -c ./write_debug_information.f90
+ifort -fast  -heap-arrays  -c ./mass_flow.f90
+
+
+
+

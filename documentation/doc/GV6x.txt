@@ -1,0 +1,17 @@
+ [I] GRAIN_ARRAY_SIZE
+
+This is the number of grain size categories used
+in gravel transport calculations
+
+The next 12 input cells in the GRAVEL_VALUES.TXT file specify the grain size
+(in mm) for the category and three entries specifying the cumulative initial
+percental representation on the bed.  The first entry is the grain size
+the second is the cumulative fraction supplied from upstream, the third
+is the cumulative fraction of the surface layer, and the next is the cumulative
+fraction for the subsurface. The differential
+percentage of the given size is the difference between the
+values for the given grain size and the value for the next
+smaller size, and the representative grain size is the geometric
+mean of the given value and that of the next entry row.
+
+See popup Gv0x for more details     

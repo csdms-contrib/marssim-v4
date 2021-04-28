@@ -1,0 +1,15 @@
+ EVAPORATION_STANDARD_DEVIATION 
+
+If the X-RATIO is modeled as being constant, keep this
+value at 0.0 . If a positive value is given, the X-RATIO
+will be recalculated at NCHANGEEVAP intervals.  The 
+X-RATIO value is assumed to follow a lognormal distribution
+
+EE - X-RATIO + 1.0   ("effective evaporation")
+ESD - Evaporation standard deviation
+LEE = log(EE**2/sqrt(ESD**2 + EE**2)  (** is exponentiation)  "Log evaporation mean"
+LSD = sqrt(log(ESD**2/EE**2+1.0)  "Log evaporation standard deviation"
+
+Evaporation this scaling follows a lognormal distribution with LEE and LSD parameters
+
+See pupup FP29x for discussion of the X-RATIO

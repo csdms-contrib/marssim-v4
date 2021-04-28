@@ -1,0 +1,4 @@
+********************** SPATIAL PROCESS MASKING **************************** 
+
+The use of a spatial mask to limit erosional processes to specific parts of
+the simulation domain is determined by the next parameter    

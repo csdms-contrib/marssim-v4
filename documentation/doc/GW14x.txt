@@ -1,0 +1,8 @@
+ MAXIMUM_GROUNDWATER_ERROR   
+
+This is the maximum change in calculated groundwater
+elevation (in meters) within the simulation matrix which will
+require additional iterations. For more accurate
+groundwater calculations set this to a lower value.
+
+ See popup GW0x for further information. 

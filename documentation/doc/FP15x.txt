@@ -1,0 +1,25 @@
+ [I] DO_SPATIAL_RUNOFF - USE SPATIALLY-VARYING RUNOFF COEFFICIENT
+
+This is the most flexible method of specifying spatially-varying runoff.
+ If this switch is set a file SPATIAL_VARIATION.DAT file must be
+ present in the execution directory. The value of SPATIAL_VARIATION_USE
+ must be set to unity in the MARSSIM_INITIAL_BOUNDARY_CONDITIONS.PRM file.
+It is a matrix of values whose dimensions 
+ correspond to the dimensions of the simulation.  This file must be assembled
+ externally to MARSSIM and can be based on a variety of factors, including
+ elevation, regional gradient, relative elevation, and topographic divergence.
+ Define:
+ VMX = maximum value in SPATIAL_VARIATION.DAT
+ VMN = mimimum value in SPATIAL_VARIATION.DAT
+ HRS = high runoff scale factor (see popup FP17x)
+ LRS = low runoff scale factor (see popup FP16x) 
+ VAL = the local value of the input matrix
+ RUN = the calculated RUNOFF value
+ DC = the discharge_constant for routed discharge_constant (see popup FP4x)
+ DE = the discharge exponent (see popup FP5x)
+ 
+ AF=(HRS-LRS)*DC/(VMX-VMN)
+ BF=(HRS*DC-AF*VMX
+ RUN=(VAL*AF+BF)**(1/DE)
+ 
+ 

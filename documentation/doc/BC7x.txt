@@ -1,0 +1,10 @@
+ [I] SKLAR_SATURATION_USE -USE SKLAR PARABOLIC SATURATION FORMULA (0)
+OR USE TUROWSKI EXPONENTIAL SATURATION RATIO (1)
+
+The Sklar and Dietrich bed abrasion model has a parabolic bed cover effect
+such that abrasion rates approach zero abruptly as the sediment load reaches
+saturation.  Turowski et al. (2007, JGR) propose a more gradual approach to
+reduced bed scour rate based on a negative exponential function.  That approach
+can be selected by setting this switch to 1.
+
+See popup BC3x for more details.

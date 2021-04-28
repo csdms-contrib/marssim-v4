@@ -1,0 +1,7 @@
+[I] ISEED, RANDOM NUMBER SEED 
+
+This seed is used to intitate generation of random numbers
+for any simulation processes requiring stochastic values.
+Routines are included to genterate normal random deviates,
+negative exponential deviates, and lognormal values as well
+as unform distribution.                                                     

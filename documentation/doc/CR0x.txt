@@ -1,0 +1,22 @@
+******************** CRATERING PARAMETERS ***************************** 
+
+This module implements impact cratering within MARSSIM simulations.  Craters
+are created geometrically, not dynamically.  The shape of a crater, including
+the crater interior bowl, the rim, and ejecta is determined through shape
+parameters. Details about the parameterization are given in Forsberg-Taylor et al (2004)
+and Howard(2007.  Craters can be created in two basic ways:
+1) As random events, such that the location and crater size are drawn randomly, using about
+   production curve for the crater diameters.  THe parameter IMPACT_PROBABILITY determines the
+   likelihood of an impact during each iteration
+2) As specified events, such that the crater size, location, and time of impact are read from
+   input files.  This is useful if the temporal evolution of a specific region is being simulated.
+   An example of this is presented in Matsubara et al. (2018).
+These two modes can be used together, such as specifying large crater events coupled with a random background
+of small random crater events.
+
+Another dichotomy in the simulation oaraneters determines whether craters are modeled using geometric
+shape parameters or whether crater morphology is based upon selected actual fresh crater topography.  This
+is implemented for martian craters.  Because of the limitations on the number of fresh craters imposed on
+relatively planar terrain, this database has only been compiled for craters between 15-100 km diameter.  If
+used, craters with diameters <15 km are geometrically modeled. as are craters>100 km. 
+        

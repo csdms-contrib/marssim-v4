@@ -1,0 +1,13 @@
+ BEDROCK_ERODIBILITY FOR STREAM POWER 
+
+This is the intrinsic bedrock erodibility for
+the stream power incision model. it can vary
+widely depending upon bedrock properties, The
+constant relates yearly bed erosion rate to the
+channel discharge and channel gradient, and
+thus depends upon the value of the discharge
+exponent. For a discharge exponent of 0.3 erodibility
+can vary from 1.0E-2 (for shaly or fine-grained
+saprolite to 1.0E-10 for very hard bedrock.
+
+ See popup BC3x for more details.

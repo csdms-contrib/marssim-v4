@@ -1,0 +1,6 @@
+ MANNING-STRICKLER RESISTANCE COEFFICIENT                                       
+
+This resistance  factor is used to calculate
+ the shear stress responsible for sediment transport
+
+See popup GV0x for more details

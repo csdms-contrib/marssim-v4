@@ -1,0 +1,6 @@
+ RUNOFF_DEPTH_DECAY_RATE -REGOLITH DEPTH FOR HALF VALUE SCALING  
+
+The factor determining how rapidly runoff decreases with regolith
+thickness. This is the depth at which runoff rate is halfway 
+betwen that for deep regolith and exposed bedrock.
+(see popup FP20x for details)

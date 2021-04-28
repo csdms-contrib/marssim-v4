@@ -1,0 +1,5 @@
+ FACTOR FOR CONVERTING ELEVATIONS AND CELL SIZE TO METERS (= 1.O IF UNITS
+ARE IM METERS.
+
+For example, this value would be 0.3048 if the input spatial data is in 
+feet. 

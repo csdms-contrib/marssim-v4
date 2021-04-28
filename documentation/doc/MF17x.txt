@@ -1,0 +1,8 @@
+ target maximum elevation change per iteration (meters)  
+
+If switch MF16x is set to 1, then the whole simulation timestep
+is adjusted such that the absolute value of the maximum elevation
+change produced by mass flow within the simulation domain equals 
+this value.
+
+For more information see popup MF0x. 

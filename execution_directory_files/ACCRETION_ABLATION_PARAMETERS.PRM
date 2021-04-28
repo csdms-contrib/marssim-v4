@@ -1,0 +1,15 @@
+!******************** ACCRETION-ABLATION PARAMETERS *************************
+0.0                       ! ACCRETION OR ABLATION RATE
+0                          ! [I] USE EXPOSURE-DEPENDENT CREEP
+0                          ! [I] USE SOLAR INSOLATION ABLATION OR DEPOSITION
+1                          ! [I] USE TOP EXPOSURE
+0                          ! [I] USE INVERSE EXPOSURE
+0                          ! [I] SMOOTH EXPOSURE VALUES
+0.0                        ! RADIATION RATE CONSTANT
+0.0                        ! RADIATION SOURCE FACTOR
+0.0                        ! THRESHOLD DEPOSITION CONVEXITY
+0.0                        ! RADIATION_DEPOSITION_RATE
+1.0                        ! FRACTIONAL DEPOSITION VOLUME
+0                          ! [I] USE_REGOLITH_ABLATION
+0                          ! [I] DO_NORMAL_ACCRETION
+1                          ! [I] DO_ACCRETE_REGOLITH

@@ -1,0 +1,7 @@
+ TRANSPORTFACTOR 
+
+The main multiplicative factor in the sediment transport
+relationship.  For sand bed total load channels an estimated
+value is 40.0 and for gravel channels 8.0. 
+
+See the AC13x popup for further details.

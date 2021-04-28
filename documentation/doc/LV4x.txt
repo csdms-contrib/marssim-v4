@@ -1,0 +1,5 @@
+    LAVA FLOW THICKNESS
+
+This is the thickness, in meters, of the lava flow.
+
+For additional information see popup LV0z.	

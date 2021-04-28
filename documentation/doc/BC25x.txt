@@ -1,0 +1,3 @@
+ [I] BISTABLE_FLUVIAL_EROSION -INDEX FOR USING BISTABLE FLUVIAL EROSION
+
+Set this to 1 to use bistable fluvial erosion See previous popup explanation 

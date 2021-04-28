@@ -1,0 +1,5 @@
+ [I] USE_BISTABLE_BEDROCK - INDEX FOR USE BISTABLE BEDROCK RESISTANCE
+
+For historical reasons both this and the previous switch (bistable fluvial erosion index)
+neet to be set to 1 for accelerated erosion modeling,  See BC26x popup for
+further explanation 

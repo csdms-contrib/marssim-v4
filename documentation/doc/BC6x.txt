@@ -1,0 +1,10 @@
+ [I] USE SHEAR RATIO IN DENOMINATOR OF FLUX!DEPENDENT EROSION (1=YES,
+0 = NO)
+
+In the default Sklar-Dietrich model there is a term that accounts for
+saltation hop length that acts to inhibit the rate of incision on steeper
+becrock channel slopes. This term is disregarded in the Chatanantavet and
+Parker (2009, JGR) bed abrasion model, so the option is given to not
+include that term by setting this switch to 0.  
+
+ See popup BC3x for more details.

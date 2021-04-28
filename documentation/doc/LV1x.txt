@@ -1,0 +1,6 @@
+ [I]   NUMBER_OF_LAVA_SOURCES - followed by I,J locations of sources   
+
+This is the number of lava sources, >=1. For each lava source the I and J
+locations of the source cell are read in.
+
+See additional information in popup LV0x. 

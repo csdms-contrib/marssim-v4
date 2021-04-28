@@ -1,0 +1,8 @@
+  SLOPE_DIFFUSIVITY  
+
+This is the diffusivity for all sub-models of regolith mantled
+slope mass wasting. Slope diffusivity varies widely among different
+landscape, ranging from 0.0002 m**2/yr to perhaps 0.06 in solifluction
+terrain.  Fairly typical values range from 0.004 to 0.012.
+
+See MW0x popup for more details.  

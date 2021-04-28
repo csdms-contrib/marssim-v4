@@ -1,0 +1,8 @@
+ SKLAR_FACTOR - SKLAR MULTIPLICATIVE FACTOR 
+
+This is the multiplicative factor to be used in the
+Sklar-Dietrich bed abrasion model, as amended by Sklar and
+Dietrich (2012, WRR).  This values should normally remain fixed
+with bedrock erodibility controlled by the rock tensile strength 
+
+See popup BC3x for more details.

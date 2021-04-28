@@ -1,0 +1,10 @@
+  BEDROCK_DISCHARGE_EXPONENT  
+
+This is the exponent governing the dependency of
+bed erosion rate on discharge in the stream power
+model.  Typical values include 0.3 for shear stress
+dependency and 0.5 for stream power per unit width.
+Higher values have been suggested based upon studies of
+long-term erosion rates.
+
+  See popup BC3x for more details.

@@ -1,0 +1,8 @@
+ critical mass flow thickness (meters)   
+
+If this is greater than zero this thickness, in meters
+at the top of the regolith is assumed to be rigid in Blen's 
+Law flow modeling.  Thus glacial flow will not occur until
+the regolith is at least this thick.
+
+See popup MF0x for more details 

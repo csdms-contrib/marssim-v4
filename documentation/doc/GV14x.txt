@@ -1,0 +1,8 @@
+ ABRASION_COEFFICENT - RAPIDITY OF ABRASION FINING
+
+This parameter sets the weighting of gravel
+size comminution by abrasion during transport.
+A value 0f zero meand no abrasion occurs during
+transport
+
+See popup GV0x for more details 

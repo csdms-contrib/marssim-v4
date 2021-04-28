@@ -1,0 +1,13 @@
+[I] SWITCH FOR LAVA FLOW MODELING (0=NO, 1=YES)
+
+This is a strongly heuristic model, using lava
+sources at specific locations. The model is intended
+to produce flows similar in morphology to those in basaltic 
+terrains, such as the Hawaiian islands and the martian
+Tharsis region. 
+
+Details about the lava flow modeling are found in:
+
+Howard, A.D. (1999). Simulation of lava flow inundation on
+     martian cratered terrain. 30th Lunar and Planetary
+     Science Conference, Abstract 1112.	 

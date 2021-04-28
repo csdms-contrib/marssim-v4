@@ -1,0 +1,6 @@
+ [I] MODEL_GROUNDWATER (>0=YES) 
+
+This switch determines whether groundwater flow
+will be simulated.
+
+For more details see the GW0x popup. 

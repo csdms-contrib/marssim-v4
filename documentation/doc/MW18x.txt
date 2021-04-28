@@ -1,0 +1,8 @@
+ MINIMUM_ROUTING_GRADIENT
+
+ If this value is greater than zero then routed
+ mass wasting debris on bedrock slopes will be deposited
+ if the local gradient drops below this value and the
+ local site will be changed to being regolith covered.
+ 
+ See MW0x for more details.

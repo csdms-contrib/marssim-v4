@@ -1,0 +1,4 @@
+ [I] INTERVAL IN ITERATIONS BETWEEN RECALCULATING GRADIENTS 
+
+This sets how frequently, in iterations, that topographic gradients
+and flow directions are recalculated.  It is best to leave this at 1. 

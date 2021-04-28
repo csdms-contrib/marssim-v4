@@ -1,0 +1,16 @@
+[I] NEW SIMULATION (1=YES, 0=NO)
+    Most runs will likely be new simulations.
+    The time will be set to TIME at start of simulation (usually 0.0)
+    The starting iteration number is usually set to 0
+    Starting elevations are read from INELEV.DAT
+    The INITIAL_REGOLITH_THICKNESS will be set from the input file
+       WEATHERING_PARAMETERS.PRM
+    
+For continuation runs the program will read state variables from the files
+produced by the previous simulation run:
+    FINAL_BEDROCK.DAT, FINLAL_SEDCOVER.DAT, fINAL_SEDBASE.DAT,
+    fINAL_REGOLITH.DAT, and FINAL_ELEVATION.DAT
+
+However, be sure to set the initial time and iteration number to
+correspond to the final values during the previous simulation as read from
+BASIN.LST                                                   

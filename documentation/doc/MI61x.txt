@@ -1,0 +1,3 @@
+************************ ROCK AND SURFACE DEFORMATION ****************
+Thia provides a stub for implementing vertical tectonic deformation
+during the simulation.          

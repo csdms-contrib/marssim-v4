@@ -1,0 +1,8 @@
+ [I] EQUATION_SELECTOR (1=Gary_Parker, 2=WILCOCK)  
+
+ The Parker spreadsheet includes gravel transport relationships
+based upon the Parker surface transport relationship or the 
+Wilcock and Crowe (2003) relationship.  The present model has only been
+tested using the Parker transport model.
+
+ See the GV0x popup for more details.

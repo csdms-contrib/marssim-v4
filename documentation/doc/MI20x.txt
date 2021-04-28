@@ -1,0 +1,20 @@
+ DEFAULT_CHANNEL_TIMESTEP 
+
+This is the first of several parameters governing
+the simulation timestep per iteration. The default
+approach for landcape modeling dominated by fluvial
+erosion and mass wasting is to have the timestep be
+governed by the potential rate of erosion to minimize
+the possibility of instability.  Fluvial erosion is one
+of the more finicky processes and it is the most limiting
+factor in most cases.  The downside to this method of
+determining the timestep is that the timesteps may vary 
+during the simulation. 
+
+In general, for all of the parameters controling timesteps
+the usual strategy is to hunt for the largest value that
+does not make the program become unstable (e.g., elevations
+increasing or decreasing without limet, or NaN numbers
+resulting from division by zero or exponentiation by very
+large numbers). The upside is that instabilities usually
+arise early in a simulation.

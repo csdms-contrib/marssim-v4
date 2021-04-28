@@ -1,0 +1,10 @@
+ [I] INDEX FOR VERTICAL PERIODIC BOUNDARY (ON J AXIS) (0=NO, 1=YES) 
+
+If this switch is set the top and bottom boundaries are periodic in the
+same way that horizontal periodic boundaries are treated.  If both
+horizontal and vertical periodic boundaries are set then care must be taken
+to keep fluvial flows having no exit and thus flooding the domain.  The
+two ways to accomplish this is either 1) set the parameter COMPLETE RUNOFF INDEX
+in the FLOW_PARAMETERS.PRM file to zero (depressions remain dry) or 2) to set
+the COMPLETE RUNOFF INDEX to 1, set the switch for LAKE EVAPORATION MODELING
+to 1, and use a X-RATIO parameter high enough to compensate for upland runoff.

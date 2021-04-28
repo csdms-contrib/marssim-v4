@@ -1,0 +1,6 @@
+ SMALLEST_MODELED_CRATER 
+
+ The smallest crater diameter that is modeled - generally
+3 to 5 times the cell size.
+
+ See Cr8x and Cr0x popups for details

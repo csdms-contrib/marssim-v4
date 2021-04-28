@@ -1,0 +1,4 @@
+ [I] DO FLUVIAL DEACHMENT (1=YES, 0=NO) 
+
+This switch should be set to 1 for any simulation involving
+erosion by flowing surface runoff. 

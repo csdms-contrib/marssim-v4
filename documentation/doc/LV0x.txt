@@ -1,0 +1,30 @@
+************************LAVAFLOW************************************** 
+This module routes lava flows across the surface from one or more locations
+and heuristically models flow branching and cessation in manner similar to
+Hawaiian basaltic flows.  Several assumptions are made:
+1) Individual flows are thin compared to their breadth and length and have
+a spatially and temproally constant thickness
+2) Emplacement of individual flows occurs over an extended period of time.
+3) Most new emplacement of lava occurs at the leading edge of the flow.
+4) Lava is erupted from a few, localized, long-lived source vents
+5) Flow events cease either due to interruption at the feeding source or
+by ponding at its terminus
+6) Erosion by lava flows is negligible.
+At each iteration lava emplacement occurs at the edges of active flows, At each such
+cell the probabily P(ij) of flow from cell i to an adjacent cell j is calculated as:
+AT = elapseed time since cell i was innundated by lava
+GR = Gradient from cell i to cell j
+LGW - Lava_gradient_weight (popup LV10x)
+LDW - Lava_duration_weight (LV11x popup)
+TH - Lava flow thickness (LV4x popup)
+PI - Probability of flow source interruption
+   P(ij) = exp(-LDW*AT)*(1-exp(-LGS*GR)
+   P(ij) is zero if the gradient to the adjacent cell is uphill or if the adjacent cell is
+      part of the active flow.
+At each iteration a potential cell is drawn randomly for inundation by lava in proportion to
+its probability. Flows cease if there is no positive probability or there is a PI cessation
+evant, after which flows reinitiate and extend from the source vent(s).  For more details see
+Howard (1999).
+The I and J locations of the source lava vents are read from the file LAVA_SOURCES.TXT that must
+be present in the execution directory.
+   

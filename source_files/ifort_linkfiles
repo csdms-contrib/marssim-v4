@@ -1,0 +1,12 @@
+ifort -fast -heap-arrays -o marssimi_4s global_variables.o main_program.o \
+channel_properties.o mass_flow.o \
+flow_routing.o determine_stream_network.o \
+eolian_erosion_deposition.o fluvial_slope_erosion.o \
+groundwater_flow.o impact_cratering.o initial_and_boundary_conditions.o \
+lava_flows.o gradient_and_flow_directions.o \
+mass_wasting.o \
+read_and_write_data_files.o sediment_routing.o \
+stream_network_properties.o summary_statistics.o \
+surface_erosion_deposition.o weathering.o \
+write_debug_information.o \
+gravel_transport_and_abrasion_new.o plot_diagnostics.o

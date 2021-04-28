@@ -1,0 +1,6 @@
+  MINIMUM_FLOW_THICKNESS (meters)
+
+This is the minimim thickness of lava flow that can flow
+onto an adjacent cell.
+
+ For additional information see popup LV0z. 

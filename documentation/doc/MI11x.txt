@@ -1,0 +1,13 @@
+ [I] SWITCH FOR MASS FLOW (0=NO, 1=YES) 
+
+In contrast to shallow mass wasting on regolith
+and bedrock slopes, this switch turns on deep
+mass flows.  Two types of rheology are permitted,
+Bingham flows with a critical shear stress and
+Glen's Law flow with a specified exponent.  These
+flows are assumed to relatively slow, so that inertial
+forces are not considered.  They also assume stresses
+proportional to the flow depth, and thus are limited to
+flow situations where the flow depth is shallow compared
+to the overall relief.  Parameters are read from
+MASS_FLOW.PRM. 

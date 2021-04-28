@@ -1,0 +1,8 @@
+ Glen's Law exponent  
+
+This is the exponent to be used for Glen's law flow rheology.
+Values between about 2 to 5 are used to model glacial flow,
+dependent on temperature, crystal size, strain rate, et al.
+A value of 3.0 is the most commonly used.
+
+ See popup MF0x for more details

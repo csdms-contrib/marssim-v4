@@ -1,0 +1,38 @@
+        REGARDING BINARY STATES IN THE MARSSIM MODEL
+        
+MARSSIM utilizes several binary states(YES/NO - TRUE/FALSE) to characterize each location.
+These state values affect the action of geomporphic processes.  At present MARSSIM tracks
+the following properties:
+
+Major state variables:
+    IS_ROCK_SURFACE:     If this is true, then this location is considered to have exposed bedrock
+                         otherwise it is regolith-covered.  Transitions occur to bedrock if weathered
+                         debris accumulate, and to regolith if erosion removes all regolith. For
+                         glacial and Bingham mass flows, the routed debris is considered to be "regolith"
+                      
+    SUBMERGED:  If this location is submerged (TRUE) then sediment routing deposits remaining
+                         sediment load as foreset deposits, and fluvial erosion is inactive.  Setting
+                         an ocean level, having wet flow conditions, or lake flow routing determine whether
+                         a given location is submerged.
+                      
+    IS_SEDIMENT_COVERED: If true then fluvial routing transports and deposits sediment across this surface
+                         if water and sediment are supplied from upstream.  Otherwise fluvial routing and
+                         erosion treat this as bedrock or regolith subject to erosion but not deposition.
+                         Changes of state occur to IS_SEDIMENT_COVERED if the channel gradient drops below
+                         the minimum value necessary to transport the imposed bed sediment load.  Reverse
+                         changes occur if the routing procedure removes all sediment.
+                         
+    ACCELERATED_EROSION: The fluvial module has the option to track a normal or acellerated erosion state
+                         if bistable erosion is selected.  This can be used to track gully erosion where
+                         slope and channel locations that are vegetation covered have accelerated_erosion
+                         FALSE and rapidly eroding gullies lacking vegetation cover have accelerated_erosion TRUE.
+                         
+Minor state variables:
+
+    In flow routing with the possibility of lakes, the domain is divided into basins, and state variables for 
+    each basin track the overflow state, the location of the basin outlet, the next downstream basin location,
+    and whether the basin is an outlet basin and several other properties.
+    
+    Other state variables relate to impact cratersing and grounwater flow, if selected.
+                         
+                         

@@ -1,0 +1,7 @@
+  LAVA_GRADIENT_WEIGHT
+
+lava_gradient_weight is a parameter that determines how much the gradient
+  between the edge of a flow and a neighboring point determines
+  the probability of flow in that direction.
+  
+ For additional information see popup LV0z

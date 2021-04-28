@@ -1,0 +1,4 @@
+  HIGH_WEATHERING RATE
+
+This sets the maximum spatially varying weathering rate if spatially varying
+weathering rate is used.  See WE15X for details.
